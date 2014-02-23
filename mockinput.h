@@ -1,14 +1,17 @@
 #ifndef __TTT____mockinput__
 #define __TTT____mockinput__
 #include "input.h"
+#include "vector"
 
-class MockInput: public Input {
+class MockInput: public Input{
 public:
-    virtual ~MockInput();
-    MockInput(int toReturn[]);
+    std::vector<int>inputsToReturn;
     
-    virtual int call();
-
+    MockInput(std::vector<int> toReturn){
+        inputsToReturn = toReturn;
+    };
+    
+    int call();
 };
 
 #endif

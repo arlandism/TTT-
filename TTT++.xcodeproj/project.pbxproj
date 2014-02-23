@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6B906CA718BA615E005AFE4B /* Test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B906CA618BA615E005AFE4B /* Test.1 */; };
-		6B906CB318BA6DB9005AFE4B /* catch.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CAB18BA63B8005AFE4B /* catch.hpp */; };
 		6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */; };
 		6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB418BA73FD005AFE4B /* runTests.cpp */; };
 		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
-		6B906CD618BA7E43005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD418BA7E43005AFE4B /* mockinput.cpp */; };
-		6B906CD918BA80F6005AFE4B /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD718BA80F6005AFE4B /* input.cpp */; };
-		6B906CDA18BA80F6005AFE4B /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD718BA80F6005AFE4B /* input.cpp */; };
+		6B906CDF18BA9595005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
+		6B906CE118BA95BF005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD418BA7E43005AFE4B /* mockinput.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +62,6 @@
 		6B906CC618BA7D1C005AFE4B /* TTT__.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = TTT__.1; sourceTree = "<group>"; };
 		6B906CD418BA7E43005AFE4B /* mockinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mockinput.cpp; sourceTree = "<group>"; };
 		6B906CD518BA7E43005AFE4B /* mockinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockinput.h; sourceTree = "<group>"; };
-		6B906CD718BA80F6005AFE4B /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
 		6B906CD818BA80F6005AFE4B /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
-				6B906CD718BA80F6005AFE4B /* input.cpp */,
 				6B906CD818BA80F6005AFE4B /* input.h */,
 				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
@@ -228,7 +224,6 @@
 			files = (
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
-				6B906CD918BA80F6005AFE4B /* input.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,11 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B906CD618BA7E43005AFE4B /* mockinput.cpp in Sources */,
+				6B906CE118BA95BF005AFE4B /* mockinput.cpp in Sources */,
+				6B906CDF18BA9595005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
-				6B906CDA18BA80F6005AFE4B /* input.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,
-				6B906CB318BA6DB9005AFE4B /* catch.hpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

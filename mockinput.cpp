@@ -1,5 +1,7 @@
 #include "mockinput.h"
 
 int MockInput::call(){
-    return 2;
+    int nextReturnValue = inputsToReturn.back();
+    inputsToReturn.pop_back();
+    return nextReturnValue;
 }

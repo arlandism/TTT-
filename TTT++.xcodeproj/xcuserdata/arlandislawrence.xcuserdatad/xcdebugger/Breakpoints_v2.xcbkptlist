@@ -68,19 +68,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tests/InputValidatorTest.cpp"
-            timestampString = "414875729.640172"
+            timestampString = "414884820.246929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "TEST_CASE(&quot;InputValidator rejects bad input&quot; &quot;[inputvalidator]&quot;)"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "TEST_CASE(&quot;InputValidator keeps asking for input until it is valid&quot; &quot;[inputvalidator]&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/input.h"
@@ -89,6 +89,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3"
             endingLineNumber = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/inputvalidator.cpp"
+            timestampString = "414884820.246929"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "InputValidator::validate(std::vector&lt;int&gt; validInputs, Input *input)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
