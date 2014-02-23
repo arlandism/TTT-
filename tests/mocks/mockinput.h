@@ -5,13 +5,15 @@
 
 class MockInput: public Input{
 public:
-    std::vector<int>inputsToReturn;
     
     MockInput(std::vector<int> toReturn){
         inputsToReturn = toReturn;
     };
     
     int call();
+    
+private:
+    std::vector<int>inputsToReturn;
 };
 
 #endif

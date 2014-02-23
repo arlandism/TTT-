@@ -14,6 +14,7 @@
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6B906CDF18BA9595005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE518BAA78F005AFE4B /* mockinput.cpp */; };
+		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		6B906CD518BA7E43005AFE4B /* mockinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockinput.h; path = tests/mocks/mockinput.h; sourceTree = "<group>"; };
 		6B906CD818BA80F6005AFE4B /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
 		6B906CE518BAA78F005AFE4B /* mockinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockinput.cpp; path = tests/mocks/mockinput.cpp; sourceTree = "<group>"; };
+		6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalinput.cpp; sourceTree = "<group>"; };
+		6B906CE818BAAA7E005AFE4B /* terminalinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalinput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				6B906CC318BA7D1C005AFE4B /* lib */,
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 				6B906CC618BA7D1C005AFE4B /* TTT__.1 */,
+				6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */,
+				6B906CE818BAAA7E005AFE4B /* terminalinput.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 			);
