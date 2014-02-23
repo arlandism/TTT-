@@ -1,5 +1,5 @@
 #include "catch.hpp"
-#include "InputValidator.h"
+#include "inputvalidator.h"
 #include "mockinput.h"
 
 TEST_CASE("InputValidator rejects bad input" "[inputvalidator]"){

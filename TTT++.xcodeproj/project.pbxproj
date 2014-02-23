@@ -11,7 +11,7 @@
 		6B906CB318BA6DB9005AFE4B /* catch.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CAB18BA63B8005AFE4B /* catch.hpp */; };
 		6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */; };
 		6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB418BA73FD005AFE4B /* runTests.cpp */; };
-		6B906CC718BA7D1C005AFE4B /* InputValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* InputValidator.cpp */; };
+		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6B906CD618BA7E43005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD418BA7E43005AFE4B /* mockinput.cpp */; };
 		6B906CD918BA80F6005AFE4B /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CD718BA80F6005AFE4B /* input.cpp */; };
@@ -57,8 +57,8 @@
 		6B906CAB18BA63B8005AFE4B /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = src/lib/catch.hpp; sourceTree = "<group>"; };
 		6B906CB418BA73FD005AFE4B /* runTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = runTests.cpp; path = tests/runTests.cpp; sourceTree = "<group>"; };
 		6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputValidatorTest.cpp; path = tests/InputValidatorTest.cpp; sourceTree = "<group>"; };
-		6B906CC118BA7D1C005AFE4B /* InputValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputValidator.cpp; sourceTree = "<group>"; };
-		6B906CC218BA7D1C005AFE4B /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputvalidator.cpp; sourceTree = "<group>"; };
+		6B906CC218BA7D1C005AFE4B /* inputvalidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputvalidator.h; sourceTree = "<group>"; };
 		6B906CC418BA7D1C005AFE4B /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 		6B906CC518BA7D1C005AFE4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6B906CC618BA7D1C005AFE4B /* TTT__.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = TTT__.1; sourceTree = "<group>"; };
@@ -137,10 +137,10 @@
 		6B906CC018BA7D1C005AFE4B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				6B906CC118BA7D1C005AFE4B /* InputValidator.cpp */,
+				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
 				6B906CD718BA80F6005AFE4B /* input.cpp */,
 				6B906CD818BA80F6005AFE4B /* input.h */,
-				6B906CC218BA7D1C005AFE4B /* InputValidator.h */,
+				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 				6B906CC618BA7D1C005AFE4B /* TTT__.1 */,
@@ -226,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B906CC718BA7D1C005AFE4B /* InputValidator.cpp in Sources */,
+				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B906CD918BA80F6005AFE4B /* input.cpp in Sources */,
 			);
