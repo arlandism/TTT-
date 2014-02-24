@@ -1,5 +1,4 @@
 #include "inputvalidator.h"
-#include <vector>
 
 int InputValidator::Validate(std::vector<int> validInputs, Input *input){
     int userInput = input->Call();

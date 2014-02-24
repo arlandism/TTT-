@@ -15,9 +15,11 @@
 		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
 		6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */; };
 		6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
-		6B906CF918BAD628005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
-		6B906CFB18BAD65B005AFE4B /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
+		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
+		6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
+		6BA27DA618BBB54E00303336 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
+		6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 		6B906CF218BACDA0005AFE4B /* playerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerfactory.h; sourceTree = "<group>"; };
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
+		6BA5BC1A18BB9F59009A9272 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = src/player.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 		6B906C8918BA5FA8005AFE4B = {
 			isa = PBXGroup;
 			children = (
+				6BA5BC1A18BB9F59009A9272 /* player.cpp */,
 				6B906CAB18BA63B8005AFE4B /* catch.hpp */,
 				6B906C9418BA5FA8005AFE4B /* TTT++ */,
 				6B906CA318BA615E005AFE4B /* tests */,
@@ -240,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
+				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */,
@@ -250,9 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B906CFB18BAD65B005AFE4B /* playerfactory.cpp in Sources */,
+				6BA27DA618BBB54E00303336 /* player.cpp in Sources */,
+				6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */,
+				6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */,
 				6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */,
-				6B906CF918BAD628005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */,
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,

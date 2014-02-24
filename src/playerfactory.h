@@ -8,7 +8,7 @@
 class PlayerFactory{
 
 public:
-    static Player Create(MoveStrategy* strategy, std::string token);
+    static Player* Create(MoveStrategy*, std::string);
 };
 
 #endif

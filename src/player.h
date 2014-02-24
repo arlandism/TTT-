@@ -5,7 +5,14 @@
 class Player {
 
 public:
-    std::string token;
+    Player(std::string token) {
+        token_ = token;
+    };
+    
+    std::string token();
+    
+private:
+    std::string token_;
 };
 
 #endif
