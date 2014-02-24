@@ -12,7 +12,7 @@ public:
         inputsToReturn = toReturn;
     }
     
-    int Execute();
+    int NextMove();
     
 private:
     std::vector<int>inputsToReturn;

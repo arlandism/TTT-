@@ -4,8 +4,7 @@
 class MoveStrategy {
     
 public:
-    virtual int Execute()=0;
-    
+    virtual int NextMove()=0;
 };
 
 #endif

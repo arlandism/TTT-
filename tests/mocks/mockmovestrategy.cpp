@@ -1,6 +1,6 @@
 #include "mockmovestrategy.h"
 
-int MockMoveStrategy::Execute(){
+int MockMoveStrategy::NextMove(){
     int nextReturnValue = inputsToReturn.back();
     inputsToReturn.pop_back();
     return nextReturnValue;
