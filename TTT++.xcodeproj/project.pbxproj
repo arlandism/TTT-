@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B906CA718BA615E005AFE4B /* Test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B906CA618BA615E005AFE4B /* Test.1 */; };
 		6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */; };
 		6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB418BA73FD005AFE4B /* runTests.cpp */; };
 		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
-		6B906CDF18BA9595005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE518BAA78F005AFE4B /* mockinput.cpp */; };
 		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
+		6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */; };
+		6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
+		6B906CF918BAD628005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
+		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
+		6B906CFB18BAD65B005AFE4B /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				6B906CA718BA615E005AFE4B /* Test.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -52,7 +54,6 @@
 /* Begin PBXFileReference section */
 		6B906C9218BA5FA8005AFE4B /* TTT++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TTT++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CA218BA615E005AFE4B /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B906CA618BA615E005AFE4B /* Test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = Test.1; path = tests/Test.1; sourceTree = "<group>"; };
 		6B906CAB18BA63B8005AFE4B /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = src/lib/catch.hpp; sourceTree = "<group>"; };
 		6B906CB418BA73FD005AFE4B /* runTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = runTests.cpp; path = tests/runTests.cpp; sourceTree = "<group>"; };
 		6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputValidatorTest.cpp; path = tests/InputValidatorTest.cpp; sourceTree = "<group>"; };
@@ -60,12 +61,18 @@
 		6B906CC218BA7D1C005AFE4B /* inputvalidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputvalidator.h; sourceTree = "<group>"; };
 		6B906CC418BA7D1C005AFE4B /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
 		6B906CC518BA7D1C005AFE4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		6B906CC618BA7D1C005AFE4B /* TTT__.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = TTT__.1; sourceTree = "<group>"; };
 		6B906CD518BA7E43005AFE4B /* mockinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockinput.h; path = tests/mocks/mockinput.h; sourceTree = "<group>"; };
 		6B906CD818BA80F6005AFE4B /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
 		6B906CE518BAA78F005AFE4B /* mockinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockinput.cpp; path = tests/mocks/mockinput.cpp; sourceTree = "<group>"; };
 		6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalinput.cpp; sourceTree = "<group>"; };
 		6B906CE818BAAA7E005AFE4B /* terminalinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalinput.h; sourceTree = "<group>"; };
+		6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = playerfactorytest.cpp; path = tests/playerfactorytest.cpp; sourceTree = "<group>"; };
+		6B906CEE18BACCDE005AFE4B /* movestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movestrategy.h; sourceTree = "<group>"; };
+		6B906CF018BACD4B005AFE4B /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		6B906CF118BACDA0005AFE4B /* playerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactory.cpp; sourceTree = "<group>"; };
+		6B906CF218BACDA0005AFE4B /* playerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerfactory.h; sourceTree = "<group>"; };
+		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
+		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +127,7 @@
 				6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */,
 				6B906CBD18BA77B4005AFE4B /* mocks */,
 				6B906CB418BA73FD005AFE4B /* runTests.cpp */,
-				6B906CA618BA615E005AFE4B /* Test.1 */,
+				6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */,
 			);
 			name = tests;
 			sourceTree = "<group>";
@@ -130,6 +137,8 @@
 			children = (
 				6B906CE518BAA78F005AFE4B /* mockinput.cpp */,
 				6B906CD518BA7E43005AFE4B /* mockinput.h */,
+				6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */,
+				6B906CF518BACF91005AFE4B /* mockmovestrategy.h */,
 			);
 			name = mocks;
 			sourceTree = "<group>";
@@ -139,10 +148,13 @@
 			children = (
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
 				6B906CD818BA80F6005AFE4B /* input.h */,
+				6B906CF018BACD4B005AFE4B /* player.h */,
+				6B906CF118BACDA0005AFE4B /* playerfactory.cpp */,
+				6B906CF218BACDA0005AFE4B /* playerfactory.h */,
+				6B906CEE18BACCDE005AFE4B /* movestrategy.h */,
 				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
-				6B906CC618BA7D1C005AFE4B /* TTT__.1 */,
 				6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */,
 				6B906CE818BAAA7E005AFE4B /* terminalinput.h */,
 			);
@@ -230,6 +242,7 @@
 				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
+				6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B906CFB18BAD65B005AFE4B /* playerfactory.cpp in Sources */,
+				6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */,
+				6B906CF918BAD628005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */,
-				6B906CDF18BA9595005AFE4B /* inputvalidator.cpp in Sources */,
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,
+				6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
