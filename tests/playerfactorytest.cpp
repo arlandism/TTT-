@@ -15,8 +15,9 @@ TEST_CASE("PlayerFactory generates players..." "[playerfactory]"){
     
     SECTION("using supplied input"){
         std::string token = "X";
+        std::vector<int> board = std::vector<int>();
         Player *player = PlayerFactory::Create(strategy, token);
-        REQUIRE(1 == player->Move());
+        REQUIRE(1 == player->Move(board));
     }
     
 }

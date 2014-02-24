@@ -12,7 +12,7 @@ public:
     };
     
     std::string token();
-    int Move();
+    int Move(std::vector<int>);
     
 private:
     std::string token_;

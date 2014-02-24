@@ -11,7 +11,6 @@ public:
     Minimax(std::string token){
         token_ = token;
     };
-    int NextMove();
     int NextMove(std::vector<int>);
     
 private:
