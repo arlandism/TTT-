@@ -7,7 +7,7 @@
 class InputValidator{
     
 public:
-    static int validate(std::vector<int> validInputs, Input* input);
+    static int Validate(std::vector<int> validInputs, Input* input);
     static bool IsValidInput(std::vector<int> validInputs, int input);
 };
 

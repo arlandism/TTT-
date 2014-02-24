@@ -6,7 +6,7 @@
 
 class TerminalInput: public Input{
 public:
-    int call();
+    int Call();
 };
 
 #endif

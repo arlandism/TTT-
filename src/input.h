@@ -5,7 +5,7 @@
 class Input{
     
 public:
-    virtual int call() = 0;
+    virtual int Call() = 0;
 };
 
 #endif

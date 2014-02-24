@@ -1,7 +1,7 @@
 #include <iostream>
 #include "terminalinput.h"
 
-int TerminalInput::call(){
+int TerminalInput::Call(){
     int input;
     std::cin >> input;
     return input;

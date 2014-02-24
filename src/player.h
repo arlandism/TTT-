@@ -6,7 +6,6 @@ class Player {
 
 public:
     std::string token;
-
 };
 
 #endif

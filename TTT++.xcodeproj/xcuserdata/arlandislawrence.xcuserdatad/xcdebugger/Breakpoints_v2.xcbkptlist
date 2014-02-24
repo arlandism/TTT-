@@ -103,7 +103,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "8"
             endingLineNumber = "8"
-            landmarkName = "InputValidator::validate(std::vector&lt;int&gt; validInputs, Input *input)"
+            landmarkName = "InputValidator::Validate(std::vector&lt;int&gt; validInputs, Input *input)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

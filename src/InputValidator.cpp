@@ -1,12 +1,12 @@
 #include "inputvalidator.h"
 #include <vector>
 
-int InputValidator::validate(std::vector<int> validInputs, Input *input){
-    int userInput = input->call();
+int InputValidator::Validate(std::vector<int> validInputs, Input *input){
+    int userInput = input->Call();
     if (InputValidator::IsValidInput(validInputs, userInput)){
         return userInput;
     } else {
-        return validate(validInputs, input);
+        return Validate(validInputs, input);
     }
 };
 

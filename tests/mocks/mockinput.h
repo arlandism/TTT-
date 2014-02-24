@@ -10,7 +10,7 @@ public:
         inputsToReturn = toReturn;
     };
     
-    int call();
+    int Call();
     
 private:
     std::vector<int>inputsToReturn;
