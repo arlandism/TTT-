@@ -23,6 +23,9 @@
 		6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */; };
 		6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
 		6BBD2BCC18BBD98C00AE12EF /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
+		6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD018BBDCD300AE12EF /* board.cpp */; };
+		6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */; };
+		6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD018BBDCD300AE12EF /* board.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minimaxtest.cpp; path = tests/minimaxtest.cpp; sourceTree = "<group>"; };
 		6BBD2BC918BBD8D800AE12EF /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
 		6BBD2BCA18BBD8D800AE12EF /* minimax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minimax.h; sourceTree = "<group>"; };
+		6BBD2BD018BBDCD300AE12EF /* board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = board.cpp; sourceTree = "<group>"; };
+		6BBD2BD118BBDCD300AE12EF /* board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = board.h; sourceTree = "<group>"; };
+		6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardtest.cpp; path = tests/boardtest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 				6B906CB418BA73FD005AFE4B /* runTests.cpp */,
 				6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */,
 				6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */,
+				6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */,
 			);
 			name = tests;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 				6B906CE818BAAA7E005AFE4B /* terminalinput.h */,
 				6BBD2BC918BBD8D800AE12EF /* minimax.cpp */,
 				6BBD2BCA18BBD8D800AE12EF /* minimax.h */,
+				6BBD2BD018BBDCD300AE12EF /* board.cpp */,
+				6BBD2BD118BBDCD300AE12EF /* board.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -256,6 +265,7 @@
 				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
+				6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */,
 			);
@@ -265,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */,
 				6BBD2BCC18BBD98C00AE12EF /* minimax.cpp in Sources */,
 				6BA27DA618BBB54E00303336 /* player.cpp in Sources */,
 				6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */,
@@ -274,6 +285,7 @@
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,
 				6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */,
+				6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */,
 				6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
