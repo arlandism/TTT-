@@ -20,6 +20,9 @@
 		6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
 		6BA27DA618BBB54E00303336 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 		6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
+		6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */; };
+		6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
+		6BBD2BCC18BBD98C00AE12EF /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
 		6BA5BC1A18BB9F59009A9272 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = src/player.cpp; sourceTree = "<group>"; };
+		6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minimaxtest.cpp; path = tests/minimaxtest.cpp; sourceTree = "<group>"; };
+		6BBD2BC918BBD8D800AE12EF /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
+		6BBD2BCA18BBD8D800AE12EF /* minimax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minimax.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				6B906CBD18BA77B4005AFE4B /* mocks */,
 				6B906CB418BA73FD005AFE4B /* runTests.cpp */,
 				6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */,
+				6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */,
 			);
 			name = tests;
 			sourceTree = "<group>";
@@ -161,6 +168,8 @@
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 				6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */,
 				6B906CE818BAAA7E005AFE4B /* terminalinput.h */,
+				6BBD2BC918BBD8D800AE12EF /* minimax.cpp */,
+				6BBD2BCA18BBD8D800AE12EF /* minimax.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
 				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
+				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */,
 			);
@@ -255,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBD2BCC18BBD98C00AE12EF /* minimax.cpp in Sources */,
 				6BA27DA618BBB54E00303336 /* player.cpp in Sources */,
 				6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */,
 				6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */,
@@ -263,6 +274,7 @@
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,
 				6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */,
+				6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ TEST_CASE("PlayerFactory generates players..." "[playerfactory]"){
         REQUIRE("X" == player->token());
     }
     
-    SECTION("using supplied move strategy"){
+    SECTION("using supplied input"){
         std::string token = "X";
         Player *player = PlayerFactory::Create(strategy, token);
         REQUIRE(1 == player->Move());

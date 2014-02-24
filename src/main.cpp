@@ -2,7 +2,7 @@
 
 int main(int argc, const char * argv[])
 {
-    std::cout << "Hello, World!\n";
+    printf("Welcome To Tic Tac Toe!\n");
     return 0;
 }
 
