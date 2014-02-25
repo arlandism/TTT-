@@ -19,4 +19,5 @@ TEST_CASE("Player generates players..." "[player]"){
         Player *player = new Player(token, strategy);
         REQUIRE(1 == player->Move(board));
     }
+    
 }

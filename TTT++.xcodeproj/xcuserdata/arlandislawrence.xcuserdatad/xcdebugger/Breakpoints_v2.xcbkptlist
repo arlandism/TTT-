@@ -103,7 +103,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
-            landmarkName = "InputValidator::Validate(std::vector&lt;int&gt; validInputs, Input &amp;input)"
+            landmarkName = "InputValidator::Validate(std::vector&lt;int&gt; validInputs, Input *input)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -191,14 +191,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/minimax.h"
-            timestampString = "414964599.134635"
+            filePath = "src/minimaxstrategy.h"
+            timestampString = "415053333.048756"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "Minimax(std::string token)"
-            landmarkType = "5">
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "class MinimaxStrategy"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -302,12 +302,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tests/playertest.cpp"
-            timestampString = "414973971.700772"
+            timestampString = "415052045.823408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "TEST_CASE(&quot;PlayerFactory generates players...&quot; &quot;[playerfactory]&quot;)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "TEST_CASE(&quot;Player generates players...&quot; &quot;[player]&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -324,6 +324,38 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "TEST_CASE(&quot;PlayerFactory generates players...&quot; &quot;[playerfactory]&quot;)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tests/mocks/mockinput.h"
+            timestampString = "415049731.74902"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "class MockInput"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/main.cpp"
+            timestampString = "415053333.048756"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "createPlayer(std::string playerType, std::string token)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

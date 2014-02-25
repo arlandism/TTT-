@@ -1,17 +1,19 @@
 #include "catch.hpp"
-#include "minimax.h"
+#include "minimaxstrategy.h"
 #include "vector"
 
-TEST_CASE("Minimax chooses the winning move", "[minimax]"){
+TEST_CASE("MinimaxStrategy chooses the winning move", "[minimax]"){
     std::vector<int> board = {"o", "o"};
-    Minimax minimax = *new Minimax("o");
+    MinimaxStrategy minimax = *new MinimaxStrategy();
+    minimax.setToken("o");
     int winningMove = 2;
     REQUIRE(winningMove == minimax.NextMove(board));
 }
 
 TEST_CASE("Minimax blocks a move", "[minimax]"){
     std::vector<int> board = {"o", "o"};
-    Minimax minimax = *new Minimax("x");
+    MinimaxStrategy minimax = *new MinimaxStrategy();
+    minimax.setToken("x");
     int winningMove = 2;
     REQUIRE(winningMove == minimax.NextMove(board));
 }

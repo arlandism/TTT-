@@ -5,14 +5,13 @@
 #include "movestrategy.h"
 #include "vector"
 
-class Minimax:public MoveStrategy{
+class MinimaxStrategy:public MoveStrategy{
     
 public:
-    Minimax(std::string token){
-        token_ = token;
-    };
+    MinimaxStrategy(){};
     int NextMove(std::vector<int>);
-    
+    void setToken(std::string);
+
 private:
     std::string token_;
 };
