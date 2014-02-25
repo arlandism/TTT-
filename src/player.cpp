@@ -7,3 +7,4 @@ std::string Player::token (){
 int Player::Move(std::vector<int> board){
     return move_strategy_->NextMove(board);
 }
+

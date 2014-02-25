@@ -13,11 +13,9 @@
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE518BAA78F005AFE4B /* mockinput.cpp */; };
 		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
-		6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */; };
-		6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
+		6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playertest.cpp */; };
 		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
-		6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF118BACDA0005AFE4B /* playerfactory.cpp */; };
 		6BA27DA618BBB54E00303336 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 		6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 		6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */; };
@@ -74,11 +72,9 @@
 		6B906CE518BAA78F005AFE4B /* mockinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockinput.cpp; path = tests/mocks/mockinput.cpp; sourceTree = "<group>"; };
 		6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalinput.cpp; sourceTree = "<group>"; };
 		6B906CE818BAAA7E005AFE4B /* terminalinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalinput.h; sourceTree = "<group>"; };
-		6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = playerfactorytest.cpp; path = tests/playerfactorytest.cpp; sourceTree = "<group>"; };
+		6B906CEA18BAC166005AFE4B /* playertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = playertest.cpp; path = tests/playertest.cpp; sourceTree = "<group>"; };
 		6B906CEE18BACCDE005AFE4B /* movestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movestrategy.h; sourceTree = "<group>"; };
 		6B906CF018BACD4B005AFE4B /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
-		6B906CF118BACDA0005AFE4B /* playerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactory.cpp; sourceTree = "<group>"; };
-		6B906CF218BACDA0005AFE4B /* playerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerfactory.h; sourceTree = "<group>"; };
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
 		6BA5BC1A18BB9F59009A9272 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player.cpp; path = src/player.cpp; sourceTree = "<group>"; };
@@ -143,7 +139,7 @@
 				6B906CB718BA7447005AFE4B /* InputValidatorTest.cpp */,
 				6B906CBD18BA77B4005AFE4B /* mocks */,
 				6B906CB418BA73FD005AFE4B /* runTests.cpp */,
-				6B906CEA18BAC166005AFE4B /* playerfactorytest.cpp */,
+				6B906CEA18BAC166005AFE4B /* playertest.cpp */,
 				6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */,
 				6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */,
 			);
@@ -167,8 +163,6 @@
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
 				6B906CD818BA80F6005AFE4B /* input.h */,
 				6B906CF018BACD4B005AFE4B /* player.h */,
-				6B906CF118BACDA0005AFE4B /* playerfactory.cpp */,
-				6B906CF218BACDA0005AFE4B /* playerfactory.h */,
 				6B906CEE18BACCDE005AFE4B /* movestrategy.h */,
 				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
@@ -267,7 +261,6 @@
 				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
 				6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
-				6B906CF318BACDA0005AFE4B /* playerfactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,13 +271,12 @@
 				6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */,
 				6BBD2BCC18BBD98C00AE12EF /* minimax.cpp in Sources */,
 				6BA27DA618BBB54E00303336 /* player.cpp in Sources */,
-				6BA27DA418BBB04200303336 /* playerfactory.cpp in Sources */,
 				6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */,
 				6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */,
 				6B906CE618BAA78F005AFE4B /* mockinput.cpp in Sources */,
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6B906CBE18BA79C0005AFE4B /* InputValidatorTest.cpp in Sources */,
-				6B906CEC18BAC166005AFE4B /* playerfactorytest.cpp in Sources */,
+				6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */,
 				6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */,
 				6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */,
 			);

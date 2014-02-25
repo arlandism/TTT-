@@ -103,7 +103,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
-            landmarkName = "InputValidator::Validate(std::vector&lt;int&gt; validInputs, Input *input)"
+            landmarkName = "InputValidator::Validate(std::vector&lt;int&gt; validInputs, Input &amp;input)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -301,7 +301,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tests/playerfactorytest.cpp"
+            filePath = "tests/playertest.cpp"
             timestampString = "414973971.700772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -317,7 +317,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tests/playerfactorytest.cpp"
+            filePath = "tests/playertest.cpp"
             timestampString = "414974092.288214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
