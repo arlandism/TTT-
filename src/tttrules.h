@@ -13,7 +13,9 @@ public:
         token_one_ = token_one;
         token_two_ = token_two;
     };
+    
     std::string Winner();
+    bool Over();
     
 private:
     Board *board_;
@@ -23,6 +25,9 @@ private:
     
     bool TokensEqual(std::vector<std::string>);
     std::vector<std::vector<std::string>> WinningCombinations();
+    std::vector<std::vector<std::string>> DiagonalWins();
+    std::vector<std::vector<std::string>> RowWins();
+    std::vector<std::vector<std::string>> ColumnWins();
 };
 
 #endif

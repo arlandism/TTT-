@@ -17,21 +17,13 @@ public:
     
     void Move(int, std::string);
     bool Full();
-    bool Over();
     bool AllSpacesFilled(std::vector<std::string>);
-    std::vector<std::vector<std::string>> Rows();
-    std::vector<std::vector<std::string>> Columns();
-    std::vector<std::vector<std::string>> Diagonals();
-    std::string winner();
+    std::vector<std::string> state();
     
 private:
-    const std::string NO_WINNER_ = "NO WINNER";
     std::vector<std::string> state_;
-    std::string winner_;
     int base_;
     
-    bool TokensEqual(std::vector<std::string>);
     bool EmptySquarePresent(std::vector<std::string>);
-    std::vector<std::vector<std::string>> WinningCombinations();
 };
 #endif

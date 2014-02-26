@@ -1,5 +1,10 @@
 #include "tttrules.h"
 
+bool TTTRules::Over(){
+    std::string current_winner = Winner();
+    return (current_winner != "NO WINNER") or board_->Full();
+}
+
 std::string TTTRules::Winner(){
     std::vector<std::vector<std::string>> winning_combinations = WinningCombinations();
     std::vector<std::vector<std::string>>::const_iterator iterator;
@@ -19,11 +24,26 @@ bool TTTRules::TokensEqual(std::vector<std::string> collection){
 
 std::vector<std::vector<std::string>> TTTRules::WinningCombinations(){
     std::vector<std::vector<std::string>> winning_combinations;
-    std::vector<std::vector<std::string>> rows = board_->Rows();
-    std::vector<std::vector<std::string>> columns = board_->Columns();
-    std::vector<std::vector<std::string>> diagonals = board_->Diagonals();
+    std::vector<std::vector<std::string>> rows = RowWins();
+    std::vector<std::vector<std::string>> columns = ColumnWins();
+    std::vector<std::vector<std::string>> diagonals = DiagonalWins();
     winning_combinations.insert(winning_combinations.end(), rows.begin(), rows.end());
     winning_combinations.insert(winning_combinations.end(), columns.begin(), columns.end());
     winning_combinations.insert(winning_combinations.end(), diagonals.begin(), diagonals.end());
     return winning_combinations;
+}
+
+std::vector<std::vector<std::string>> TTTRules::RowWins(){
+    BoardSpaces board_spaces = *new BoardSpaces(board_->state());
+    return board_spaces.Rows();
+};
+
+std::vector<std::vector<std::string>> TTTRules::DiagonalWins(){
+    BoardSpaces board_spaces = *new BoardSpaces(board_->state());
+    return board_spaces.Diagonals();
+}
+
+std::vector<std::vector<std::string>> TTTRules::ColumnWins(){
+    BoardSpaces board_spaces = *new BoardSpaces(board_->state());
+    return board_spaces.Columns();
 }
