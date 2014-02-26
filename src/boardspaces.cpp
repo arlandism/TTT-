@@ -14,11 +14,13 @@ std::vector<std::vector<std::string>> BoardSpaces::Rows(){
 std::vector<std::vector<std::string>> BoardSpaces::Columns(){
     std::vector<std::vector<std::string>> columns;
     for (int i = 0; i < base_; i++){
-        int index = i;
+        
+        int column_space = i;
         std::vector<std::string> column;
+        
         for (int j = 0; j < base_; j++){
-            column.push_back(state_[index]);
-            index += base_;
+            column.push_back(state_[column_space]);
+            column_space += base_;
         }
         columns.push_back(column);
     }
@@ -37,8 +39,8 @@ std::vector<std::string> BoardSpaces::DiagonalOne(){
     std::vector<std::string> diagonal_one;
     int upper_bound = base_ * base_;
     int offset = base_ + 1;
-    for (int i = 0; i < upper_bound; i+= offset){
-        diagonal_one.push_back(state_[i]);
+    for (int diagonal_space = 0; diagonal_space < upper_bound; diagonal_space+= offset){
+        diagonal_one.push_back(state_[diagonal_space]);
     }
     return diagonal_one;
 }
@@ -48,37 +50,8 @@ std::vector<std::string> BoardSpaces::DiagonalTwo(){
     int start = base_ - 1;
     int upper_bound = base_ * base_ - 1;
     int offset = base_ - 1;
-    for (int i = start; i < upper_bound; i+= offset){
-        diagonal_two.push_back(state_[i]);
+    for (int diagonal_space = start; diagonal_space < upper_bound; diagonal_space+= offset){
+        diagonal_two.push_back(state_[diagonal_space]);
     }
     return diagonal_two;
 }
-
-//vector<vector<string>> BoardSpaces::Diagonals(Board board){
-//    vector<vector<string>> diagonals;
-//    vector<string> diagonalOne = BoardSpaces::DiagonalOne(board);
-//    vector<string> diagonalTwo = BoardSpaces::DiagonalTwo(board);
-//    diagonals = {diagonalOne, diagonalTwo};
-//    return diagonals;
-//}
-//
-//vector<string> BoardSpaces::DiagonalOne(Board board){
-//    vector<string> diagonalOne;
-//    int upperBound = board.base() * board.base();
-//    int offset = board.base() + 1;
-//    for (int i = 0; i < upperBound; i+= offset){
-//        diagonalOne.push_back(board.state()[i]);
-//    }
-//    return diagonalOne;
-//}
-//
-////vector<string> BoardSpaces::DiagonalTwo(Board board){
-//    vector<string> diagonalTwo;
-//    int start = board.base() - 1;
-//    int upperBound = board.base() * board.base() - 1;
-//    int offset = board.base() - 1;
-//    for (int i = start; i < upperBound; i+= offset){
-//        diagonalTwo.push_back(board.state()[i]);
-//    }
-//    return diagonalTwo;
-//}

@@ -19,6 +19,7 @@ public:
     std::vector<std::vector<std::string>> Diagonals();
     
 private:
+    
     std::vector<std::string> state_;
     int base_;
     std::vector<std::string> DiagonalOne();
