@@ -9,10 +9,6 @@ class Board {
     
 public:
     
-    Board (){
-        Board(3);
-    }
-    
     Board(int base){
         base_ = base;
         const int numSpaces_ = base * base;
@@ -21,6 +17,7 @@ public:
     
     void Move(int, std::string);
     bool Full();
+    bool Over();
     std::string winner();
     
 private:

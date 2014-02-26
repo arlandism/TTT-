@@ -5,6 +5,11 @@ void Board::Move(int space, std::string token){
     state_[square_index] = token;
 }
 
+bool Board::Over(){
+    std::string current_winner = winner();
+    return (current_winner != "NO WINNER") or Full();
+}
+
 std::string Board::winner(){
     std::vector<std::vector<std::string>> winning_combinations = WinningCombinations();
     std::vector<std::vector<std::string>>::const_iterator iterator;

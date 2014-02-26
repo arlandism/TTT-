@@ -197,7 +197,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
             endingLineNumber = "5"
-            landmarkName = "TEST_CASE(&quot;Board reports row winners&quot;, &quot;[board]&quot;)"
+            landmarkName = "TEST_CASE(&quot;Board reports row winners&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -213,7 +213,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "TEST_CASE(&quot;Board returns NO WINNER for no winner&quot;, &quot;[board]&quot;)"
+            landmarkName = "TEST_CASE(&quot;Board returns NO WINNER for no winner&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -224,11 +224,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/board/board.h"
-            timestampString = "415133964.991669"
+            timestampString = "415136170.59862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "class Board"
             landmarkType = "3">
          </BreakpointContent>
@@ -240,11 +240,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/board/board.h"
-            timestampString = "415133964.991669"
+            timestampString = "415136170.59862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "Board(int base)"
             landmarkType = "5">
          </BreakpointContent>
@@ -256,11 +256,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/board/board.h"
-            timestampString = "415133964.991669"
+            timestampString = "415136170.59862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "class Board"
             landmarkType = "3">
          </BreakpointContent>

@@ -16,7 +16,7 @@ TEST_CASE("Player generates players..."){
     }
     
     SECTION("using supplied input"){
-        Board board = *new Board();
+        Board board = *new Board(3);
         std::string token = "X";
         Player *player = new Player(token, strategy);
         REQUIRE(1 == player->Move(board));

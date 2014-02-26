@@ -13,6 +13,7 @@ public:
     void set_token(std::string);
 
 private:
+    int EvaluateBoard(Board board);
     std::string token_;
 };
 #endif
