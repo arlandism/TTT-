@@ -18,6 +18,10 @@ public:
     void Move(int, std::string);
     bool Full();
     bool Over();
+    bool AllSpacesFilled(std::vector<std::string>);
+    std::vector<std::vector<std::string>> Rows();
+    std::vector<std::vector<std::string>> Columns();
+    std::vector<std::vector<std::string>> Diagonals();
     std::string winner();
     
 private:
@@ -27,11 +31,7 @@ private:
     int base_;
     
     bool TokensEqual(std::vector<std::string>);
-    bool AllSpacesFilled(std::vector<std::string>);
     bool EmptySquarePresent(std::vector<std::string>);
     std::vector<std::vector<std::string>> WinningCombinations();
-    std::vector<std::vector<std::string>> Rows();
-    std::vector<std::vector<std::string>> Columns();
-    std::vector<std::vector<std::string>> Diagonals();
 };
 #endif
