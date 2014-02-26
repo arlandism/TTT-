@@ -11,3 +11,13 @@ TEST_CASE("BoardSpaces generates rows of a board"){
     REQUIRE(expectedFirstRow == rows.front());
     REQUIRE(expectedSecondRow == rows.back());
 }
+
+TEST_CASE("BoardSpaces generates columns of a board"){
+    std::vector<std::string> state = {"o", "", "", "", "", "x", "", "", ""};
+    BoardSpaces board_spaces = *new BoardSpaces(state);
+    std::vector<std::vector<std::string>> columns = board_spaces.Columns();
+    std::vector<std::string> expected_first_column = {"o", "", ""};
+    std::vector<std::string> expected_second_column = {"", "x", ""};
+    REQUIRE(expected_first_column == columns.front());
+    REQUIRE(expected_second_column == columns.back());
+}

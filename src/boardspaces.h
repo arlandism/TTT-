@@ -15,6 +15,7 @@ public:
     }
     
     std::vector<std::vector<std::string>> Rows();
+    std::vector<std::vector<std::string>> Columns();
     
 private:
     std::vector<std::string> state_;
