@@ -15,6 +15,7 @@ public:
     };
     
     std::string Winner();
+    std::string OtherToken(std::string);
     bool Over();
     
 private:

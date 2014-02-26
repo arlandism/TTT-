@@ -67,3 +67,10 @@ TEST_CASE("TTTRules::Over returns... true if the board is full"){
         REQUIRE(false == rules.Over());
     }
 }
+
+TEST_CASE("TTTRules::OtherToken returns the opposite token"){
+    Board *board = new Board(3);
+    TTTRules rules = *new TTTRules(board, "A", "B");
+    REQUIRE("A" == rules.OtherToken("B"));
+    REQUIRE("B" == rules.OtherToken("A"));
+}

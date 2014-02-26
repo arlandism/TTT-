@@ -224,13 +224,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/board/board.h"
-            timestampString = "415136170.59862"
+            timestampString = "415147549.504761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "class Board"
-            landmarkType = "3">
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "Board(std::vector&lt;std::string&gt; state)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -320,13 +320,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/tttrules.cpp"
-            timestampString = "415140225.363366"
+            timestampString = "415143814.213282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "TTTRules::WinningCombinations()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/minimaxstrategy.cpp"
+            timestampString = "415147345.089908"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
