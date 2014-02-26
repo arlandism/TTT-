@@ -1,8 +1,10 @@
 #include "catch.hpp"
+#include "board.h"
+#include "movestrategy.h"
 #include "mockmovestrategy.h"
 #include "player.h"
 
-TEST_CASE("Player generates players..." "[player]"){
+TEST_CASE("Player generates players..."){
     
     std::vector<int> inputsToReturn = {1};
     MoveStrategy *strategy = new MockMoveStrategy(inputsToReturn);
@@ -14,10 +16,9 @@ TEST_CASE("Player generates players..." "[player]"){
     }
     
     SECTION("using supplied input"){
+        Board board = *new Board();
         std::string token = "X";
-        std::vector<int> board = std::vector<int>();
         Player *player = new Player(token, strategy);
         REQUIRE(1 == player->Move(board));
     }
-    
 }

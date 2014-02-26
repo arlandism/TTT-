@@ -5,9 +5,14 @@
 #include "vector"
 #include "boardspaces.h"
 
-class Board{
+class Board {
     
 public:
+    
+    Board (){
+        Board(3);
+    }
+    
     Board(int base){
         base_ = base;
         const int numSpaces_ = base * base;

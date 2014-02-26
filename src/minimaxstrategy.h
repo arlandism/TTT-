@@ -2,14 +2,14 @@
 #define __TTT____minimax__
 
 #include <iostream>
+#include "board.h"
 #include "movestrategy.h"
 #include "vector"
 
 class MinimaxStrategy:public MoveStrategy {
     
 public:
-    MinimaxStrategy(){};
-    int NextMove(std::vector<int>);
+    int NextMove(Board board);
     void set_token(std::string);
 
 private:

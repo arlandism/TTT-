@@ -114,11 +114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tests/mocks/mockmovestrategy.h"
-            timestampString = "414896250.894244"
+            timestampString = "415134999.749803"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
             landmarkName = "class MockMoveStrategy"
             landmarkType = "3">
             <Locations>
@@ -160,11 +160,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/player.h"
-            timestampString = "414956364.171511"
+            timestampString = "415133857.657781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "Player(std::string token, MoveStrategy * strategy)"
             landmarkType = "5">
          </BreakpointContent>
@@ -176,28 +176,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/player.h"
-            timestampString = "414956364.171511"
+            timestampString = "415133857.657781"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "class Player"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.h"
-            timestampString = "415053333.048756"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "class MinimaxStrategy"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -240,39 +224,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/board/board.h"
-            timestampString = "415125768.305843"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "class Board"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/board/board.h"
-            timestampString = "415125768.305843"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "Board(int base)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/board/board.h"
-            timestampString = "415125768.305843"
+            timestampString = "415133964.991669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -287,13 +239,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "tests/playertest.cpp"
-            timestampString = "415052045.823408"
+            filePath = "src/board/board.h"
+            timestampString = "415133964.991669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "TEST_CASE(&quot;Player generates players...&quot; &quot;[player]&quot;)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "Board(int base)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/board/board.h"
+            timestampString = "415133964.991669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "class Board"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tests/playertest.cpp"
+            timestampString = "415134999.749803"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "TEST_CASE(&quot;Player generates players...&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -304,12 +288,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tests/playertest.cpp"
-            timestampString = "414974092.288214"
+            timestampString = "415134999.749803"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "TEST_CASE(&quot;Player generates players...&quot; &quot;[player]&quot;)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "TEST_CASE(&quot;Player generates players...&quot;)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1,8 +1,7 @@
 #include "minimaxstrategy.h"
 
-int MinimaxStrategy::NextMove(std::vector<int> board){
-    
-    return 2;
+int MinimaxStrategy::NextMove(Board board){    
+    return 3;
 }
 
 void MinimaxStrategy::set_token(std::string token){

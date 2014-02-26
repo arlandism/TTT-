@@ -1,5 +1,6 @@
+
 #include "userinputstrategy.h"
 
-int UserInputStrategy::NextMove(std::vector<int> board){
+int UserInputStrategy::NextMove(Board board){
     return 0;
 }

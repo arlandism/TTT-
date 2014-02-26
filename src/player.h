@@ -1,6 +1,7 @@
 #ifndef TTT___player_h
 #define TTT___player_h
 #include <iostream>
+#include "board.h"
 #include "movestrategy.h"
 
 class Player {
@@ -12,7 +13,7 @@ public:
     };
     
     std::string token();
-    int Move(std::vector<int>);
+    int Move(Board board);
     
 private:
     std::string token_;
