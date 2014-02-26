@@ -24,3 +24,61 @@ std::vector<std::vector<std::string>> BoardSpaces::Columns(){
     }
     return columns;
 }
+
+std::vector<std::vector<std::string>> BoardSpaces::Diagonals(){
+    std::vector<std::vector<std::string>> diagonals;
+    std::vector<std::string> diagonal_one = DiagonalOne();
+    std::vector<std::string> diagonal_two = DiagonalTwo();
+    diagonals = {diagonal_one, diagonal_two};
+    return diagonals;
+}
+
+std::vector<std::string> BoardSpaces::DiagonalOne(){
+    std::vector<std::string> diagonal_one;
+    int upper_bound = base_ * base_;
+    int offset = base_ + 1;
+    for (int i = 0; i < upper_bound; i+= offset){
+        diagonal_one.push_back(state_[i]);
+    }
+    return diagonal_one;
+}
+
+std::vector<std::string> BoardSpaces::DiagonalTwo(){
+    std::vector<std::string> diagonal_two;
+    int start = base_ - 1;
+    int upper_bound = base_ * base_ - 1;
+    int offset = base_ - 1;
+    for (int i = start; i < upper_bound; i+= offset){
+        diagonal_two.push_back(state_[i]);
+    }
+    return diagonal_two;
+}
+
+//vector<vector<string>> BoardSpaces::Diagonals(Board board){
+//    vector<vector<string>> diagonals;
+//    vector<string> diagonalOne = BoardSpaces::DiagonalOne(board);
+//    vector<string> diagonalTwo = BoardSpaces::DiagonalTwo(board);
+//    diagonals = {diagonalOne, diagonalTwo};
+//    return diagonals;
+//}
+//
+//vector<string> BoardSpaces::DiagonalOne(Board board){
+//    vector<string> diagonalOne;
+//    int upperBound = board.base() * board.base();
+//    int offset = board.base() + 1;
+//    for (int i = 0; i < upperBound; i+= offset){
+//        diagonalOne.push_back(board.state()[i]);
+//    }
+//    return diagonalOne;
+//}
+//
+////vector<string> BoardSpaces::DiagonalTwo(Board board){
+//    vector<string> diagonalTwo;
+//    int start = board.base() - 1;
+//    int upperBound = board.base() * board.base() - 1;
+//    int offset = board.base() - 1;
+//    for (int i = start; i < upperBound; i+= offset){
+//        diagonalTwo.push_back(board.state()[i]);
+//    }
+//    return diagonalTwo;
+//}

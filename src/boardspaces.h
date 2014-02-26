@@ -16,9 +16,12 @@ public:
     
     std::vector<std::vector<std::string>> Rows();
     std::vector<std::vector<std::string>> Columns();
+    std::vector<std::vector<std::string>> Diagonals();
     
 private:
     std::vector<std::string> state_;
     int base_;
+    std::vector<std::string> DiagonalOne();
+    std::vector<std::string> DiagonalTwo();
 };
 #endif
