@@ -21,6 +21,7 @@ public:
     std::vector<std::string> state();
     
 private:
+    
     std::vector<std::string> state_;
     int base_;
     

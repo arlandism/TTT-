@@ -14,3 +14,9 @@ TEST_CASE("Board::Full returns false for non-full board"){
     Board board = *new Board(2);
     REQUIRE(false == board.Full());
 }
+
+TEST_CASE("Board::state returns state of the board"){
+    Board board = *new Board(2);
+    std::vector<std::string> expected_state = {"", "", "", ""};
+    REQUIRE(expected_state == board.state());
+}
