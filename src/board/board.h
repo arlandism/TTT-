@@ -15,6 +15,7 @@ public:
     }
     
     void Move(int, std::string);
+    bool Full();
     std::string winner();
     
 private:

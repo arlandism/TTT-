@@ -18,6 +18,17 @@ std::string Board::winner(){
     return NO_WINNER_;
 }
 
+bool Board::Full(){
+    std::vector<std::string>::const_iterator iterator;
+    for (iterator = state_.begin(); iterator != state_.end(); iterator++){
+        std::string token_at_space = *iterator;
+        if (token_at_space != ""){
+            return true;
+        }
+    }
+    return false;
+}
+
 bool Board::TokensEqual(std::vector<std::string> collection){
     return std::equal(collection.begin() + 1, collection.end(), collection.begin());
 }

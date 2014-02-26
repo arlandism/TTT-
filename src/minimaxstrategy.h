@@ -5,12 +5,12 @@
 #include "movestrategy.h"
 #include "vector"
 
-class MinimaxStrategy:public MoveStrategy{
+class MinimaxStrategy:public MoveStrategy {
     
 public:
     MinimaxStrategy(){};
     int NextMove(std::vector<int>);
-    void setToken(std::string);
+    void set_token(std::string);
 
 private:
     std::string token_;
