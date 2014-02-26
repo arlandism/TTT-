@@ -5,10 +5,13 @@ void Board::Move(int space, std::string token){
 }
 
 std::string Board::winner(){
-    std::vector<std::string>rowOne = {state_[0], state_[1], state_[2]};
-    if (AllEqual(rowOne)){
-        return state_[0];
-    };
+    std::vector<std::vector<std::string>> rows = Rows();
+    for (std::vector<std::vector<std::string>>::const_iterator it = rows.begin(); it != rows.end(); it++){
+        std::vector<std::string> row = *it;
+        if (AllEqual(row) && AllSpacesFilled(row)){
+            return (*it).front();
+        }
+    }
     return NO_WINNER_;
 }
 
@@ -16,13 +19,13 @@ bool Board::AllEqual(std::vector<std::string> collection){
     return std::equal(collection.begin() + 1, collection.end(), collection.begin());
 }
 
-std::vector<std::vector<int>> Board::Rows(){
-    std::vector<std::vector<int>> rows;
-    for (int i = 0; i < base_; i++ ){
-        std::vector<int> row = {i, i, i};
-        rows[i] = row;
-    }
-    return rows;
+bool Board::AllSpacesFilled(std::vector<std::string> spaces){
+    return not EmptySquarePresent(spaces);
+}
+
+std::vector<std::vector<std::string>> Board::Rows(){
+    BoardSpaces board_spaces = *new BoardSpaces(state_);
+    return board_spaces.Rows();
 };
 
 std::vector<std::vector<int>> Board::Columns(){
@@ -33,10 +36,7 @@ std::vector<std::vector<int>> Board::Diagonals(){
      return *new std::vector<std::vector<int>>();
 };
 
-std::vector<int> Board::Range(int upperBound){
-    std::vector<int> range;
-    for (int i = 0; i < upperBound; i++){
-        range[i] = i;
-    }
-    return range;
+bool Board::EmptySquarePresent(std::vector<std::string> spaces){
+    std::string empty_square = "";
+    return std::find(spaces.begin(), spaces.end(), empty_square) != spaces.end();
 }

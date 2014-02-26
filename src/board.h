@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "vector"
+#include "boardspaces.h"
 
 class Board{
     
@@ -23,9 +24,10 @@ private:
     int base_;
     
     bool AllEqual(std::vector<std::string>);
-    std::vector<std::vector<int>> Rows();
+    bool AllSpacesFilled(std::vector<std::string>);
+    bool EmptySquarePresent(std::vector<std::string>);
+    std::vector<std::vector<std::string>> Rows();
     std::vector<std::vector<int>> Columns();
     std::vector<std::vector<int>> Diagonals();
-    std::vector<int> Range(int);
 };
 #endif
