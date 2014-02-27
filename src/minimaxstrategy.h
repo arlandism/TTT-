@@ -4,6 +4,7 @@
 #include <iostream>
 #include "board.h"
 #include "movestrategy.h"
+#include <map>
 #include "vector"
 
 class MinimaxStrategy:public MoveStrategy {
@@ -14,7 +15,8 @@ public:
     void set_token(std::string);
 
 private:
-    
+    int EvaluateMove(Board, int, std::string, bool=false);
+    int MinMax(int, std::string);
     int HighestScoringMove(Board, std::string);
     int EvaluateGame(std::string);
     std::string token_;
