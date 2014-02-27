@@ -82,8 +82,8 @@
 		6B389DD818BE4427000D3294 /* boardspacestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspacestest.cpp; path = board/tests/boardspacestest.cpp; sourceTree = "<group>"; };
 		6B389DDB18BE44FD000D3294 /* boardspaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspaces.cpp; path = board/boardspaces.cpp; sourceTree = "<group>"; };
 		6B389DDC18BE44FD000D3294 /* boardspaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boardspaces.h; path = board/boardspaces.h; sourceTree = "<group>"; };
-		6B389DE118BE5E8A000D3294 /* mockboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mockboard.cpp; sourceTree = "<group>"; };
-		6B389DE218BE5E8A000D3294 /* mockboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockboard.h; sourceTree = "<group>"; };
+		6B389DE118BE5E8A000D3294 /* mockboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockboard.cpp; path = tests/mocks/mockboard.cpp; sourceTree = "<group>"; };
+		6B389DE218BE5E8A000D3294 /* mockboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockboard.h; path = tests/mocks/mockboard.h; sourceTree = "<group>"; };
 		6B389DE418BE61D7000D3294 /* boardinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boardinterface.h; sourceTree = "<group>"; };
 		6B906C9218BA5FA8005AFE4B /* TTT++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TTT++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CA218BA615E005AFE4B /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
