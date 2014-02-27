@@ -1,11 +1,11 @@
 #include "tttrules.h"
 
-bool TTTRules::Over(){
-    std::string current_winner = Winner();
+bool TTTRules::GameOver(){
+    std::string current_winner = GameWinner();
     return (current_winner != "NO WINNER") or board_->Full();
 }
 
-std::string TTTRules::Winner(){
+std::string TTTRules::GameWinner(){
     std::vector<std::vector<std::string>> winning_combinations = WinningCombinations();
     std::vector<std::vector<std::string>>::const_iterator iterator;
     for (iterator = winning_combinations.begin(); iterator != winning_combinations.end(); iterator++){

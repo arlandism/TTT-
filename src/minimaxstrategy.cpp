@@ -8,8 +8,8 @@ int MinimaxStrategy::NextMove(Board board){
 int MinimaxStrategy::HighestScoringMove(Board board, std::string current_token){
     Board *board_ptr = &board;
     TTTRules rules = *new TTTRules(board_ptr, "o", "x");
-    if (rules.Over()){
-        return EvaluateGame(rules.Winner());
+    if (rules.GameOver()){
+        return EvaluateGame(rules.GameWinner());
     } else {
         std::vector<int> available_spaces = board.OpenSpaces();
         std::vector<int>::const_iterator iterator;

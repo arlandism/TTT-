@@ -14,9 +14,9 @@ public:
         token_two_ = token_two;
     };
     
-    std::string Winner();
+    std::string GameWinner();
     std::string OtherToken(std::string);
-    bool Over();
+    bool GameOver();
     
 private:
     Board *board_;

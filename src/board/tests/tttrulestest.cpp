@@ -8,39 +8,39 @@ std::string token_two = "o";
 
 TEST_CASE("TTTRules::Winner reports..."){
     
-  SECTION("row winners"){
+  SECTION("rowGameWinners"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         board->Move(1, "x");
         board->Move(2, "x");
         board->Move(3, "x");
-        REQUIRE("x" == rules.Winner());
+        REQUIRE("x" == rules.GameWinner());
    }
 
-   SECTION("column winners"){
+   SECTION("columnGameWinners"){
         Board *board = new Board(2);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         board->Move(1, "o");
         board->Move(3, "o");
-        REQUIRE("o" == rules.Winner());
+        REQUIRE("o" == rules.GameWinner());
    }
 
-   SECTION("diagonal winners"){
+   SECTION("diagonalGameWinners"){
         Board *board = new Board(2);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         board->Move(1, "o");
         board->Move(4, "o");
-        REQUIRE("o" == rules.Winner());
+        REQUIRE("o" == rules.GameWinner());
    }
     
-    SECTION("NO WINNER for no winner"){
+    SECTION("No Winner for winner"){
         Board *board = new Board(2);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
-        REQUIRE("NO WINNER" == rules.Winner());
+        REQUIRE("NO WINNER" == rules.GameWinner());
     }
 }
 
-TEST_CASE("TTTRules::Over returns... true if the board is full"){
+TEST_CASE("TTTRules::GameOver returns..."){
     
     SECTION("true if the board is full"){
         Board *board = new Board(2);
@@ -49,22 +49,22 @@ TEST_CASE("TTTRules::Over returns... true if the board is full"){
         board->Move(2, "o");
         board->Move(3, "a");
         board->Move(4, "c");
-        REQUIRE(true == rules.Over());
+        REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("true if there's a winner on the board"){
+    SECTION("true if there's aGameWinner on the board"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         board->Move(1, "x");
         board->Move(2, "x");
         board->Move(3, "x");
-        REQUIRE(true == rules.Over());
+        REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("false if the board isn't empty and there's no winner"){
+    SECTION("false if the board isn't empty and there's noGameWinner"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
-        REQUIRE(false == rules.Over());
+        REQUIRE(false == rules.GameOver());
     }
 }
 
