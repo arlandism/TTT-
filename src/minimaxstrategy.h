@@ -15,6 +15,7 @@ public:
     void set_token(std::string);
 
 private:
+    
     int EvaluateMove(Board, int, std::string, bool=false);
     int EvaluateGame(std::string);
     std::string token_;
