@@ -6,16 +6,22 @@
 #include "movestrategy.h"
 #include <map>
 #include "vector"
+#include "gamesettings.h"
 #include "tttrules.h"
 
 class MinimaxStrategy: public MoveStrategy {
     
 public:
     
+    MinimaxStrategy(GameSettings *settings){
+        settings_ = settings;
+    }
     int NextMove(Board);
     void set_token(std::string);
 
 private:
+    
+    GameSettings *settings_;
     
     bool ShouldPrune(int, int);
     std::multimap<int, int> EvaluateRemainingMoves(Board);

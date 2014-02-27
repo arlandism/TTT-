@@ -16,6 +16,7 @@
 		6B36E52118BFD58400E67CE4 /* tttsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */; };
 		6B36E52618BFDDF700E67CE4 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */; };
 		6B36E52718BFDE3500E67CE4 /* minimaxstrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimaxstrategy.cpp */; };
+		6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */; };
 		6B389DDA18BE4427000D3294 /* boardspacestest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DD818BE4427000D3294 /* boardspacestest.cpp */; };
 		6B389DDD18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
 		6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
@@ -340,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */,
 				6B36E52718BFDE3500E67CE4 /* minimaxstrategy.cpp in Sources */,
 				6B36E52618BFDDF700E67CE4 /* tttrules.cpp in Sources */,
 				6B0BBC4F18BEDBC900F3EB4B /* game.cpp in Sources */,
