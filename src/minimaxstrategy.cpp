@@ -21,8 +21,10 @@ int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, boo
     board.Move(space, token);
     Board *board_ptr = &board;
     TTTRules rules = *new TTTRules(board_ptr, "o", "x");
+    std::string opponent_token = rules.OpponentToken(token);
+    std::string game_winner = rules.GameWinner();
     if (rules.GameOver()){
-        return EvaluateGame(rules.GameWinner());
+        return EvaluateGame(game_winner, opponent_token);
     } else {
         std::vector<int> available_spaces = board.OpenSpaces();
         std::vector<int>::const_iterator iterator;
@@ -52,11 +54,11 @@ void MinimaxStrategy::set_token(std::string token){
     token_ = token;
 }
 
-int MinimaxStrategy::EvaluateGame(std::string winner){
+int MinimaxStrategy::EvaluateGame(std::string winner, std::string opponent_token){
     if (winner == token_){
         return 1;
-    } else if (winner == ""){
-        return 0;
+    } else if (winner == opponent_token){
+        return -1;
     }
-    return -1;
+    return 0;
 }

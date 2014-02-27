@@ -17,7 +17,7 @@ public:
 private:
     
     int EvaluateMove(Board, int, std::string, bool=false);
-    int EvaluateGame(std::string);
+    int EvaluateGame(std::string, std::string);
     std::string token_;
 };
 #endif
