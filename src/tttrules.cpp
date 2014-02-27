@@ -18,7 +18,7 @@ std::string TTTRules::GameWinner(){
     return NO_WINNER_;
 }
 
-std::string TTTRules::OtherToken(std::string token){
+std::string TTTRules::OpponentToken(std::string token){
     if (token == token_one_){
         return token_two_;
     }

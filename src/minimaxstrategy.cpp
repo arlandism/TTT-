@@ -20,7 +20,7 @@ int MinimaxStrategy::HighestScoringMove(Board board, std::string current_token){
                 board.Move(space, current_token);
                 Board new_board  = *new Board(board.state());
                 board.Undo(space);
-                int board_score = HighestScoringMove(new_board, rules.OtherToken(current_token));
+                int board_score = HighestScoringMove(new_board, rules.OpponentToken(current_token));
                 int score = std::max(board_score, best_score);
                 return score;
             }
@@ -31,7 +31,7 @@ int MinimaxStrategy::HighestScoringMove(Board board, std::string current_token){
                 board.Move(space, current_token);
                 Board new_board  = *new Board(board.state());
                 board.Undo(space);
-                int board_score = HighestScoringMove(new_board, rules.OtherToken(current_token));
+                int board_score = HighestScoringMove(new_board, rules.OpponentToken(current_token));
                 int score = std::min(board_score, best_score);
                 return score;
            }

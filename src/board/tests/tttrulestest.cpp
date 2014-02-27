@@ -61,7 +61,7 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("false if the board isn't empty and there's winner"){
+    SECTION("false if the board isn't empty and there's no winner"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         REQUIRE(false == rules.GameOver());
@@ -71,6 +71,6 @@ TEST_CASE("TTTRules::GameOver returns..."){
 TEST_CASE("TTTRules::OtherToken returns the opposite token"){
     Board *board = new Board(3);
     TTTRules rules = *new TTTRules(board, "A", "B");
-    REQUIRE("A" == rules.OtherToken("B"));
-    REQUIRE("B" == rules.OtherToken("A"));
+    REQUIRE("A" == rules.OpponentToken("B"));
+    REQUIRE("B" == rules.OpponentToken("A"));
 }

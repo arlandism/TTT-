@@ -15,7 +15,7 @@ public:
     };
     
     std::string GameWinner();
-    std::string OtherToken(std::string);
+    std::string OpponentToken(std::string);
     bool GameOver();
     
 private:
