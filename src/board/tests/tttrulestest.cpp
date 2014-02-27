@@ -33,10 +33,10 @@ TEST_CASE("TTTRules::Winner reports..."){
         REQUIRE("o" == rules.GameWinner());
    }
     
-    SECTION("No Winner for winner"){
+    SECTION("empty string for no winner"){
         Board *board = new Board(2);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
-        REQUIRE("NO WINNER" == rules.GameWinner());
+        REQUIRE("" == rules.GameWinner());
     }
 }
 
@@ -52,7 +52,7 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("true if there's aGameWinner on the board"){
+    SECTION("true if there's a winner on the board"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         board->Move(1, "x");
@@ -61,7 +61,7 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("false if the board isn't empty and there's noGameWinner"){
+    SECTION("false if the board isn't empty and there's winner"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board, token_one, token_two);
         REQUIRE(false == rules.GameOver());

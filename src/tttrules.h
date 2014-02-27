@@ -22,7 +22,7 @@ private:
     Board *board_;
     std::string token_one_;
     std::string token_two_;
-    std::string NO_WINNER_ = "NO WINNER";
+    std::string NO_WINNER_ = "";
     
     bool TokensEqual(std::vector<std::string>);
     std::vector<std::vector<std::string>> WinningCombinations();

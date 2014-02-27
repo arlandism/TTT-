@@ -2,7 +2,7 @@
 
 bool TTTRules::GameOver(){
     std::string current_winner = GameWinner();
-    return (current_winner != "NO WINNER") or board_->Full();
+    return (current_winner != NO_WINNER_) or board_->Full();
 }
 
 std::string TTTRules::GameWinner(){
