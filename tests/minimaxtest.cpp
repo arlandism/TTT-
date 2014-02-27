@@ -3,9 +3,9 @@
 #include "minimaxstrategy.h"
 
 TEST_CASE("MinimaxStrategy..."){
-    
+
     MinimaxStrategy minimax = *new MinimaxStrategy();
-    
+
     SECTION("chooses the winning move"){
         Board board = *new Board(3);
         board.Move(1, "o");
@@ -14,7 +14,7 @@ TEST_CASE("MinimaxStrategy..."){
         int winning_move = 3;
         REQUIRE(winning_move == minimax.NextMove(board));
     }
-    
+
     SECTION("blocks a move"){
         Board board = *new Board(3);
         board.Move(1, "o");

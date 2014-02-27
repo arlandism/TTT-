@@ -287,22 +287,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/main.cpp"
-            timestampString = "415161937.139066"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "createPlayer(std::string playerType, std::string token)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "src/board/boardspaces.cpp"
             timestampString = "415127980.587388"
             startingColumnNumber = "9223372036854775807"
@@ -326,22 +310,6 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "TTTRules::WinningCombinations()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415212808.08625"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -414,11 +382,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
+            timestampString = "415227699.810374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
             landmarkName = "MinimaxStrategy::NextMove(Board board)"
             landmarkType = "5">
          </BreakpointContent>
@@ -430,193 +398,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
+            timestampString = "415227699.810374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415214669.373459"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415214669.375831"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "332">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415214669.376267"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "440">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415214669.376633"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "601">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415214669.376914"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "706">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415214669.377165"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "1032">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415216063.758995"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "1619">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MinimaxStrategy::NextMove(Board)"
-                  moduleName = "Test"
-                  urlString = "file:///Users/arlandislawrence/development/TTT++/src/minimaxstrategy.cpp"
-                  timestampString = "415216063.759377"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "1797">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
-            timestampString = "415216044.410923"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
             landmarkName = "MinimaxStrategy::NextMove(Board board)"
             landmarkType = "5">
          </BreakpointContent>

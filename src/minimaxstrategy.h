@@ -6,8 +6,9 @@
 #include "movestrategy.h"
 #include <map>
 #include "vector"
+#include "tttrules.h"
 
-class MinimaxStrategy:public MoveStrategy {
+class MinimaxStrategy: public MoveStrategy {
     
 public:
     
@@ -16,7 +17,10 @@ public:
 
 private:
     
-    int EvaluateMove(Board, int, std::string, bool=false);
+    bool ShouldPrune(int, int);
+    std::multimap<int, int> EvaluateRemainingMoves(Board);
+    int HighestRatedMove(std::multimap<int, int>);
+    int EvaluateMove(Board, int, std::string, int=-1, int=1, bool=false);
     int EvaluateGame(std::string, std::string);
     std::string token_;
 };

@@ -4,6 +4,7 @@
 #include "terminalinput.h"
 #include "userinputstrategy.h"
 #include "minimaxstrategy.h"
+#include "tttsettings.h"
 #include "vector"
 
 std::string first_player_type, second_player_type,
@@ -32,14 +33,14 @@ void PrintWelcomeBanner(){
     std::cout << "* Welcome to Tic Tac Toe! *\n";
     std::cout << "***************************\n";
 }
-
-Player* CreatePlayer(std::string playerType, std::string token){
-    if (playerType == "Human"){
-        return new Player(token, new UserInputStrategy());
-    } else {
-        return new Player(token, new MinimaxStrategy());
-    }
-}
+//
+//Player* CreatePlayer(std::string playerType, std::string token){
+//    if (playerType == "Human"){
+//        return new Player(token, new UserInputStrategy());
+//    } else {
+//        return new Player(token, new MinimaxStrategy());
+//    }
+//}
 
 int main(int argc, const char * argv[])
 {
