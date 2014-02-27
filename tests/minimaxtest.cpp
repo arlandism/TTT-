@@ -19,6 +19,6 @@ TEST_CASE("Minimax blocks a move", "[minimax]"){
     board.Move(2, "o");
     MinimaxStrategy minimax = *new MinimaxStrategy();
     minimax.set_token("x");
-    int blocking_move = 2;
+    int blocking_move = 3;
     REQUIRE(blocking_move == minimax.NextMove(board));
 }

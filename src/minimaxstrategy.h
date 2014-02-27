@@ -16,8 +16,6 @@ public:
 
 private:
     int EvaluateMove(Board, int, std::string, bool=false);
-    int MinMax(int, std::string);
-    int HighestScoringMove(Board, std::string);
     int EvaluateGame(std::string);
     std::string token_;
 };
