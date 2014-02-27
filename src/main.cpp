@@ -1,4 +1,5 @@
 #include <iostream>
+#include "game.h"
 #include "player.h"
 #include "terminalinput.h"
 #include "userinputstrategy.h"
@@ -47,11 +48,11 @@ int main(int argc, const char * argv[])
     firstPlayerToken = getPlayerToken();
     secondPlayerType = promptUserForPlayerType("second");
     secondPlayerToken = getPlayerToken();
-    Player *playerOne = createPlayer(firstPlayerType, firstPlayerToken);
-    Player *playerTwo = createPlayer(secondPlayerType, secondPlayerToken);
-//    Board *board;
-//    Game *game = new Game(&playerOne, &playerTwo, &board);
-//    game->Run();
-//    printWinner(game);
+    IPlayer *player_one = createPlayer(firstPlayerType, firstPlayerToken);
+    IPlayer *player_two = createPlayer(secondPlayerType, secondPlayerToken);
+    Board board = *new Board(3);
+//    Game game = *new Game(board, player_one, player_two);
+//    game.Round();
+//    PrintWinner(game);
     return 0;
 }

@@ -3,8 +3,9 @@
 #include <iostream>
 #include "board.h"
 #include "movestrategy.h"
+#include "iplayer.h"
 
-class Player {
+class Player: public IPlayer {
 
 public:
     Player(std::string token, MoveStrategy * strategy) {
