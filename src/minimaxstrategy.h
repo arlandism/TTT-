@@ -9,10 +9,12 @@
 class MinimaxStrategy:public MoveStrategy {
     
 public:
+    
     int NextMove(Board);
     void set_token(std::string);
 
 private:
+    
     int HighestScoringMove(Board, std::string);
     int EvaluateGame(std::string);
     std::string token_;
