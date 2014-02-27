@@ -25,6 +25,7 @@ private:
     
     bool ShouldPrune(int, int);
     std::multimap<int, int> EvaluateRemainingMoves(Board);
+    int BestScoreOfChildren(Board, std::string, int);
     int HighestRatedMove(std::multimap<int, int>);
     int EvaluateMove(Board, int, std::string, int=-1, int=1, bool=false);
     int EvaluateGame(std::string, std::string);

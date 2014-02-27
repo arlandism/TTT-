@@ -22,7 +22,7 @@ int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, int
         if (maximizing){
             for (iterator = available_spaces.begin(); iterator != available_spaces.end(); iterator++){
                 int next_space = *iterator;
-                int score_for_move = EvaluateMove(next_board, next_space, next_token, -maximizing);
+                int score_for_move = BestScoreOfChildren(board, token, next_space);
                 int alpha = std::max(alpha, score_for_move);
                 if (ShouldPrune(alpha, beta)){
                     break;
@@ -32,7 +32,7 @@ int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, int
         } else {
             for (iterator = available_spaces.begin(); iterator != available_spaces.end(); iterator++){
                 int next_space = *iterator;
-                int score_for_move = EvaluateMove(next_board, next_space, next_token, -maximizing);
+                int score_for_move = BestScoreOfChildren(board, token, next_space);
                 int beta = std::min(beta, score_for_move);
                 if (ShouldPrune(alpha, beta)){
                     break;
@@ -41,6 +41,13 @@ int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, int
             return beta;
         }
     }
+}
+
+int MinimaxStrategy::BestScoreOfChildren(Board board, std::string token, int space){
+    std::vector<int> available_spaces = board.OpenSpaces();
+    std::string next_token = settings_->OtherToken(token);
+    int score_for_move = EvaluateMove(board, space, token);
+    return score_for_move;
 }
 
 int MinimaxStrategy::HighestRatedMove(std::multimap<int, int> scores_to_moves){
