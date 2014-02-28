@@ -32,7 +32,8 @@ int main(int argc, const char * argv[])
     second_player_type = GetPlayerType(engine);
     second_player_token = GetToken();
     
-    engine.StartGame(first_player_type, first_player_token,
-                     second_player_type, second_player_token);
+//    engine.StartGame(first_player_type, first_player_token,
+//                     second_player_type, second_player_token);
+    std::cout << GamePresenter::ReplayPrompt();
     return 0;
 }

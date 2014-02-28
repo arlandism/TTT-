@@ -9,19 +9,19 @@ std::string GamePresenter::WelcomeBanner(){
 }
 
 std::string GamePresenter::PlayerPrompt(){
-    return "Please select a player type:\n";
+    return "\nPlease select a player type:\n";
 }
 
 std::string GamePresenter::TokenPrompt(){
-    return "What's that player's token?\n";
+    return "\nWhat's that player's token?\n";
 }
 
 std::string GamePresenter::PresentWinner(TTTRules rules){
-    return "And the winner is... " + rules.GameWinner() + "\n";
+    return "\nAnd the winner is... " + rules.GameWinner() + "\n";
 }
 
 std::string GamePresenter::ReplayPrompt(){
-    return "Would you like to play again?\n";
+    return "\nWould you like to play again?\n";
 }
 
 std::string GamePresenter::PresentPlayerChoices(std::vector<std::string> choices){
@@ -31,7 +31,7 @@ std::string GamePresenter::PresentPlayerChoices(std::vector<std::string> choices
         std::string choice = *iterator;
         presented += (choice + "\n");
     }
-    return presented;
+    return presented + "\n";
 }
 
 bool GamePresenter::AffirmativeAnswer(std::string answer){
