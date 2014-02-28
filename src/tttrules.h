@@ -8,10 +8,8 @@ class TTTRules {
 
 public:
     
-    TTTRules(Board *board, std::string token_one, std::string token_two){
+    TTTRules(Board *board){
         board_ = board;
-        token_one_ = token_one;
-        token_two_ = token_two;
     };
     
     std::string GameWinner();
@@ -20,8 +18,6 @@ public:
 private:
     
     Board *board_;
-    std::string token_one_;
-    std::string token_two_;
     std::string NO_WINNER_ = "";
     
     bool TokensEqual(std::vector<std::string>);

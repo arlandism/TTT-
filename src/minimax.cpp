@@ -10,7 +10,7 @@ int Minimax::EvaluateMove(Board board, int space, std::string token, int alpha, 
     board.Move(space, token);
     Board *board_ptr = &board;
     std::string opponent_token = settings_->OtherToken(token);
-    TTTRules rules = *new TTTRules(board_ptr, token_, opponent_token);
+    TTTRules rules = *new TTTRules(board_ptr);
     std::string game_winner = rules.GameWinner();
     if (rules.GameOver()){
         return EvaluateGame(game_winner, opponent_token);
