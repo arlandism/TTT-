@@ -47,7 +47,7 @@ void StartGame(){
     Player *player_one = CreatePlayer();
     Player *player_two = CreatePlayer();
     Board *board = new Board(3);
-    Game game = Game(board, player_one, player_two);
+    Game game = *new Game(board, player_one, player_two);
     TTTRules rules = *new TTTRules(board, player_one->token(), player_two->token());
     while (not (rules.GameOver())){
         game.Round();

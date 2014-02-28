@@ -36,7 +36,6 @@
 		6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */; };
 		6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD018BBDCD300AE12EF /* board.cpp */; };
 		6BBDE6EE18BD090C00DD5829 /* inputvalidatortest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBDE6ED18BD090C00DD5829 /* inputvalidatortest.cpp */; };
-		6BBDE6F118BD31F300DD5829 /* userinputstrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBDE6EF18BD31F300DD5829 /* userinputstrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,8 +112,6 @@
 		6BBD2BD118BBDCD300AE12EF /* board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = board.h; path = board/board.h; sourceTree = "<group>"; };
 		6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardtest.cpp; path = board/tests/boardtest.cpp; sourceTree = "<group>"; };
 		6BBDE6ED18BD090C00DD5829 /* inputvalidatortest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inputvalidatortest.cpp; path = tests/inputvalidatortest.cpp; sourceTree = "<group>"; };
-		6BBDE6EF18BD31F300DD5829 /* userinputstrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = userinputstrategy.cpp; sourceTree = "<group>"; };
-		6BBDE6F018BD31F300DD5829 /* userinputstrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userinputstrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,9 +223,7 @@
 				6B906CF018BACD4B005AFE4B /* player.h */,
 				6B36E51D18BFD43000E67CE4 /* gamesettings.h */,
 				6B906CEE18BACCDE005AFE4B /* movestrategy.h */,
-				6BBDE6EF18BD31F300DD5829 /* userinputstrategy.cpp */,
 				6B389DDF18BE5B92000D3294 /* board */,
-				6BBDE6F018BD31F300DD5829 /* userinputstrategy.h */,
 				6B0BBC4E18BED8E600F3EB4B /* iplayer.h */,
 				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
@@ -324,7 +319,6 @@
 				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B0BBC4A18BED6BD00F3EB4B /* game.cpp in Sources */,
-				6BBDE6F118BD31F300DD5829 /* userinputstrategy.cpp in Sources */,
 				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
 				6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */,
 				6B0BBC4218BE7D4800F3EB4B /* tttrules.cpp in Sources */,

@@ -2,7 +2,7 @@
 #define __TTT____game__
 
 #include <iostream>
-#include "player.h"
+#include "iplayer.h"
 
 class Game {
     
