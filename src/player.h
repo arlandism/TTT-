@@ -8,6 +8,7 @@
 class Player: public IPlayer {
 
 public:
+    
     Player(std::string token, MoveStrategy * strategy) {
         token_ = token;
         move_strategy_ = strategy;
@@ -17,6 +18,7 @@ public:
     int Move(Board board);
     
 private:
+    
     std::string token_;
     MoveStrategy *move_strategy_;
 };

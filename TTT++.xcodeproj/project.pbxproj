@@ -17,6 +17,8 @@
 		6B36E52618BFDDF700E67CE4 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */; };
 		6B36E52718BFDE3500E67CE4 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
 		6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */; };
+		6B36E52B18C0305600E67CE4 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E52918C0305600E67CE4 /* gamepresenter.cpp */; };
+		6B36E52C18C0305600E67CE4 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E52918C0305600E67CE4 /* gamepresenter.cpp */; };
 		6B389DDA18BE4427000D3294 /* boardspacestest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DD818BE4427000D3294 /* boardspacestest.cpp */; };
 		6B389DDD18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
 		6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
@@ -82,6 +84,8 @@
 		6B36E51D18BFD43000E67CE4 /* gamesettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamesettings.h; sourceTree = "<group>"; };
 		6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttsettings.cpp; sourceTree = "<group>"; };
 		6B36E52018BFD58400E67CE4 /* tttsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttsettings.h; sourceTree = "<group>"; };
+		6B36E52918C0305600E67CE4 /* gamepresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamepresenter.cpp; sourceTree = "<group>"; };
+		6B36E52A18C0305600E67CE4 /* gamepresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamepresenter.h; sourceTree = "<group>"; };
 		6B389DD818BE4427000D3294 /* boardspacestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspacestest.cpp; path = board/tests/boardspacestest.cpp; sourceTree = "<group>"; };
 		6B389DDB18BE44FD000D3294 /* boardspaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspaces.cpp; path = board/boardspaces.cpp; sourceTree = "<group>"; };
 		6B389DDC18BE44FD000D3294 /* boardspaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boardspaces.h; path = board/boardspaces.h; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
 				6B0BBC4818BED6BD00F3EB4B /* game.cpp */,
 				6B0BBC4918BED6BD00F3EB4B /* game.h */,
+				6B36E52918C0305600E67CE4 /* gamepresenter.cpp */,
+				6B36E52A18C0305600E67CE4 /* gamepresenter.h */,
 				6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */,
 				6B36E52018BFD58400E67CE4 /* tttsettings.h */,
 				6B906CD818BA80F6005AFE4B /* input.h */,
@@ -322,6 +328,7 @@
 				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
 				6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */,
 				6B0BBC4218BE7D4800F3EB4B /* tttrules.cpp in Sources */,
+				6B36E52B18C0305600E67CE4 /* gamepresenter.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B36E52118BFD58400E67CE4 /* tttsettings.cpp in Sources */,
 				6B389DDD18BE44FD000D3294 /* boardspaces.cpp in Sources */,
@@ -348,6 +355,7 @@
 				6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */,
 				6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */,
 				6B0BBC4718BED38300F3EB4B /* gametest.cpp in Sources */,
+				6B36E52C18C0305600E67CE4 /* gamepresenter.cpp in Sources */,
 				6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */,
 				6BBDE6EE18BD090C00DD5829 /* inputvalidatortest.cpp in Sources */,
 				6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */,

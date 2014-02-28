@@ -5,32 +5,15 @@
 #include "minimax.h"
 #include "tttsettings.h"
 #include "terminalinput.h"
-
-void PrintWelcomeBanner(){
-    std::cout << "***************************\n";
-    std::cout << "* Welcome to Tic Tac Toe! *\n";
-    std::cout << "***************************\n";
-}
-
-void PlayerPrompt(){
-    std::cout << "What type of player would you like to be?\n";
-}
-
-void TokenPrompt(){
-    std::cout << "What's that player's token?\n";
-}
-
-void PrintWinner(TTTRules rules){
-    std::cout << "And the winner is... " << rules.GameWinner() << "\n";
-}
+#include "gamepresenter.h"
 
 Player * CreatePlayer(){
     std::string player_type;
     std::string player_token;
     
-    PlayerPrompt();
+    std::cout << GamePresenter::PlayerPrompt();
     std::cin >> player_type;
-    TokenPrompt();
+    GamePresenter::TokenPrompt();
     std::cin >> player_token;
     
     MoveStrategy *move_strategy;
@@ -43,7 +26,7 @@ Player * CreatePlayer(){
 }
 
 void StartGame(){
-    PrintWelcomeBanner();
+    std::cout << GamePresenter::WelcomeBanner();
     Player *player_one = CreatePlayer();
     Player *player_two = CreatePlayer();
     Board *board = new Board(3);
@@ -52,14 +35,14 @@ void StartGame(){
     while (not (rules.GameOver())){
         game.Round();
     }
-    PrintWinner(rules);
+    GamePresenter::PresentWinner(rules);
 }
 
 void PromptForReplay(){
-    std::cout << "Would you like to play again?\n";
+    std::cout << GamePresenter::ReplayPrompt();
     std::string answer;
     std::cin >> answer;
-    if (answer == "y"){
+    if (GamePresenter::AffirmativeAnswer(answer)){
         StartGame();
     }
 }

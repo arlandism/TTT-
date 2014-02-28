@@ -16,6 +16,7 @@ public:
     void Round();
     
 private:
+    
     Board *board_;
     IPlayer *player_one_;
     IPlayer *player_two_;

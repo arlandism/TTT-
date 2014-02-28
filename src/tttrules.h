@@ -19,6 +19,7 @@ public:
     bool GameOver();
     
 private:
+    
     Board *board_;
     std::string token_one_;
     std::string token_two_;
