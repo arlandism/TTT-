@@ -9,7 +9,7 @@ std::string GamePresenter::WelcomeBanner(){
 }
 
 std::string GamePresenter::PlayerPrompt(){
-    return "What type of player would you like to be?\n";
+    return "Please select a player type:\n";
 }
 
 std::string GamePresenter::TokenPrompt(){
@@ -24,12 +24,12 @@ std::string GamePresenter::ReplayPrompt(){
     return "Would you like to play again?\n";
 }
 
-std::string GamePresenter::PresentChoices(std::vector<std::string> choices){
-    std::string presented = "";
+std::string GamePresenter::PresentPlayerChoices(std::vector<std::string> choices){
+    std::string presented = GamePresenter::PlayerPrompt();
     std::vector<std::string>::const_iterator iterator;
     for (iterator = choices.begin(); iterator != choices.end(); iterator++){
         std::string choice = *iterator;
-        presented += ("\n"+choice);
+        presented += (choice + "\n");
     }
     return presented;
 }

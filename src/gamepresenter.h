@@ -13,7 +13,7 @@ public:
     static std::string TokenPrompt();
     static std::string PresentWinner(TTTRules rules);
     static std::string ReplayPrompt();
-    static std::string PresentChoices(std::vector<std::string>);
+    static std::string PresentPlayerChoices(std::vector<std::string>);
     static bool AffirmativeAnswer(std::string);
 };
 

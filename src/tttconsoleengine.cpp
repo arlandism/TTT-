@@ -1,6 +1,6 @@
 #include "tttconsoleengine.h"
 
-Player * CreatePlayer(){
+Player * TTTConsoleEngine::CreatePlayer(){
     std::string player_type;
     std::string player_token;
     
@@ -18,21 +18,18 @@ Player * CreatePlayer(){
     return new Player(player_token, move_strategy);
 }
 
-void StartGame(std::string first_player_type, std::string first_player_token,
+void TTTConsoleEngine::StartGame(std::string first_player_type, std::string first_player_token,
                std::string second_player_type, std::string second_player_token){
-    std::cout << GamePresenter::WelcomeBanner();
-    Player *player_one = CreatePlayer();
-    Player *player_two = CreatePlayer();
     Board *board = new Board(3);
-    Game game = *new Game(board, player_one, player_two);
+//    Game game = *new Game(board, player_one, player_two);
     TTTRules rules = *new TTTRules(board);
-    while (not (rules.GameOver())){
-        game.Round();
-    }
+//    while (not (rules.GameOver())){
+//        game.Round();
+//    }
     GamePresenter::PresentWinner(rules);
 }
 
-void PromptForReplay(){
+void TTTConsoleEngine::PromptForReplay(){
     std::cout << GamePresenter::ReplayPrompt();
     std::string answer;
     std::cin >> answer;
