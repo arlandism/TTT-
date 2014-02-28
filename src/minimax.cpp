@@ -9,8 +9,8 @@ int Minimax::NextMove(Board board){
 int Minimax::EvaluateMove(Board board, int space, std::string token, int alpha, int beta, bool maximizing){
     board.Move(space, token);
     Board *board_ptr = &board;
-    TTTRules rules = *new TTTRules(board_ptr, "o", "x");
     std::string opponent_token = settings_->OtherToken(token);
+    TTTRules rules = *new TTTRules(board_ptr, token_, opponent_token);
     std::string game_winner = rules.GameWinner();
     if (rules.GameOver()){
         return EvaluateGame(game_winner, opponent_token);
