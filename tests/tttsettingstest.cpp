@@ -4,8 +4,9 @@
 #include "tttsettings.h"
 
 TEST_CASE("TTTSettings::OtherToken returns opponent's token"){
-    TTTSettings::set_token_one("a");
-    TTTSettings::set_token_two("b");
+    TTTSettings settings = *new TTTSettings();
+    settings.token_one = "a";
+    settings.token_two = "b";
 //    REQUIRE("a" == TTTSettings::OtherToken("b"));
 //    REQUIRE("b" == TTTSettings::OtherToken("a"));
 }
