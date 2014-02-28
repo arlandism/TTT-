@@ -72,10 +72,6 @@ bool Minimax::ShouldPrune(int alpha, int beta){
     return beta <= alpha;
 }
 
-void Minimax::set_token(std::string token){
-    token_ = token;
-}
-
 int Minimax::EvaluateGame(std::string winner, std::string opponent_token){
     if (winner == token_){
         return 1;

@@ -13,11 +13,11 @@ class Minimax: public MoveStrategy {
     
 public:
     
-    Minimax(GameSettings *settings){
+    Minimax(std::string token, GameSettings *settings){
         settings_ = settings;
+        token_ = token;
     }
     int NextMove(Board);
-    void set_token(std::string);
 
 private:
     

@@ -20,7 +20,7 @@ Player * CreatePlayer(){
     if (player_type == "human"){
         move_strategy = new TerminalInput();
     } else {
-        move_strategy = new Minimax(new TTTSettings("x","o"));
+        move_strategy = new Minimax(player_token, new TTTSettings("x","o"));
     }
     return new Player(player_token, move_strategy);
 }
