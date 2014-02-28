@@ -1,7 +1,6 @@
 #include <iostream>
 #include "game.h"
 #include "player.h"
-#include "playerfactory.h"
 #include "movestrategy.h"
 #include "minimax.h"
 #include "tttsettings.h"

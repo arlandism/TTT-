@@ -1,6 +1,7 @@
 #ifndef __TTT____InputValidator__
 #define __TTT____InputValidator__
 
+#include <iostream>
 #include "input.h"
 #include "vector"
 
@@ -8,8 +9,7 @@ class InputValidator{
     
 public:
     
-    static int Validate(std::vector<int>, Input*);
-    static bool IsValidInput(std::vector<int>, int);
+    static bool IsValid(std::vector<std::string>, std::string);
 };
 
 #endif
