@@ -16,8 +16,8 @@ std::string GamePresenter::TokenPrompt(){
     return "\nWhat's that player's token?\n";
 }
 
-std::string GamePresenter::PresentWinner(TTTRules rules){
-    return "\nAnd the winner is... " + rules.GameWinner() + "\n";
+std::string GamePresenter::PresentWinner(std::string winner){
+    return "\nAnd the winner is... " + winner + "\n";
 }
 
 std::string GamePresenter::ReplayPrompt(){

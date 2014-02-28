@@ -26,7 +26,7 @@ void TTTConsoleEngine::StartGame(std::string first_player_type, std::string firs
 //    while (not (rules.GameOver())){
 //        game.Round();
 //    }
-    GamePresenter::PresentWinner(rules);
+    GamePresenter::PresentWinner(rules.GameWinner());
 }
 
 void TTTConsoleEngine::PromptForReplay(){
