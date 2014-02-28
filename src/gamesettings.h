@@ -7,6 +7,6 @@ class GameSettings {
     
 public:
     
-    virtual std::string OtherToken(std::string)=0;
+    static std::string OtherToken(std::string);
 };
 #endif

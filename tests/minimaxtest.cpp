@@ -5,7 +5,9 @@
 
 TEST_CASE("Minimax..."){
 
-    TTTSettings *settings = new TTTSettings("x", "o");
+    TTTSettings *settings = new TTTSettings();
+    settings->set_token_one("x");
+    settings->set_token_one("o");
     Minimax minimax = *new Minimax("x", settings);
 
     SECTION("chooses the winning move"){

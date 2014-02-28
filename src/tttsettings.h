@@ -8,16 +8,15 @@ class TTTSettings: public GameSettings {
     
 public:
     
-    TTTSettings(std::string token_one, std::string token_two){
-        token_one_ = token_one;
-        token_two_ = token_two;
+    static std::string token_one;
+    static std::string token_two;
+    
+    static std::string OtherToken(std::string);
+    static void set_token_one(std::string token){
+        token_one = token;
     }
-    
-    std::string OtherToken(std::string);
-    
-private:
-    
-    std::string token_one_;
-    std::string token_two_;
+    static void set_token_two(std::string token){
+        token_two = token;
+    }
 };
 #endif
