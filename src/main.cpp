@@ -1,6 +1,7 @@
 #include <iostream>
 #include "game.h"
 #include "player.h"
+#include "playerfactory.h"
 #include "movestrategy.h"
 #include "minimax.h"
 #include "tttsettings.h"
@@ -37,7 +38,6 @@ void StartGame(){
     }
     GamePresenter::PresentWinner(rules);
 }
-
 void PromptForReplay(){
     std::cout << GamePresenter::ReplayPrompt();
     std::string answer;
