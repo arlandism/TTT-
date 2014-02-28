@@ -24,6 +24,16 @@ std::string GamePresenter::ReplayPrompt(){
     return "Would you like to play again?\n";
 }
 
+std::string GamePresenter::PresentChoices(std::vector<std::string> choices){
+    std::string presented = "";
+    std::vector<std::string>::const_iterator iterator;
+    for (iterator = choices.begin(); iterator != choices.end(); iterator++){
+        std::string choice = *iterator;
+        presented += ("\n"+choice);
+    }
+    return presented;
+}
+
 bool GamePresenter::AffirmativeAnswer(std::string answer){
     return answer == "y";
 }
