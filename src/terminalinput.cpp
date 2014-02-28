@@ -1,7 +1,6 @@
-#include <iostream>
 #include "terminalinput.h"
 
-int TerminalInput::Call(){
+int TerminalInput::NextMove(Board board){
     int input;
     std::cin >> input;
     return input;

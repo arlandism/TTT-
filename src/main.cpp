@@ -2,9 +2,9 @@
 #include "game.h"
 #include "player.h"
 #include "movestrategy.h"
-#include "minimaxstrategy.h"
+#include "minimax.h"
 #include "tttsettings.h"
-#include "userinputstrategy.h"
+#include "terminalinput.h"
 
 void PrintWelcomeBanner(){
     std::cout << "***************************\n";
@@ -35,9 +35,9 @@ Player * CreatePlayer(){
     
     MoveStrategy *move_strategy;
     if (player_type == "human"){
-        move_strategy = new UserInputStrategy();
+        move_strategy = new TerminalInput();
     } else {
-        move_strategy = new MinimaxStrategy(new TTTSettings("x","o"));
+        move_strategy = new Minimax(new TTTSettings("x","o"));
     }
     return new Player(player_token, move_strategy);
 }

@@ -1,12 +1,12 @@
-#include "minimaxstrategy.h"
+#include "minimax.h"
 
-int MinimaxStrategy::NextMove(Board board){
+int Minimax::NextMove(Board board){
     std::multimap<int, int> move_to_score = EvaluateRemainingMoves(board);
     int highest_rated_move = HighestRatedMove(move_to_score);
     return highest_rated_move;
 }
 
-int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, int alpha, int beta, bool maximizing){
+int Minimax::EvaluateMove(Board board, int space, std::string token, int alpha, int beta, bool maximizing){
     board.Move(space, token);
     Board *board_ptr = &board;
     TTTRules rules = *new TTTRules(board_ptr, "o", "x");
@@ -43,20 +43,20 @@ int MinimaxStrategy::EvaluateMove(Board board, int space, std::string token, int
     }
 }
 
-int MinimaxStrategy::BestScoreOfChildren(Board board, std::string token, int space){
+int Minimax::BestScoreOfChildren(Board board, std::string token, int space){
     std::vector<int> available_spaces = board.OpenSpaces();
     std::string next_token = settings_->OtherToken(token);
     int score_for_move = EvaluateMove(board, space, token);
     return score_for_move;
 }
 
-int MinimaxStrategy::HighestRatedMove(std::multimap<int, int> scores_to_moves){
+int Minimax::HighestRatedMove(std::multimap<int, int> scores_to_moves){
     int highest_score = scores_to_moves.rbegin()->first;
     int highest_rated_move = scores_to_moves.find(highest_score)->second;
     return highest_rated_move;
 }
 
-std::multimap<int, int> MinimaxStrategy::EvaluateRemainingMoves(Board board){
+std::multimap<int, int> Minimax::EvaluateRemainingMoves(Board board){
     std::multimap<int, int> move_to_score;
     std::vector<int> available_moves = board.OpenSpaces();
     std::vector<int>::const_iterator iterator;
@@ -70,15 +70,15 @@ std::multimap<int, int> MinimaxStrategy::EvaluateRemainingMoves(Board board){
     return move_to_score;
 }
 
-bool MinimaxStrategy::ShouldPrune(int alpha, int beta){
+bool Minimax::ShouldPrune(int alpha, int beta){
     return beta <= alpha;
 }
 
-void MinimaxStrategy::set_token(std::string token){
+void Minimax::set_token(std::string token){
     token_ = token;
 }
 
-int MinimaxStrategy::EvaluateGame(std::string winner, std::string opponent_token){
+int Minimax::EvaluateGame(std::string winner, std::string opponent_token){
     if (winner == token_){
         return 1;
     } else if (winner == opponent_token){

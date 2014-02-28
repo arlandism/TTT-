@@ -1,12 +1,12 @@
 #include "catch.hpp"
 #include "board.h"
-#include "minimaxstrategy.h"
+#include "minimax.h"
 #include "tttsettings.h"
 
-TEST_CASE("MinimaxStrategy..."){
+TEST_CASE("Minimax..."){
 
     TTTSettings *settings = new TTTSettings("x", "o");
-    MinimaxStrategy minimax = *new MinimaxStrategy(settings);
+    Minimax minimax = *new Minimax(settings);
 
     SECTION("chooses the winning move"){
         Board board = *new Board(3);

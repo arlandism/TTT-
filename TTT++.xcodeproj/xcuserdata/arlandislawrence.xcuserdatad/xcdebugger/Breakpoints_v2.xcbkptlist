@@ -381,13 +381,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
+            filePath = "src/minimax.cpp"
             timestampString = "415227699.810374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6"
             endingLineNumber = "6"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
+            landmarkName = "Minimax::NextMove(Board board)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -397,13 +397,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "src/minimaxstrategy.cpp"
+            filePath = "src/minimax.cpp"
             timestampString = "415227699.810374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
             endingLineNumber = "5"
-            landmarkName = "MinimaxStrategy::NextMove(Board board)"
+            landmarkName = "Minimax::NextMove(Board board)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

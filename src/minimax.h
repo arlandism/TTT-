@@ -9,11 +9,11 @@
 #include "gamesettings.h"
 #include "tttrules.h"
 
-class MinimaxStrategy: public MoveStrategy {
+class Minimax: public MoveStrategy {
     
 public:
     
-    MinimaxStrategy(GameSettings *settings){
+    Minimax(GameSettings *settings){
         settings_ = settings;
     }
     int NextMove(Board);

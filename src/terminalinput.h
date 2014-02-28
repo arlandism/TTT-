@@ -1,12 +1,14 @@
-
 #ifndef __TTT____terminalinput__
 #define __TTT____terminalinput__
 
-#include "input.h"
+#include "board.h"
+#include "movestrategy.h"
 
-class TerminalInput: public Input{
+class TerminalInput: public MoveStrategy {
+    
 public:
-    int Call();
+    
+    int NextMove(Board);
 };
 
 #endif
