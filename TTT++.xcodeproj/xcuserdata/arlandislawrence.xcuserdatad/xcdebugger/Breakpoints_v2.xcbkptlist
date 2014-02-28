@@ -270,11 +270,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "src/tttrules.cpp"
-            timestampString = "415143814.213282"
+            timestampString = "415253975.105877"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "TTTRules::WinningCombinations()"
             landmarkType = "5">
          </BreakpointContent>

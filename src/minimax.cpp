@@ -17,7 +17,6 @@ int Minimax::EvaluateMove(Board board, int space, std::string token, int alpha, 
     } else {
         std::vector<int> available_spaces = board.OpenSpaces();
         std::vector<int>::const_iterator iterator;
-        std::string next_token = rules.OpponentToken(token);
         Board next_board = *new Board(board.state());
         if (maximizing){
             for (iterator = available_spaces.begin(); iterator != available_spaces.end(); iterator++){
@@ -45,7 +44,6 @@ int Minimax::EvaluateMove(Board board, int space, std::string token, int alpha, 
 
 int Minimax::BestScoreOfChildren(Board board, std::string token, int space){
     std::vector<int> available_spaces = board.OpenSpaces();
-    std::string next_token = settings_->OtherToken(token);
     int score_for_move = EvaluateMove(board, space, token);
     return score_for_move;
 }

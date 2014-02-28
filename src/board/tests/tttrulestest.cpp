@@ -67,10 +67,3 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(false == rules.GameOver());
     }
 }
-
-TEST_CASE("TTTRules::OtherToken returns the opposite token"){
-    Board *board = new Board(3);
-    TTTRules rules = *new TTTRules(board, "A", "B");
-    REQUIRE("A" == rules.OpponentToken("B"));
-    REQUIRE("B" == rules.OpponentToken("A"));
-}
