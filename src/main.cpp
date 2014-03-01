@@ -1,13 +1,11 @@
 #include <iostream>
 #include "gamepresenter.h"
-#include "inputvalidator.h"
-#include "tttconsoleengine.h"
+#include "tttengine.h"
 
-std::string GetPlayerType(TTTConsoleEngine engine){
-    std::vector<std::string> valid_player_choices = engine.valid_player_choices;
-    std::string user_choice = "";
-    while (not (InputValidator::IsValid(valid_player_choices, user_choice))){
-        std::cout << GamePresenter::PresentPlayerChoices(valid_player_choices);
+std::string GetPlayerType(TTTEngine engine){
+    std::string user_choice;
+    while (not (engine.ValidPlayerChoice(user_choice))){
+        std::cout << GamePresenter::PresentPlayerChoices(engine.valid_player_choices);
         std::cin >> user_choice;
     }
     return user_choice;
@@ -20,10 +18,12 @@ std::string GetToken(){
     return user_choice;
 }
 
-int main(int argc, const char * argv[])
-{
-    std::string first_player_type, second_player_type, first_player_token, second_player_token;
-    TTTConsoleEngine engine = *new TTTConsoleEngine();
+void GameLoop(){
+    std::string first_player_type, second_player_type,
+                first_player_token, second_player_token,
+                play_again_answer;
+    
+    TTTEngine engine = *new TTTEngine();
     std::cout << GamePresenter::WelcomeBanner();
     
     first_player_type = GetPlayerType(engine);
@@ -32,8 +32,17 @@ int main(int argc, const char * argv[])
     second_player_type = GetPlayerType(engine);
     second_player_token = GetToken();
     
-//    engine.StartGame(first_player_type, first_player_token,
-//                     second_player_type, second_player_token);
+    engine.StartGame(first_player_type, first_player_token,
+                     second_player_type, second_player_token);
     std::cout << GamePresenter::ReplayPrompt();
+    std::cin >> play_again_answer;
+    if (engine.AffirmativeAnswer(play_again_answer)){
+        GameLoop();
+    }
+}
+
+int main(int argc, const char * argv[])
+{
+    GameLoop();
     return 0;
 }

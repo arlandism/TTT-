@@ -4,18 +4,18 @@
 #include "mockmovestrategy.h"
 #include "player.h"
 
-TEST_CASE("Player generates players..."){
+TEST_CASE("Player..."){
     
     std::vector<int> inputsToReturn = {1};
     MoveStrategy *strategy = new MockMoveStrategy(inputsToReturn);
     
-    SECTION("using supplied token"){
+    SECTION("has supplied token"){
         std::string token = "X";
         Player *player = new Player(token, strategy);
         REQUIRE("X" == player->token());
     }
     
-    SECTION("using supplied input"){
+    SECTION("uses supplied input"){
         Board board = *new Board(3);
         std::string token = "X";
         Player *player = new Player(token, strategy);

@@ -30,7 +30,7 @@
 		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
 		6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playertest.cpp */; };
 		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
-		6B9CFFBD18C12CCF005C918B /* tttconsoleengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CFFBB18C12CCF005C918B /* tttconsoleengine.cpp */; };
+		6B9CFFBD18C12CCF005C918B /* tttengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CFFBB18C12CCF005C918B /* tttengine.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6BA27DA618BBB54E00303336 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 		6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
@@ -111,8 +111,8 @@
 		6B906CF018BACD4B005AFE4B /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
-		6B9CFFBB18C12CCF005C918B /* tttconsoleengine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttconsoleengine.cpp; sourceTree = "<group>"; };
-		6B9CFFBC18C12CCF005C918B /* tttconsoleengine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttconsoleengine.h; sourceTree = "<group>"; };
+		6B9CFFBB18C12CCF005C918B /* tttengine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttengine.cpp; sourceTree = "<group>"; };
+		6B9CFFBC18C12CCF005C918B /* tttengine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttengine.h; sourceTree = "<group>"; };
 		6BA5BC1A18BB9F59009A9272 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minimaxtest.cpp; path = tests/minimaxtest.cpp; sourceTree = "<group>"; };
 		6BBD2BC918BBD8D800AE12EF /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				6BA5BC1A18BB9F59009A9272 /* player.cpp */,
-				6B9CFFBB18C12CCF005C918B /* tttconsoleengine.cpp */,
-				6B9CFFBC18C12CCF005C918B /* tttconsoleengine.h */,
+				6B9CFFBB18C12CCF005C918B /* tttengine.cpp */,
+				6B9CFFBC18C12CCF005C918B /* tttengine.h */,
 				6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */,
 				6B0BBC4118BE7D4800F3EB4B /* tttrules.h */,
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
@@ -331,7 +331,7 @@
 			files = (
 				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
 				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
-				6B9CFFBD18C12CCF005C918B /* tttconsoleengine.cpp in Sources */,
+				6B9CFFBD18C12CCF005C918B /* tttengine.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
 				6B0BBC4A18BED6BD00F3EB4B /* game.cpp in Sources */,
 				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,

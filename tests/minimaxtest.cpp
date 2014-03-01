@@ -3,7 +3,7 @@
 #include "minimax.h"
 #include "tttsettings.h"
 
-TEST_CASE("Minimax..."){
+TEST_CASE("Minimax::NextMove..."){
 
     TTTSettings *settings = new TTTSettings();
     settings->token_one = "x";

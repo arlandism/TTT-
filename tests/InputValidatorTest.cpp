@@ -2,7 +2,7 @@
 #include "inputvalidator.h"
 #include "vector"
 
-TEST_CASE("InputValidator returns..."){
+TEST_CASE("InputValidator::IsValid returns..."){
     
     SECTION("false when the input isn't valid"){
         std::vector<std::string> validInputs = { "Foo" };

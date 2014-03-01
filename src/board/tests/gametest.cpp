@@ -3,7 +3,7 @@
 #include "game.h"
 #include "mockplayer.h"
 
-TEST_CASE("Game calls Move on..."){
+TEST_CASE("Game::Round calls Move on..."){
     
     std::vector<int> player_one_moves = {1};
     std::vector<int> player_two_moves = {2};
