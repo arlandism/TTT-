@@ -19,6 +19,8 @@ public:
         state_ = state;
     }
     
+    static const std::string EmptySpace;
+    
     void Move(int, std::string);
     bool Full();
     bool AllSpacesFilled(std::vector<std::string>);
