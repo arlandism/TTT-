@@ -2,6 +2,7 @@
 #define __TTT____game__
 
 #include <iostream>
+#include "boardpresenter.h"
 #include "iplayer.h"
 
 class Game {
@@ -14,6 +15,7 @@ public:
         player_two_ = player_two;
     };
     void Round();
+    std::string Summary();
     
 private:
     
