@@ -1,7 +1,7 @@
 #include "mockmovestrategy.h"
 
 int MockMoveStrategy::NextMove(Board board){
-    int nextReturnValue = inputsToReturn.back();
-    inputsToReturn.pop_back();
-    return nextReturnValue;
+    int next_return_value = inputs_to_return.back();
+    inputs_to_return.pop_back();
+    return next_return_value;
 }

@@ -11,13 +11,13 @@ class MockMoveStrategy: public MoveStrategy {
     
 public:
     
-    MockMoveStrategy(std::vector<int> toReturn){
-        inputsToReturn = toReturn;
+    MockMoveStrategy(std::vector<int> to_return){
+        inputs_to_return = to_return;
     }
     
     int NextMove(Board board);
     
 private:
-    std::vector<int>inputsToReturn;
+    std::vector<int>inputs_to_return;
 };
 #endif

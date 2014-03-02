@@ -8,6 +8,7 @@
 #include "game.h"
 #include "io.h"
 #include "inputvalidator.h"
+#include "playerfactory.h"
 #include "player.h"
 
 class TTTEngine {
@@ -16,6 +17,12 @@ public:
     
     TTTEngine(IO *io){
         io_ = io;
+        factory_ = new PlayerFactory();
+    }
+    
+    TTTEngine(IO *io, PlayerFactory *factory){
+        io_ = io;
+        factory_ = factory;
     }
     
     std::vector<std::string> valid_player_choices = {"Human", "AI"};
@@ -29,6 +36,7 @@ public:
 private:
     
     IO *io_;
+    PlayerFactory *factory_;
     
     std::string GetFromUser(std::vector<std::string>, std::string);
     Player * CreatePlayer(std::string player_type, std::string player_token);

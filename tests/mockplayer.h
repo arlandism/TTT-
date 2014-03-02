@@ -8,6 +8,12 @@
 class MockPlayer: public IPlayer {
     
 public:
+  
+    MockPlayer(){
+        std::vector<int> inputs_to_return = {1};
+        token_ = "x";
+        inputs_to_return_ = inputs_to_return;
+    }
     
     MockPlayer(std::string token, std::vector<int> inputs_to_return){
         token_ = token;
