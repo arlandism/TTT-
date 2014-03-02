@@ -27,7 +27,3 @@ Player * TTTEngine::CreatePlayer(std::string player_type, std::string player_tok
 bool TTTEngine::AffirmativeAnswer(std::string answer){
     return answer == "y";
 }
-
-bool TTTEngine::ValidPlayerChoice(std::string choice){
-    return std::find(valid_player_choices.begin(), valid_player_choices.end(), choice) != valid_player_choices.end();
-}

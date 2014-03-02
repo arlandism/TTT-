@@ -13,11 +13,11 @@ class TTTEngine {
     
 public:
     
-    Player * CreatePlayer();
+    std::vector<std::string> valid_player_choices = {"Human", "AI"};
+    std::vector<std::string> valid_token_choices = {"x", "o"};
+    
     void StartGame(std::string, std::string, std::string, std::string);
     bool AffirmativeAnswer(std::string);
-    bool ValidPlayerChoice(std::string);
-    std::vector<std::string> valid_player_choices = {"Human", "AI"};
     
 private:
     
