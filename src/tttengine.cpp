@@ -1,11 +1,11 @@
 #include "tttengine.h"
+#include "terminalinput.h"
 
 void TTTEngine::StartGame(){
     std::string first_player_type, second_player_type,
-    first_player_token, second_player_token,
-    play_again_answer;
+                first_player_token, second_player_token,
+                play_again_answer;
     
-    TTTEngine engine = *new TTTEngine();
     std::cout << GamePresenter::WelcomeBanner();
     
     first_player_type = GetPlayerType();
@@ -22,8 +22,6 @@ void TTTEngine::StartGame(){
     while (not rules.GameOver()){
         game.Round();
     }
-    //    engine.StartGame(first_player_type, first_player_token,
-    //                     second_player_type, second_player_token);
     GamePresenter::PresentWinner(rules.GameWinner());
     std::cout << GamePresenter::ReplayPrompt();
     std::cin >> play_again_answer;
@@ -61,7 +59,7 @@ std::string TTTEngine::GetFromUser(std::vector<std::string> valid_choices, std::
     std::string user_choice;
     while (not (InputValidator::IsValid(valid_choices, user_choice))){
         std::cout << prompt;
-        std::cin >> user_choice;
+        user_choice = io_->GetInput();
     }
     return user_choice;
 }
