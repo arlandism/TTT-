@@ -6,7 +6,7 @@ void TTTEngine::StartGame(){
                 first_player_token, second_player_token,
                 play_again_answer;
     
-    std::cout << GamePresenter::WelcomeBanner();
+    io_->Print(GamePresenter::WelcomeBanner());
     
     first_player_type = GetPlayerType();
     first_player_token = GetToken();
@@ -23,7 +23,7 @@ void TTTEngine::StartGame(){
         game.Round();
     }
     GamePresenter::PresentWinner(rules.GameWinner());
-    std::cout << GamePresenter::ReplayPrompt();
+    io_->Print(GamePresenter::ReplayPrompt());
     std::cin >> play_again_answer;
     if (AffirmativeAnswer(play_again_answer)){
         StartGame();
@@ -58,7 +58,7 @@ std::string TTTEngine::GetToken(){
 std::string TTTEngine::GetFromUser(std::vector<std::string> valid_choices, std::string prompt){
     std::string user_choice;
     while (not (InputValidator::IsValid(valid_choices, user_choice))){
-        std::cout << prompt;
+        io_->Print(prompt);
         user_choice = io_->GetInput();
     }
     return user_choice;

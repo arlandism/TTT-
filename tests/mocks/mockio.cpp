@@ -5,3 +5,5 @@ std::string MockIO::GetInput(){
     inputs_to_return.pop_back();
     return next_return_value;
 }
+
+void MockIO::Print(std::string message){}

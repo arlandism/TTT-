@@ -12,6 +12,7 @@ public:
     };
     
     std::string GetInput();
+    void Print(std::string);
     
 private:
     std::vector<std::string>inputs_to_return;

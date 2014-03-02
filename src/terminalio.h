@@ -7,6 +7,7 @@
 class TerminalIO: public IO {
     
     std::string GetInput();
+    void Print(std::string);
     
 };
 #endif

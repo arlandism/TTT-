@@ -5,3 +5,7 @@ std::string TerminalIO::GetInput(){
     std::cin >> input;
     return input;
 }
+
+void TerminalIO::Print(std::string message){
+    std::cout << message;
+}

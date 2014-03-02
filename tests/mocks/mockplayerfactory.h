@@ -11,6 +11,7 @@ class MockPlayerFactory : public PlayerFactory {
   
 public:
     
+//    IPlayer * Create(std::string, std::string);
     bool LastPlayerTypeCalledWith(std::string);
     bool LastPlayerTokenCalledWith(std::string);
     
