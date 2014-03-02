@@ -2,22 +2,21 @@
 #define __TTT____mockplayerfactory__
 
 #include <iostream>
-#include "playerfactory.h"
 #include "mockplayer.h"
-#include "map"
-#include "vector"
+#include "playerfactory.h"
 
-class MockPlayerFactory : public PlayerFactory {
-  
+class MockPlayerFactory: public IPlayerFactory {
+    
 public:
     
-//    IPlayer * Create(std::string, std::string);
-    bool LastPlayerTypeCalledWith(std::string);
-    bool LastPlayerTokenCalledWith(std::string);
+    IPlayer * Create(std::string, std::string);
+    bool LastPlayerType(std::string);
+    bool LastPlayerToken(std::string);
     
 private:
     
     std::vector<std::string> player_type_call_list;
     std::vector<std::string> player_token_call_list;
+    
 };
 #endif

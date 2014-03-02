@@ -1,17 +1,17 @@
 #include "mockplayerfactory.h"
 
-//IPlayer * MockPlayerFactory::Create(std::string type, std::string token){
-//    std::vector<int> moves = {1, 2, 3};
-//    IPlayer *player = new MockPlayer();
-//    return player;
-//}
-
-bool MockPlayerFactory::LastPlayerTypeCalledWith(std::string type){
-    std::string last_call = *(player_type_call_list.end() - 1);
-    return type == last_call;
+IPlayer * MockPlayerFactory::Create(std::string player_type, std::string token){
+    player_type_call_list.push_back(player_type);
+    player_token_call_list.push_back(token);
+    return new MockPlayer();
 }
 
-bool MockPlayerFactory::LastPlayerTokenCalledWith(std::string type){
-    std::string last_call = *(player_token_call_list.end() - 1);
-    return type == last_call;
+bool MockPlayerFactory::LastPlayerType(std::string player_type){
+    std::string last_call_value = player_type_call_list.back();
+    return last_call_value == player_type;
+}
+
+bool MockPlayerFactory::LastPlayerToken(std::string token){
+    std::string last_call_value = player_token_call_list.back();
+    return last_call_value == token;
 }

@@ -8,19 +8,14 @@
 #include "game.h"
 #include "io.h"
 #include "inputvalidator.h"
-#include "playerfactory.h"
+#include "iplayerfactory.h"
 #include "player.h"
 
 class TTTEngine {
     
 public:
     
-    TTTEngine(IO *io){
-        io_ = io;
-        factory_ = new PlayerFactory();
-    }
-    
-    TTTEngine(IO *io, PlayerFactory *factory){
+    TTTEngine(IO *io, IPlayerFactory *factory){
         io_ = io;
         factory_ = factory;
     }
@@ -29,16 +24,17 @@ public:
     std::vector<std::string> valid_token_choices = {"x", "o"};
     
     void StartGame();
-    std::string GetPlayerType();
-    std::string GetToken();
     bool AffirmativeAnswer(std::string);
+    IPlayer * CreatePlayer(std::string player_type, std::string player_token);
     
 private:
     
     IO *io_;
-    PlayerFactory *factory_;
+    IPlayerFactory *factory_;
     
     std::string GetFromUser(std::vector<std::string>, std::string);
-    Player * CreatePlayer(std::string player_type, std::string player_token);
+    
+    std::string GetPlayerType();
+    std::string GetToken();
 };
 #endif
