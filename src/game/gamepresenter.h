@@ -11,8 +11,12 @@ public:
     
     static std::string WelcomeBanner();
     static std::string PlayerPrompt(std::vector<std::string>);
-    static std::string TokenPrompt();
+    static std::string TokenPrompt(std::vector<std::string>);
     static std::string PresentWinner(std::string);
+    
+private:
+    
+    static std::string JoinChoices(std::vector<std::string>);
 };
 
 #endif
