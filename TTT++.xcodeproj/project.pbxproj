@@ -34,7 +34,6 @@
 		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6B906CE918BAAA7E005AFE4B /* consolemovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* consolemovestrategy.cpp */; };
-		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6BA46E2C18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
 		6BA46E2D18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
@@ -50,6 +49,7 @@
 		6BE8487518C42A3500FF219E /* gametest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8487118C42A3500FF219E /* gametest.cpp */; };
 		6BE8487618C42A3500FF219E /* mockplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8487318C42A3500FF219E /* mockplayer.cpp */; };
 		6BE8487918C42A9A00FF219E /* mockio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8487718C42A9A00FF219E /* mockio.cpp */; };
+		6BE8487D18C42AEF00FF219E /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8487B18C42AEF00FF219E /* mockmovestrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,8 +121,6 @@
 		6B906CC518BA7D1C005AFE4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6B906CE718BAAA7E005AFE4B /* consolemovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = consolemovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CE818BAAA7E005AFE4B /* consolemovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consolemovestrategy.h; sourceTree = "<group>"; };
-		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
-		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
 		6BA46E2A18C2C29900B15D42 /* terminalio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalio.cpp; sourceTree = "<group>"; };
 		6BA46E2B18C2C29900B15D42 /* terminalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalio.h; sourceTree = "<group>"; };
 		6BBD2BD018BBDCD300AE12EF /* board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = board.cpp; path = board/board.cpp; sourceTree = "<group>"; };
@@ -139,6 +137,8 @@
 		6BE8487418C42A3500FF219E /* mockplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockplayer.h; sourceTree = "<group>"; };
 		6BE8487718C42A9A00FF219E /* mockio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mockio.cpp; sourceTree = "<group>"; };
 		6BE8487818C42A9A00FF219E /* mockio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockio.h; sourceTree = "<group>"; };
+		6BE8487B18C42AEF00FF219E /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mockmovestrategy.cpp; sourceTree = "<group>"; };
+		6BE8487C18C42AEF00FF219E /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockmovestrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,8 +275,6 @@
 		6B906CBD18BA77B4005AFE4B /* mocks */ = {
 			isa = PBXGroup;
 			children = (
-				6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */,
-				6B906CF518BACF91005AFE4B /* mockmovestrategy.h */,
 			);
 			name = mocks;
 			sourceTree = "<group>";
@@ -322,6 +320,7 @@
 		6BE8480018C4283D00FF219E /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				6BE8487A18C42AEF00FF219E /* mocks */,
 				6BE8480118C4283D00FF219E /* playertest.cpp */,
 			);
 			path = tests;
@@ -361,6 +360,15 @@
 			children = (
 				6BE8487318C42A3500FF219E /* mockplayer.cpp */,
 				6BE8487418C42A3500FF219E /* mockplayer.h */,
+			);
+			path = mocks;
+			sourceTree = "<group>";
+		};
+		6BE8487A18C42AEF00FF219E /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6BE8487B18C42AEF00FF219E /* mockmovestrategy.cpp */,
+				6BE8487C18C42AEF00FF219E /* mockmovestrategy.h */,
 			);
 			path = mocks;
 			sourceTree = "<group>";
@@ -468,7 +476,6 @@
 				6B389DDA18BE4427000D3294 /* boardspacestest.cpp in Sources */,
 				6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */,
 				6BE8480218C4283D00FF219E /* playertest.cpp in Sources */,
-				6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */,
 				6B0BBC3F18BE7BBD00F3EB4B /* tttrulestest.cpp in Sources */,
 				6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */,
 				6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */,
@@ -479,6 +486,7 @@
 				6BE8487518C42A3500FF219E /* gametest.cpp in Sources */,
 				6B6019D918C41A56007F2BC7 /* player.cpp in Sources */,
 				6BE8487918C42A9A00FF219E /* mockio.cpp in Sources */,
+				6BE8487D18C42AEF00FF219E /* mockmovestrategy.cpp in Sources */,
 				6B6019C518C41872007F2BC7 /* playerfactory.cpp in Sources */,
 				6B6019B618C41733007F2BC7 /* game.cpp in Sources */,
 				6B6019C018C417D9007F2BC7 /* boardpresenter.cpp in Sources */,
