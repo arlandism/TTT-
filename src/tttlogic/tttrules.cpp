@@ -47,3 +47,11 @@ std::vector<std::vector<std::string>> TTTRules::ColumnWins(){
     BoardSpaces board_spaces = *new BoardSpaces(board_->state());
     return board_spaces.Columns();
 }
+
+std::string TTTRules::OtherToken(std::string token){
+    if (token == "x"){
+        return "o";
+    } else {
+        return "x";
+    }
+}

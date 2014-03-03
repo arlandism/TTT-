@@ -14,6 +14,7 @@ public:
     
     std::string GameWinner();
     bool GameOver();
+    static std::string OtherToken(std::string);
     
 private:
     

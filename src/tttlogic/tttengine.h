@@ -19,20 +19,19 @@ public:
         factory_ = factory;
     }
     
-    std::vector<std::string> valid_player_choices = {"Human", "AI"};
-    std::vector<std::string> valid_token_choices = {"x", "o"};
-    
     void StartGame();
     bool AffirmativeAnswer(std::string);
     IPlayer * CreatePlayer(std::string player_type, std::string player_token);
+    std::string GetPlayerType();
+    std::string GetToken();
     
 private:
     IO *io_;
     IPlayerFactory *factory_;
+    std::string used_token_;
+    std::vector<std::string> valid_player_choices = {"Human", "AI"};
+    std::vector<std::string> valid_token_choices = {"x", "o"};
     
     std::string GetFromUser(std::vector<std::string>, std::string);
-    
-    std::string GetPlayerType();
-    std::string GetToken();
 };
 #endif
