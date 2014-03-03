@@ -86,8 +86,5 @@ int Minimax::EvaluateGame(std::string winner, std::string current_token, int dep
 }
 
 std::string Minimax::OtherToken(std::string token){
-    if (token == "x"){
-        return "o";
-    }
-    return "x";
+    return TTTRules::OtherToken(token);
 }

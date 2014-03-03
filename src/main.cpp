@@ -1,12 +1,14 @@
 #include "terminalio.h"
 #include "playerfactory.h"
 #include "tttengine.h"
+#include "uidriver.h"
 
 int main(int argc, const char * argv[])
 {
     IPlayerFactory *factory = new PlayerFactory();
     IO *io = new TerminalIO();
-    TTTEngine engine = *new TTTEngine(io, factory);
+    UIDriver *driver = new UIDriver(io, factory);
+    TTTEngine engine = *new TTTEngine(io, driver);
     engine.StartGame();
     return 0;
 }

@@ -74,3 +74,14 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(false == rules.GameOver());
     }
 }
+
+TEST_CASE("TTTRules::OtherToken returns"){
+    
+    SECTION("x when given o"){
+        REQUIRE("o" == TTTRules::OtherToken("x"));
+    }
+    
+    SECTION("o when given x"){
+        REQUIRE("x" == TTTRules::OtherToken("o"));
+    }
+}
