@@ -49,7 +49,7 @@
 		6BE847FF18C427D500FF219E /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE847FE18C427D500FF219E /* minimaxtest.cpp */; };
 		6BE8480218C4283D00FF219E /* playertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8480118C4283D00FF219E /* playertest.cpp */; };
 		6BE8486B18C4290500FF219E /* tttenginetest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8486A18C4290500FF219E /* tttenginetest.cpp */; };
-		6BE8A8B418C2E29400D41F53 /* mockplayerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8A8B218C2E29400D41F53 /* mockplayerfactory.cpp */; };
+		6BE8486F18C429DF00FF219E /* mockplayerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE8486D18C429DF00FF219E /* mockplayerfactory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,8 +137,8 @@
 		6BE847FE18C427D500FF219E /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimaxtest.cpp; sourceTree = "<group>"; };
 		6BE8480118C4283D00FF219E /* playertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playertest.cpp; sourceTree = "<group>"; };
 		6BE8486A18C4290500FF219E /* tttenginetest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttenginetest.cpp; sourceTree = "<group>"; };
-		6BE8A8B218C2E29400D41F53 /* mockplayerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockplayerfactory.cpp; path = tests/mocks/mockplayerfactory.cpp; sourceTree = "<group>"; };
-		6BE8A8B318C2E29400D41F53 /* mockplayerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockplayerfactory.h; path = tests/mocks/mockplayerfactory.h; sourceTree = "<group>"; };
+		6BE8486D18C429DF00FF219E /* mockplayerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mockplayerfactory.cpp; sourceTree = "<group>"; };
+		6BE8486E18C429DF00FF219E /* mockplayerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mockplayerfactory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +199,9 @@
 		6B6019B718C41798007F2BC7 /* minimax */ = {
 			isa = PBXGroup;
 			children = (
-				6B6019B818C41798007F2BC7 /* gamesettings.h */,
 				6BE847FD18C427D500FF219E /* tests */,
 				6B6019B918C41798007F2BC7 /* minimax.cpp */,
+				6B6019B818C41798007F2BC7 /* gamesettings.h */,
 				6B6019BA18C41798007F2BC7 /* minimax.h */,
 			);
 			path = minimax;
@@ -281,8 +281,6 @@
 				6B906CF518BACF91005AFE4B /* mockmovestrategy.h */,
 				6B0BBC4B18BED6FF00F3EB4B /* mockplayer.cpp */,
 				6B0BBC4C18BED6FF00F3EB4B /* mockplayer.h */,
-				6BE8A8B218C2E29400D41F53 /* mockplayerfactory.cpp */,
-				6BE8A8B318C2E29400D41F53 /* mockplayerfactory.h */,
 			);
 			name = mocks;
 			sourceTree = "<group>";
@@ -336,9 +334,19 @@
 		6BE8486918C4290500FF219E /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				6BE8486C18C429DF00FF219E /* mocks */,
 				6BE8486A18C4290500FF219E /* tttenginetest.cpp */,
 			);
 			path = tests;
+			sourceTree = "<group>";
+		};
+		6BE8486C18C429DF00FF219E /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6BE8486D18C429DF00FF219E /* mockplayerfactory.cpp */,
+				6BE8486E18C429DF00FF219E /* mockplayerfactory.h */,
+			);
+			path = mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,7 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA46E2F18C2C54800B15D42 /* consolemovestrategy.cpp in Sources */,
-				6BE8A8B418C2E29400D41F53 /* mockplayerfactory.cpp in Sources */,
+				6BE8486F18C429DF00FF219E /* mockplayerfactory.cpp in Sources */,
 				6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */,
 				6BA46E2D18C2C29900B15D42 /* terminalio.cpp in Sources */,
 				6B6019BC18C41798007F2BC7 /* minimax.cpp in Sources */,
