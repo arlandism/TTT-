@@ -162,10 +162,10 @@
 		6B389DDF18BE5B92000D3294 /* board */ = {
 			isa = PBXGroup;
 			children = (
-				6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */,
-				6B6019BE18C417D9007F2BC7 /* boardpresenter.h */,
 				6B389DE018BE5C84000D3294 /* tests */,
 				6BBD2BD118BBDCD300AE12EF /* board.h */,
+				6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */,
+				6B6019BE18C417D9007F2BC7 /* boardpresenter.h */,
 				6BBD2BD018BBDCD300AE12EF /* board.cpp */,
 				6B389DDC18BE44FD000D3294 /* boardspaces.h */,
 				6B389DDB18BE44FD000D3294 /* boardspaces.cpp */,

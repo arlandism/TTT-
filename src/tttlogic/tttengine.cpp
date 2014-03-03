@@ -22,8 +22,6 @@ void TTTEngine::StartGame(){
         game.Round();
     }
     GamePresenter::PresentWinner(rules.GameWinner());
-    io_->Print(GamePresenter::ReplayPrompt());
-    std::cin >> play_again_answer;
 }
 
 IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_token){

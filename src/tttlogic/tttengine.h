@@ -3,14 +3,13 @@
 
 #include <iostream>
 #include "gamepresenter.h"
-#include "minimax.h"
+#include "tttrules.h"
 #include "tttsettings.h"
 #include "game.h"
 #include "io.h"
 #include "inputvalidator.h"
 #include "iplayerfactory.h"
 #include "player.h"
-#include "consolemovestrategy.h"
 
 class TTTEngine {
     
