@@ -36,10 +36,6 @@ std::string BoardPresenter::JoinMiddle(std::vector<std::string> middle){
 
 std::string BoardPresenter::FormatToken(std::string token){
     char formatted_token [20];
-    if (token == Board::EmptySpace){
-        sprintf(formatted_token, "%3s", token.c_str());
-    } else {
-        sprintf(formatted_token, "%3s", token.c_str());
-    }
+    sprintf(formatted_token, "%3s", token.c_str());
     return formatted_token;
 }
