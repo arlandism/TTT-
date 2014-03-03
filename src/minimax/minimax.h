@@ -22,12 +22,13 @@ public:
 private:
     
     GameSettings *settings_;
-    
-    bool ShouldPrune(int, int);
-    std::multimap<int, int> EvaluateRemainingMoves(Board);
-    int BestScoreOfChildren(Board, std::string, int);
+    std::multimap<int, int> ScorePossibleMoves(Board);
+    int ScoreMove(Board, int, std::string, bool maximizing=true);
+    int Maximize(Board, std::string);
+    int Minimize(Board, std::string);
+    std::string GameWinner(Board);
+    bool GameOver(Board);
     int HighestRatedMove(std::multimap<int, int>);
-    int EvaluateMove(Board, int, std::string, int=-1, int=1, bool=false);
     int EvaluateGame(std::string, std::string);
     std::string token_;
 };
