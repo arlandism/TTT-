@@ -30,7 +30,8 @@ IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_to
 }
 
 std::string TTTEngine::GetPlayerType(){
-    return GetFromUser(valid_player_choices, GamePresenter::PlayerPrompt());
+    std::string prompt = GamePresenter::PlayerPrompt(valid_player_choices);
+    return GetFromUser(valid_player_choices, prompt);
 }
 
 std::string TTTEngine::GetToken(){

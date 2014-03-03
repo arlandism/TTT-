@@ -27,7 +27,6 @@ public:
     IPlayer * CreatePlayer(std::string player_type, std::string player_token);
     
 private:
-    
     IO *io_;
     IPlayerFactory *factory_;
     
