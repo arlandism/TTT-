@@ -7,6 +7,8 @@
 class MockIO: public IO {
 public:
     
+    MockIO(){};
+    
     MockIO(std::vector<std::string> to_return){
         inputs_to_return = to_return;
     };
