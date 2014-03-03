@@ -18,17 +18,18 @@ std::multimap<int, int> Minimax::ScorePossibleMoves(Board board){
     return score_to_move_map;
 }
 
-int Minimax::ScoreMove(Board board, int move, std::string current_token, bool maximizing){
+int Minimax::ScoreMove(Board board, int move, std::string current_token, int depth, bool maximizing){
     Board sandbox_board = *new Board( board.state() );
     sandbox_board.Move(move, current_token);
-    if (GameOver(sandbox_board)){
+    if (GameOver(sandbox_board) or depth == 0){
         return EvaluateGame(GameWinner(sandbox_board), current_token);
     } else {
         std::string opponent_token = OtherToken(current_token);
+        depth -= 1;
         if (maximizing) {
-            return Maximize(sandbox_board, opponent_token);
+            return Maximize(sandbox_board, opponent_token, depth);
         } else {
-            return Minimize(sandbox_board, opponent_token);
+            return Minimize(sandbox_board, opponent_token, depth);
         }
     }
 }
@@ -43,24 +44,24 @@ std::string Minimax::GameWinner(Board board){
     return rules.GameWinner();
 }
 
-int Minimax::Maximize(Board board, std::string token){
+int Minimax::Maximize(Board board, std::string token, int depth){
     std::vector<int> available_moves = board.OpenSpaces();
     std::vector<int>::const_iterator iterator;
     int best_score = -10000;
     for (iterator = available_moves.begin(); iterator != available_moves.end(); iterator++){
         int move = *iterator;
-        best_score = std::min(best_score, ScoreMove(board, move, token, false));
+        best_score = std::min(best_score, ScoreMove(board, move, token, false, depth));
     }
     return best_score;
 }
 
-int Minimax::Minimize(Board board, std::string token){
+int Minimax::Minimize(Board board, std::string token, int depth){
     std::vector<int> available_moves = board.OpenSpaces();
     std::vector<int>::const_iterator iterator;
     int best_score = 10000;
     for (iterator = available_moves.begin(); iterator != available_moves.end(); iterator++){
         int move = *iterator;
-        best_score = std::max(best_score, ScoreMove(board, move, token, true));
+        best_score = std::max(best_score, ScoreMove(board, move, token, true, depth));
     }
     return best_score;
 }

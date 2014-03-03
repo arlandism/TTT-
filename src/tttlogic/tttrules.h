@@ -18,7 +18,7 @@ public:
 private:
     
     Board *board_;
-    std::string NO_WINNER_ = "";
+    std::string NO_WINNER_ = board_->EmptySpace;
     
     bool TokensEqual(std::vector<std::string>);
     std::vector<std::vector<std::string>> WinningCombinations();

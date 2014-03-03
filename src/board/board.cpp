@@ -15,11 +15,11 @@ bool Board::Full(){
     std::vector<std::string>::const_iterator iterator;
     for (iterator = state_.begin(); iterator != state_.end(); iterator++){
         std::string token_at_space = *iterator;
-        if (token_at_space != EmptySpace){
-            return true;
+        if (token_at_space == EmptySpace){
+            return false;
         }
     }
-    return false;
+    return true;
 }
 
 std::vector<int> Board::OpenSpaces(){

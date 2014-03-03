@@ -61,9 +61,16 @@ TEST_CASE("TTTRules::GameOver returns..."){
         REQUIRE(true == rules.GameOver());
     }
 
-    SECTION("false if the board isn't empty and there's no winner"){
+    SECTION("false if the board is empty"){
         Board *board = new Board(3);
         TTTRules rules = *new TTTRules(board);
+        REQUIRE(false == rules.GameOver());
+    }
+    
+    SECTION("false if the board isn't empty, but there's no winner"){
+        Board *board = new Board(3);
+        TTTRules rules = *new TTTRules(board);
+        board->Move(1, "x");
         REQUIRE(false == rules.GameOver());
     }
 }

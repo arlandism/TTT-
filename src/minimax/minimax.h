@@ -21,9 +21,9 @@ private:
     
     std::multimap<int, int> ScorePossibleMoves(Board);
     std::string OtherToken(std::string);
-    int ScoreMove(Board, int, std::string, bool maximizing=true);
-    int Maximize(Board, std::string);
-    int Minimize(Board, std::string);
+    int ScoreMove(Board, int, std::string, int depth=20, bool maximizing=true);
+    int Maximize(Board, std::string, int);
+    int Minimize(Board, std::string, int);
     std::string GameWinner(Board);
     bool GameOver(Board);
     int HighestRatedMove(std::multimap<int, int>);

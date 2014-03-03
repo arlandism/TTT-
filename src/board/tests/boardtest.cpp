@@ -17,8 +17,14 @@ TEST_CASE("Board::Full returns true for full board"){
     REQUIRE(true == board.Full());
 }
 
+TEST_CASE("Board::Full returns false for empty board"){
+    Board board = *new Board(2);
+    REQUIRE(false == board.Full());
+}
+
 TEST_CASE("Board::Full returns false for non-full board"){
     Board board = *new Board(2);
+    board.Move(3, "x");
     REQUIRE(false == board.Full());
 }
 
