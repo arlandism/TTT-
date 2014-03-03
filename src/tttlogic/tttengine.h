@@ -4,7 +4,6 @@
 #include <iostream>
 #include "gamepresenter.h"
 #include "tttrules.h"
-#include "tttsettings.h"
 #include "game.h"
 #include "io.h"
 #include "inputvalidator.h"

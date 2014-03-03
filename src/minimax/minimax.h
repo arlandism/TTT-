@@ -6,23 +6,21 @@
 #include "movestrategy.h"
 #include <map>
 #include "vector"
-#include "gamesettings.h"
 #include "tttrules.h"
 
 class Minimax: public MoveStrategy {
     
 public:
     
-    Minimax(std::string token, GameSettings *settings){
-        settings_ = settings;
+    Minimax(std::string token){
         token_ = token;
     }
     int NextMove(Board);
 
 private:
     
-    GameSettings *settings_;
     std::multimap<int, int> ScorePossibleMoves(Board);
+    std::string OtherToken(std::string);
     int ScoreMove(Board, int, std::string, bool maximizing=true);
     int Maximize(Board, std::string);
     int Minimize(Board, std::string);

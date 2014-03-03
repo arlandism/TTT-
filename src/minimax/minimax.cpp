@@ -24,7 +24,7 @@ int Minimax::ScoreMove(Board board, int move, std::string current_token, bool ma
     if (GameOver(sandbox_board)){
         return EvaluateGame(GameWinner(sandbox_board), current_token);
     } else {
-        std::string opponent_token = settings_->OtherToken(current_token);
+        std::string opponent_token = OtherToken(current_token);
         if (maximizing) {
             return Maximize(sandbox_board, opponent_token);
         } else {
@@ -66,7 +66,7 @@ int Minimax::Minimize(Board board, std::string token){
 }
 
 int Minimax::EvaluateGame(std::string winner, std::string current_token){
-    std::string opponent_token = settings_->OtherToken(current_token);
+    std::string opponent_token = OtherToken(current_token);
     if (winner == current_token){
         return 1;
     } else if (winner == opponent_token){
@@ -79,4 +79,11 @@ int Minimax::HighestRatedMove(std::multimap<int, int> scores_to_moves){
    int highest_score = scores_to_moves.rbegin()->first;
    int highest_rated_move = scores_to_moves.find(highest_score)->second;
    return highest_rated_move;
+}
+
+std::string Minimax::OtherToken(std::string token){
+    if (token == "x"){
+        return "o";
+    }
+    return "x";
 }
