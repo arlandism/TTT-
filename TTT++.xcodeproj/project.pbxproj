@@ -23,6 +23,7 @@
 		6B6019D218C41924007F2BC7 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CD18C41924007F2BC7 /* tttrules.cpp */; };
 		6B6019D818C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
 		6B6019D918C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
+		6B6793C618C523FF0059CF32 /* gamepresentertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6793C418C523FF0059CF32 /* gamepresentertest.cpp */; };
 		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
@@ -101,6 +102,7 @@
 		6B6019D618C41A56007F2BC7 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		6B6019D718C41A56007F2BC7 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		6B6019DA18C41C39007F2BC7 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		6B6793C418C523FF0059CF32 /* gamepresentertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamepresentertest.cpp; sourceTree = "<group>"; };
 		6B906C9218BA5FA8005AFE4B /* TTT++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TTT++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CA218BA615E005AFE4B /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputvalidator.cpp; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				6BA597E018C4E2CA0080A8B2 /* minimaxtest.cpp */,
+				6B6793C418C523FF0059CF32 /* gamepresentertest.cpp */,
 				6BE8487118C42A3500FF219E /* gametest.cpp */,
 				6BE8487218C42A3500FF219E /* mocks */,
 			);
@@ -454,6 +457,7 @@
 				6B6019D018C41924007F2BC7 /* tttengine.cpp in Sources */,
 				6BA597DF18C4E2BA0080A8B2 /* minimax.cpp in Sources */,
 				6BBDE6EE18BD090C00DD5829 /* inputvalidatortest.cpp in Sources */,
+				6B6793C618C523FF0059CF32 /* gamepresentertest.cpp in Sources */,
 				6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

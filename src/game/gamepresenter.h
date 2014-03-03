@@ -1,6 +1,7 @@
 #ifndef __TTT____gamepresenter__
 #define __TTT____gamepresenter__
 
+#include "board.h"
 #include <iostream>
 #include "vector"
 

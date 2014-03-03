@@ -17,7 +17,10 @@ std::string GamePresenter::TokenPrompt(){
 }
 
 std::string GamePresenter::PresentWinner(std::string winner){
-    return "\nAnd the winner is... " + winner + "\n";
+    if (winner != Board::EmptySpace){
+        return "\nAnd the winner is... " + winner + "\n";
+    }
+    return "\nIt's a tie!\n";
 }
 
 std::string GamePresenter::ReplayPrompt(){
