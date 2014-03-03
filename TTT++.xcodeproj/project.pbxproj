@@ -127,7 +127,7 @@
 		6B906CD818BA80F6005AFE4B /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
 		6B906CE518BAA78F005AFE4B /* mockio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockio.cpp; path = tests/mocks/mockio.cpp; sourceTree = "<group>"; };
 		6B906CE718BAAA7E005AFE4B /* consolemovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = consolemovestrategy.cpp; sourceTree = "<group>"; };
-		6B906CE818BAAA7E005AFE4B /* consolvemovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consolvemovestrategy.h; sourceTree = "<group>"; };
+		6B906CE818BAAA7E005AFE4B /* consolemovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consolemovestrategy.h; sourceTree = "<group>"; };
 		6B906CEA18BAC166005AFE4B /* playertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = playertest.cpp; path = tests/playertest.cpp; sourceTree = "<group>"; };
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
@@ -308,7 +308,7 @@
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 				6B389DE418BE61D7000D3294 /* boardinterface.h */,
 				6B906CE718BAAA7E005AFE4B /* consolemovestrategy.cpp */,
-				6B906CE818BAAA7E005AFE4B /* consolvemovestrategy.h */,
+				6B906CE818BAAA7E005AFE4B /* consolemovestrategy.h */,
 			);
 			name = src;
 			sourceTree = "<group>";

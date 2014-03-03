@@ -2,7 +2,7 @@
 #define TTT___playerfactory_h
 
 #include "player.h"
-#include "terminalinput.h"
+#include "consolemovestrategy.h"
 #include "minimax.h"
 #include "tttsettings.h"
 #include "movestrategy.h"
