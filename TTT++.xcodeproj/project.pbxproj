@@ -8,21 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		6B0BBC3F18BE7BBD00F3EB4B /* tttrulestest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */; };
-		6B0BBC4218BE7D4800F3EB4B /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */; };
 		6B0BBC4718BED38300F3EB4B /* gametest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4518BED38300F3EB4B /* gametest.cpp */; };
-		6B0BBC4A18BED6BD00F3EB4B /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4818BED6BD00F3EB4B /* game.cpp */; };
 		6B0BBC4D18BED6FF00F3EB4B /* mockplayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4B18BED6FF00F3EB4B /* mockplayer.cpp */; };
-		6B0BBC4F18BEDBC900F3EB4B /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4818BED6BD00F3EB4B /* game.cpp */; };
 		6B36E52118BFD58400E67CE4 /* tttsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */; };
-		6B36E52618BFDDF700E67CE4 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */; };
-		6B36E52718BFDE3500E67CE4 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
 		6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */; };
-		6B36E52B18C0305600E67CE4 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E52918C0305600E67CE4 /* gamepresenter.cpp */; };
-		6B36E52C18C0305600E67CE4 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E52918C0305600E67CE4 /* gamepresenter.cpp */; };
 		6B36E53918C047D000E67CE4 /* tttsettingstest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B36E53718C047D000E67CE4 /* tttsettingstest.cpp */; };
 		6B389DDA18BE4427000D3294 /* boardspacestest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DD818BE4427000D3294 /* boardspacestest.cpp */; };
 		6B389DDD18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
 		6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B389DDB18BE44FD000D3294 /* boardspaces.cpp */; };
+		6B6019B518C41733007F2BC7 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019B218C41733007F2BC7 /* game.cpp */; };
+		6B6019B618C41733007F2BC7 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019B218C41733007F2BC7 /* game.cpp */; };
+		6B6019BB18C41798007F2BC7 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019B918C41798007F2BC7 /* minimax.cpp */; };
+		6B6019BC18C41798007F2BC7 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019B918C41798007F2BC7 /* minimax.cpp */; };
+		6B6019BF18C417D9007F2BC7 /* boardpresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */; };
+		6B6019C018C417D9007F2BC7 /* boardpresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */; };
+		6B6019C418C41872007F2BC7 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019C218C41872007F2BC7 /* playerfactory.cpp */; };
+		6B6019C518C41872007F2BC7 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019C218C41872007F2BC7 /* playerfactory.cpp */; };
+		6B6019C818C418C8007F2BC7 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019C618C418C8007F2BC7 /* gamepresenter.cpp */; };
+		6B6019C918C418C8007F2BC7 /* gamepresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019C618C418C8007F2BC7 /* gamepresenter.cpp */; };
+		6B6019CF18C41924007F2BC7 /* tttengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CB18C41924007F2BC7 /* tttengine.cpp */; };
+		6B6019D018C41924007F2BC7 /* tttengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CB18C41924007F2BC7 /* tttengine.cpp */; };
+		6B6019D118C41924007F2BC7 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CD18C41924007F2BC7 /* tttrules.cpp */; };
+		6B6019D218C41924007F2BC7 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CD18C41924007F2BC7 /* tttrules.cpp */; };
+		6B6019D818C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
+		6B6019D918C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
 		6B906CBF18BA79C4005AFE4B /* runTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CB418BA73FD005AFE4B /* runTests.cpp */; };
 		6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
@@ -30,21 +39,12 @@
 		6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
 		6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CEA18BAC166005AFE4B /* playertest.cpp */; };
 		6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */; };
-		6B9CFFBD18C12CCF005C918B /* tttengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CFFBB18C12CCF005C918B /* tttengine.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
-		6BA27DA618BBB54E00303336 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
-		6BA46E2218C26F0200B15D42 /* boardpresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2018C26F0200B15D42 /* boardpresenter.cpp */; };
-		6BA46E2318C26F0200B15D42 /* boardpresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2018C26F0200B15D42 /* boardpresenter.cpp */; };
 		6BA46E2618C2BF5200B15D42 /* tttenginetest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2418C2BF5200B15D42 /* tttenginetest.cpp */; };
 		6BA46E2C18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
 		6BA46E2D18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
-		6BA46E2E18C2C53C00B15D42 /* tttengine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CFFBB18C12CCF005C918B /* tttengine.cpp */; };
 		6BA46E2F18C2C54800B15D42 /* terminalinput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */; };
-		6BA46E3618C2CDF000B15D42 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E3518C2CDF000B15D42 /* playerfactory.cpp */; };
-		6BA46E3718C2CDF000B15D42 /* playerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E3518C2CDF000B15D42 /* playerfactory.cpp */; };
-		6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5BC1A18BB9F59009A9272 /* player.cpp */; };
 		6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */; };
-		6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BC918BBD8D800AE12EF /* minimax.cpp */; };
 		6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD018BBDCD300AE12EF /* board.cpp */; };
 		6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */; };
 		6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD2BD018BBDCD300AE12EF /* board.cpp */; };
@@ -85,26 +85,37 @@
 
 /* Begin PBXFileReference section */
 		6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tttrulestest.cpp; path = src/board/tests/tttrulestest.cpp; sourceTree = "<group>"; };
-		6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttrules.cpp; sourceTree = "<group>"; };
-		6B0BBC4118BE7D4800F3EB4B /* tttrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttrules.h; sourceTree = "<group>"; };
 		6B0BBC4518BED38300F3EB4B /* gametest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gametest.cpp; path = src/board/tests/gametest.cpp; sourceTree = "<group>"; };
-		6B0BBC4818BED6BD00F3EB4B /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
-		6B0BBC4918BED6BD00F3EB4B /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 		6B0BBC4B18BED6FF00F3EB4B /* mockplayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockplayer.cpp; path = tests/mockplayer.cpp; sourceTree = "<group>"; };
 		6B0BBC4C18BED6FF00F3EB4B /* mockplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockplayer.h; path = tests/mockplayer.h; sourceTree = "<group>"; };
-		6B0BBC4E18BED8E600F3EB4B /* iplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iplayer.h; sourceTree = "<group>"; };
-		6B36E51D18BFD43000E67CE4 /* gamesettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamesettings.h; sourceTree = "<group>"; };
 		6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttsettings.cpp; sourceTree = "<group>"; };
 		6B36E52018BFD58400E67CE4 /* tttsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttsettings.h; sourceTree = "<group>"; };
-		6B36E52918C0305600E67CE4 /* gamepresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gamepresenter.cpp; sourceTree = "<group>"; };
-		6B36E52A18C0305600E67CE4 /* gamepresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamepresenter.h; sourceTree = "<group>"; };
 		6B36E53718C047D000E67CE4 /* tttsettingstest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tttsettingstest.cpp; path = tests/tttsettingstest.cpp; sourceTree = "<group>"; };
 		6B389DD818BE4427000D3294 /* boardspacestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspacestest.cpp; path = board/tests/boardspacestest.cpp; sourceTree = "<group>"; };
 		6B389DDB18BE44FD000D3294 /* boardspaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspaces.cpp; path = board/boardspaces.cpp; sourceTree = "<group>"; };
 		6B389DDC18BE44FD000D3294 /* boardspaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boardspaces.h; path = board/boardspaces.h; sourceTree = "<group>"; };
 		6B389DE218BE5E8A000D3294 /* mockboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockboard.h; path = tests/mocks/mockboard.h; sourceTree = "<group>"; };
 		6B389DE418BE61D7000D3294 /* boardinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boardinterface.h; sourceTree = "<group>"; };
-		6B452AB618C2EA0C00DD4A1F /* iplayerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iplayerfactory.h; sourceTree = "<group>"; };
+		6B6019B218C41733007F2BC7 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		6B6019B318C41733007F2BC7 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		6B6019B818C41798007F2BC7 /* gamesettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gamesettings.h; sourceTree = "<group>"; };
+		6B6019B918C41798007F2BC7 /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
+		6B6019BA18C41798007F2BC7 /* minimax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minimax.h; sourceTree = "<group>"; };
+		6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardpresenter.cpp; path = board/boardpresenter.cpp; sourceTree = "<group>"; };
+		6B6019BE18C417D9007F2BC7 /* boardpresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boardpresenter.h; path = board/boardpresenter.h; sourceTree = "<group>"; };
+		6B6019C118C41872007F2BC7 /* iplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iplayer.h; sourceTree = "<group>"; };
+		6B6019C218C41872007F2BC7 /* playerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactory.cpp; sourceTree = "<group>"; };
+		6B6019C318C41872007F2BC7 /* playerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerfactory.h; sourceTree = "<group>"; };
+		6B6019C618C418C8007F2BC7 /* gamepresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gamepresenter.cpp; path = src/game/gamepresenter.cpp; sourceTree = SOURCE_ROOT; };
+		6B6019C718C418C8007F2BC7 /* gamepresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gamepresenter.h; path = src/game/gamepresenter.h; sourceTree = SOURCE_ROOT; };
+		6B6019CB18C41924007F2BC7 /* tttengine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttengine.cpp; sourceTree = "<group>"; };
+		6B6019CC18C41924007F2BC7 /* tttengine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttengine.h; sourceTree = "<group>"; };
+		6B6019CD18C41924007F2BC7 /* tttrules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttrules.cpp; sourceTree = "<group>"; };
+		6B6019CE18C41924007F2BC7 /* tttrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttrules.h; sourceTree = "<group>"; };
+		6B6019D318C419C1007F2BC7 /* iplayerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iplayerfactory.h; sourceTree = "<group>"; };
+		6B6019D518C41A56007F2BC7 /* movestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movestrategy.h; sourceTree = "<group>"; };
+		6B6019D618C41A56007F2BC7 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		6B6019D718C41A56007F2BC7 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		6B906C9218BA5FA8005AFE4B /* TTT++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TTT++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CA218BA615E005AFE4B /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CB418BA73FD005AFE4B /* runTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = runTests.cpp; path = tests/runTests.cpp; sourceTree = "<group>"; };
@@ -118,23 +129,12 @@
 		6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalinput.cpp; sourceTree = "<group>"; };
 		6B906CE818BAAA7E005AFE4B /* terminalinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalinput.h; sourceTree = "<group>"; };
 		6B906CEA18BAC166005AFE4B /* playertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = playertest.cpp; path = tests/playertest.cpp; sourceTree = "<group>"; };
-		6B906CEE18BACCDE005AFE4B /* movestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movestrategy.h; sourceTree = "<group>"; };
-		6B906CF018BACD4B005AFE4B /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		6B906CF418BACF91005AFE4B /* mockmovestrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mockmovestrategy.cpp; path = tests/mocks/mockmovestrategy.cpp; sourceTree = "<group>"; };
 		6B906CF518BACF91005AFE4B /* mockmovestrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mockmovestrategy.h; path = tests/mocks/mockmovestrategy.h; sourceTree = "<group>"; };
-		6B9CFFBB18C12CCF005C918B /* tttengine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttengine.cpp; sourceTree = "<group>"; };
-		6B9CFFBC18C12CCF005C918B /* tttengine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttengine.h; sourceTree = "<group>"; };
-		6BA46E2018C26F0200B15D42 /* boardpresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boardpresenter.cpp; sourceTree = "<group>"; };
-		6BA46E2118C26F0200B15D42 /* boardpresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boardpresenter.h; sourceTree = "<group>"; };
 		6BA46E2418C2BF5200B15D42 /* tttenginetest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tttenginetest.cpp; path = tests/tttenginetest.cpp; sourceTree = "<group>"; };
 		6BA46E2A18C2C29900B15D42 /* terminalio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalio.cpp; sourceTree = "<group>"; };
 		6BA46E2B18C2C29900B15D42 /* terminalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalio.h; sourceTree = "<group>"; };
-		6BA46E3418C2CD5700B15D42 /* playerfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerfactory.h; sourceTree = "<group>"; };
-		6BA46E3518C2CDF000B15D42 /* playerfactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactory.cpp; sourceTree = "<group>"; };
-		6BA5BC1A18BB9F59009A9272 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
 		6BBD2BC618BBD86F00AE12EF /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minimaxtest.cpp; path = tests/minimaxtest.cpp; sourceTree = "<group>"; };
-		6BBD2BC918BBD8D800AE12EF /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
-		6BBD2BCA18BBD8D800AE12EF /* minimax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minimax.h; sourceTree = "<group>"; };
 		6BBD2BD018BBDCD300AE12EF /* board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = board.cpp; path = board/board.cpp; sourceTree = "<group>"; };
 		6BBD2BD118BBDCD300AE12EF /* board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = board.h; path = board/board.h; sourceTree = "<group>"; };
 		6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardtest.cpp; path = board/tests/boardtest.cpp; sourceTree = "<group>"; };
@@ -164,6 +164,8 @@
 		6B389DDF18BE5B92000D3294 /* board */ = {
 			isa = PBXGroup;
 			children = (
+				6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */,
+				6B6019BE18C417D9007F2BC7 /* boardpresenter.h */,
 				6B389DE018BE5C84000D3294 /* tests */,
 				6BBD2BD118BBDCD300AE12EF /* board.h */,
 				6BBD2BD018BBDCD300AE12EF /* board.cpp */,
@@ -180,6 +182,52 @@
 				6BBD2BD318BBDCF500AE12EF /* boardtest.cpp */,
 			);
 			name = tests;
+			sourceTree = "<group>";
+		};
+		6B6019B118C41733007F2BC7 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				6B6019C718C418C8007F2BC7 /* gamepresenter.h */,
+				6B6019C618C418C8007F2BC7 /* gamepresenter.cpp */,
+				6B6019C218C41872007F2BC7 /* playerfactory.cpp */,
+				6B6019C318C41872007F2BC7 /* playerfactory.h */,
+				6B6019C118C41872007F2BC7 /* iplayer.h */,
+				6B6019B218C41733007F2BC7 /* game.cpp */,
+				6B6019B318C41733007F2BC7 /* game.h */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		6B6019B718C41798007F2BC7 /* minimax */ = {
+			isa = PBXGroup;
+			children = (
+				6B6019B818C41798007F2BC7 /* gamesettings.h */,
+				6B6019B918C41798007F2BC7 /* minimax.cpp */,
+				6B6019BA18C41798007F2BC7 /* minimax.h */,
+			);
+			path = minimax;
+			sourceTree = "<group>";
+		};
+		6B6019CA18C41924007F2BC7 /* tttlogic */ = {
+			isa = PBXGroup;
+			children = (
+				6B6019D318C419C1007F2BC7 /* iplayerfactory.h */,
+				6B6019CB18C41924007F2BC7 /* tttengine.cpp */,
+				6B6019CC18C41924007F2BC7 /* tttengine.h */,
+				6B6019CD18C41924007F2BC7 /* tttrules.cpp */,
+				6B6019CE18C41924007F2BC7 /* tttrules.h */,
+			);
+			path = tttlogic;
+			sourceTree = "<group>";
+		};
+		6B6019D418C41A56007F2BC7 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				6B6019D518C41A56007F2BC7 /* movestrategy.h */,
+				6B6019D618C41A56007F2BC7 /* player.cpp */,
+				6B6019D718C41A56007F2BC7 /* player.h */,
+			);
+			path = player;
 			sourceTree = "<group>";
 		};
 		6B906C8918BA5FA8005AFE4B = {
@@ -244,39 +292,23 @@
 		6B906CC018BA7D1C005AFE4B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				6BA5BC1A18BB9F59009A9272 /* player.cpp */,
-				6B9CFFBB18C12CCF005C918B /* tttengine.cpp */,
-				6B9CFFBC18C12CCF005C918B /* tttengine.h */,
-				6B452AB618C2EA0C00DD4A1F /* iplayerfactory.h */,
-				6B0BBC4018BE7D4800F3EB4B /* tttrules.cpp */,
-				6B0BBC4118BE7D4800F3EB4B /* tttrules.h */,
-				6BA46E2018C26F0200B15D42 /* boardpresenter.cpp */,
-				6BA46E2118C26F0200B15D42 /* boardpresenter.h */,
+				6B6019D418C41A56007F2BC7 /* player */,
+				6B6019CA18C41924007F2BC7 /* tttlogic */,
+				6B6019B718C41798007F2BC7 /* minimax */,
+				6B6019B118C41733007F2BC7 /* game */,
 				6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */,
-				6B0BBC4818BED6BD00F3EB4B /* game.cpp */,
-				6B0BBC4918BED6BD00F3EB4B /* game.h */,
-				6B36E52918C0305600E67CE4 /* gamepresenter.cpp */,
-				6BA46E3418C2CD5700B15D42 /* playerfactory.h */,
-				6BA46E3518C2CDF000B15D42 /* playerfactory.cpp */,
-				6B36E52A18C0305600E67CE4 /* gamepresenter.h */,
 				6B36E51F18BFD58400E67CE4 /* tttsettings.cpp */,
 				6BA46E2A18C2C29900B15D42 /* terminalio.cpp */,
 				6BA46E2B18C2C29900B15D42 /* terminalio.h */,
 				6B36E52018BFD58400E67CE4 /* tttsettings.h */,
 				6B906CD818BA80F6005AFE4B /* io.h */,
-				6B906CF018BACD4B005AFE4B /* player.h */,
-				6B36E51D18BFD43000E67CE4 /* gamesettings.h */,
-				6B906CEE18BACCDE005AFE4B /* movestrategy.h */,
 				6B389DDF18BE5B92000D3294 /* board */,
-				6B0BBC4E18BED8E600F3EB4B /* iplayer.h */,
 				6B906CC218BA7D1C005AFE4B /* inputvalidator.h */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 				6B389DE418BE61D7000D3294 /* boardinterface.h */,
 				6B906CE718BAAA7E005AFE4B /* terminalinput.cpp */,
 				6B906CE818BAAA7E005AFE4B /* terminalinput.h */,
-				6BBD2BC918BBD8D800AE12EF /* minimax.cpp */,
-				6BBD2BCA18BBD8D800AE12EF /* minimax.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -360,19 +392,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B906CE918BAAA7E005AFE4B /* terminalinput.cpp in Sources */,
-				6BA5BC1B18BB9F59009A9272 /* player.cpp in Sources */,
-				6B9CFFBD18C12CCF005C918B /* tttengine.cpp in Sources */,
 				6B906CC718BA7D1C005AFE4B /* inputvalidator.cpp in Sources */,
-				6B0BBC4A18BED6BD00F3EB4B /* game.cpp in Sources */,
-				6BBD2BCB18BBD8D800AE12EF /* minimax.cpp in Sources */,
-				6BA46E3618C2CDF000B15D42 /* playerfactory.cpp in Sources */,
+				6B6019BF18C417D9007F2BC7 /* boardpresenter.cpp in Sources */,
 				6BBD2BD218BBDCD300AE12EF /* board.cpp in Sources */,
-				6B0BBC4218BE7D4800F3EB4B /* tttrules.cpp in Sources */,
-				6B36E52B18C0305600E67CE4 /* gamepresenter.cpp in Sources */,
-				6BA46E2218C26F0200B15D42 /* boardpresenter.cpp in Sources */,
+				6B6019B518C41733007F2BC7 /* game.cpp in Sources */,
+				6B6019D118C41924007F2BC7 /* tttrules.cpp in Sources */,
+				6B6019C418C41872007F2BC7 /* playerfactory.cpp in Sources */,
 				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
+				6B6019C818C418C8007F2BC7 /* gamepresenter.cpp in Sources */,
 				6BA46E2C18C2C29900B15D42 /* terminalio.cpp in Sources */,
+				6B6019BB18C41798007F2BC7 /* minimax.cpp in Sources */,
+				6B6019D818C41A56007F2BC7 /* player.cpp in Sources */,
 				6B36E52118BFD58400E67CE4 /* tttsettings.cpp in Sources */,
+				6B6019CF18C41924007F2BC7 /* tttengine.cpp in Sources */,
 				6B389DDD18BE44FD000D3294 /* boardspaces.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,17 +415,14 @@
 			files = (
 				6BA46E2F18C2C54800B15D42 /* terminalinput.cpp in Sources */,
 				6BE8A8B418C2E29400D41F53 /* mockplayerfactory.cpp in Sources */,
-				6BA46E2E18C2C53C00B15D42 /* tttengine.cpp in Sources */,
 				6B36E52818BFDFED00E67CE4 /* tttsettings.cpp in Sources */,
-				6B36E52718BFDE3500E67CE4 /* minimax.cpp in Sources */,
 				6BA46E2618C2BF5200B15D42 /* tttenginetest.cpp in Sources */,
 				6BA46E2D18C2C29900B15D42 /* terminalio.cpp in Sources */,
-				6B36E52618BFDDF700E67CE4 /* tttrules.cpp in Sources */,
-				6B0BBC4F18BEDBC900F3EB4B /* game.cpp in Sources */,
+				6B6019BC18C41798007F2BC7 /* minimax.cpp in Sources */,
 				6B0BBC4D18BED6FF00F3EB4B /* mockplayer.cpp in Sources */,
 				6BBD2BD618BBDFC300AE12EF /* board.cpp in Sources */,
-				6BA27DA618BBB54E00303336 /* player.cpp in Sources */,
-				6BA46E3718C2CDF000B15D42 /* playerfactory.cpp in Sources */,
+				6B6019D218C41924007F2BC7 /* tttrules.cpp in Sources */,
+				6B6019C918C418C8007F2BC7 /* gamepresenter.cpp in Sources */,
 				6B389DDA18BE4427000D3294 /* boardspacestest.cpp in Sources */,
 				6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */,
 				6B906CFA18BAD63A005AFE4B /* mockmovestrategy.cpp in Sources */,
@@ -403,9 +432,12 @@
 				6B906CEC18BAC166005AFE4B /* playertest.cpp in Sources */,
 				6BBD2BD518BBDCF500AE12EF /* boardtest.cpp in Sources */,
 				6B36E53918C047D000E67CE4 /* tttsettingstest.cpp in Sources */,
-				6BA46E2318C26F0200B15D42 /* boardpresenter.cpp in Sources */,
 				6B0BBC4718BED38300F3EB4B /* gametest.cpp in Sources */,
-				6B36E52C18C0305600E67CE4 /* gamepresenter.cpp in Sources */,
+				6B6019D918C41A56007F2BC7 /* player.cpp in Sources */,
+				6B6019C518C41872007F2BC7 /* playerfactory.cpp in Sources */,
+				6B6019B618C41733007F2BC7 /* game.cpp in Sources */,
+				6B6019C018C417D9007F2BC7 /* boardpresenter.cpp in Sources */,
+				6B6019D018C41924007F2BC7 /* tttengine.cpp in Sources */,
 				6BBD2BC818BBD86F00AE12EF /* minimaxtest.cpp in Sources */,
 				6BBDE6EE18BD090C00DD5829 /* inputvalidatortest.cpp in Sources */,
 				6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */,
