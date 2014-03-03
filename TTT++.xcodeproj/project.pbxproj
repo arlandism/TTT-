@@ -81,7 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tttrulestest.cpp; path = src/board/tests/tttrulestest.cpp; sourceTree = "<group>"; };
+		6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tttrulestest.cpp; path = ../../board/tests/tttrulestest.cpp; sourceTree = "<group>"; };
 		6B389DD818BE4427000D3294 /* boardspacestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspacestest.cpp; path = board/tests/boardspacestest.cpp; sourceTree = "<group>"; };
 		6B389DDB18BE44FD000D3294 /* boardspaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardspaces.cpp; path = board/boardspaces.cpp; sourceTree = "<group>"; };
 		6B389DDC18BE44FD000D3294 /* boardspaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boardspaces.h; path = board/boardspaces.h; sourceTree = "<group>"; };
@@ -251,7 +251,6 @@
 			children = (
 				6BBDE6ED18BD090C00DD5829 /* inputvalidatortest.cpp */,
 				6BA72FFB18C42BE60018099F /* runtests.cpp */,
-				6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */,
 			);
 			name = tests;
 			sourceTree = "<group>";
@@ -294,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				6BE8486C18C429DF00FF219E /* mocks */,
+				6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */,
 				6BE8486A18C4290500FF219E /* tttenginetest.cpp */,
 			);
 			path = tests;

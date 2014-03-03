@@ -20,8 +20,9 @@ void TTTEngine::StartGame(){
     TTTRules rules = *new TTTRules(&board);
     while (not rules.GameOver()){
         game.Round();
+        io_->Print(game.Summary());
     }
-    GamePresenter::PresentWinner(rules.GameWinner());
+    io_->Print(GamePresenter::PresentWinner(rules.GameWinner()));
 }
 
 IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_token){

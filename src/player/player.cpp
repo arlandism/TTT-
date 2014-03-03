@@ -5,5 +5,14 @@ std::string Player::token (){
 }
 
 int Player::Move(Board board){
-    return move_strategy_->NextMove(board);
+    int move = move_strategy_->NextMove(board);
+    if (ValidMove(board, move)){
+        return move;
+    }
+    return Move(board);
+}
+
+bool Player::ValidMove(Board board, int move){
+    std::vector<int> valid_moves = board.OpenSpaces();
+    return std::find(valid_moves.begin(), valid_moves.end(), move) != valid_moves.end();
 }

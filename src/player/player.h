@@ -22,6 +22,8 @@ private:
     
     std::string token_;
     MoveStrategy *move_strategy_;
+    
+    bool ValidMove(Board, int);
 };
 
 #endif

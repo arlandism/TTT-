@@ -39,3 +39,15 @@ std::string BoardPresenter::FormatToken(std::string token){
     sprintf(formatted_token, "%3s", token.c_str());
     return formatted_token;
 }
+
+std::string BoardPresenter::ShowOpenSpaces(Board board){
+    std::vector<int> open_spaces = board.OpenSpaces();
+    std::vector<int>::const_iterator iterator;
+    std::string formatted_list = "";
+    for (iterator = open_spaces.begin(); iterator != open_spaces.end(); iterator++){
+        int move = *iterator;
+        formatted_list += std::to_string(move);
+        formatted_list += " ";
+    }
+    return formatted_list;
+}

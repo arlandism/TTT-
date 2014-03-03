@@ -12,6 +12,7 @@ class BoardPresenter {
 public:
     
     static std::string Present(Board);
+    static std::string ShowOpenSpaces(Board);
     
 private:
     const static std::string LINE_SEPARATOR;
