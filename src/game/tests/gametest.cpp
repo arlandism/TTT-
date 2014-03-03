@@ -7,8 +7,10 @@ TEST_CASE("Game::Round calls Move on..."){
     
     std::vector<int> player_one_moves = {1};
     std::vector<int> player_two_moves = {2};
-    IPlayer *player_one = new MockPlayer("x", player_one_moves);
-    IPlayer *player_two = new MockPlayer("o", player_two_moves);
+    MockPlayer mock_player_one = *new MockPlayer("x", player_one_moves);
+    MockPlayer mock_player_two = *new MockPlayer("o", player_two_moves);
+    IPlayer *player_one = &mock_player_one;
+    IPlayer *player_two = &mock_player_two;
     Board *board = new Board(3);
     
     SECTION("player one with board"){
@@ -23,6 +25,14 @@ TEST_CASE("Game::Round calls Move on..."){
         REQUIRE("o" == board->state()[1]);
     }
     
+    SECTION("player two with most up-to-date board"){
+        Board board = *new Board(2);
+        Game game = *new Game(&board, player_one, player_two);
+        game.Round();
+        std::vector<std::string> expected_state = {"x", "", "", ""};
+        std::vector<std::string> state_received_by_player_two = mock_player_two.LastRecordedState();
+        REQUIRE(expected_state == state_received_by_player_two);
+    }
 }
 
 TEST_CASE("Game::Summary displays board"){
