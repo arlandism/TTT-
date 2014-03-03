@@ -1,5 +1,6 @@
 #ifndef TTT___player_h
 #define TTT___player_h
+
 #include <iostream>
 #include "board.h"
 #include "movestrategy.h"

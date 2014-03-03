@@ -10,6 +10,7 @@
 #include "inputvalidator.h"
 #include "iplayerfactory.h"
 #include "player.h"
+#include "consolemovestrategy.h"
 
 class TTTEngine {
     
