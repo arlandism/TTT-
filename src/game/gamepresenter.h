@@ -13,7 +13,6 @@ public:
     static std::string PlayerPrompt(std::vector<std::string>);
     static std::string TokenPrompt();
     static std::string PresentWinner(std::string);
-    static std::string ReplayPrompt();
 };
 
 #endif

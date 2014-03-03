@@ -28,7 +28,3 @@ std::string GamePresenter::PresentWinner(std::string winner){
     }
     return "\nIt's a tie!\n";
 }
-
-std::string GamePresenter::ReplayPrompt(){
-    return "\nWould you like to play again?\n";
-}
