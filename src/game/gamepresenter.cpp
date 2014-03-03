@@ -8,8 +8,14 @@ std::string GamePresenter::WelcomeBanner(){
     return banner;
 }
 
-std::string GamePresenter::PlayerPrompt(){
-    return "\nPlease select a player type:\n";
+std::string GamePresenter::PlayerPrompt(std::vector<std::string> choices){
+    std::string formatted_player_choices = "";
+    std::vector<std::string>::const_iterator iterator;
+    for (iterator = choices.begin(); iterator != choices.end(); iterator++){
+        std::string choice = *iterator;
+        formatted_player_choices += (choice + "\n");
+    }
+    return "\nPlease select a player type:\n" + formatted_player_choices + "\n";
 }
 
 std::string GamePresenter::TokenPrompt(){
@@ -25,18 +31,4 @@ std::string GamePresenter::PresentWinner(std::string winner){
 
 std::string GamePresenter::ReplayPrompt(){
     return "\nWould you like to play again?\n";
-}
-
-std::string GamePresenter::PresentPlayerChoices(std::vector<std::string> choices){
-    std::string presented = GamePresenter::PlayerPrompt();
-    std::vector<std::string>::const_iterator iterator;
-    for (iterator = choices.begin(); iterator != choices.end(); iterator++){
-        std::string choice = *iterator;
-        presented += (choice + "\n");
-    }
-    return presented + "\n";
-}
-
-bool GamePresenter::AffirmativeAnswer(std::string answer){
-    return answer == "y";
 }
