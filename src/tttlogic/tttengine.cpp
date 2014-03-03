@@ -1,5 +1,5 @@
 #include "tttengine.h"
-#include "terminalinput.h"
+#include "consolemovestrategy.h"
 
 void TTTEngine::StartGame(){
     std::string first_player_type, second_player_type,
