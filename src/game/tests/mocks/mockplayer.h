@@ -22,12 +22,14 @@ public:
     
     int Move(Board board);
     std::vector<std::string> LastRecordedState();
+    bool move_called();
     std::string token();
     
 private:
     std::vector<int> inputs_to_return_;
     std::vector<std::vector<std::string>> recorded_board_states_;
     std::string token_;
+    bool move_called_ = false;
     
     void RecordBoard(Board);
 };

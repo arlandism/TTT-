@@ -19,7 +19,7 @@ public:
 
 private:
     
-    const int MAX_DEPTH = 100;
+    const int MAX_DEPTH = 20;
     std::string token_;
     
     std::multimap<int, int> ScorePossibleMoves(Board);

@@ -2,6 +2,8 @@
 
 int MockPlayer::Move(Board board){
     RecordBoard(board);
+    move_called_ = true;
+    
     int next_output_value = inputs_to_return_.back();
     inputs_to_return_.pop_back();
     return next_output_value;
@@ -9,6 +11,10 @@ int MockPlayer::Move(Board board){
 
 std::string MockPlayer::token(){
     return token_;
+}
+
+bool MockPlayer::move_called(){
+    return move_called_;
 }
 
 void MockPlayer::RecordBoard(Board board){

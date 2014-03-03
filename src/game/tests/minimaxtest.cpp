@@ -31,4 +31,13 @@ TEST_CASE("Minimax::NextMove..."){
         int blocking_move = 5;
         REQUIRE(blocking_move == minimax.NextMove(board));
     }
+    
+    SECTION("stops a win"){
+        std::vector<std::string> board_state = {"x", "", "o",
+                                                "x", "x", "",
+                                                "o", "", ""};
+        Board board = *new Board(board_state);
+        int blocking_move = 6;
+        REQUIRE(blocking_move == minimax.NextMove(board));
+    }
 }

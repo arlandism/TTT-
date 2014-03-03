@@ -4,6 +4,7 @@
 #include <iostream>
 #include "boardpresenter.h"
 #include "iplayer.h"
+#include "tttrules.h"
 
 class Game {
     
@@ -22,5 +23,7 @@ private:
     Board *board_;
     IPlayer *player_one_;
     IPlayer *player_two_;
+    
+    void PlayerMove(IPlayer *);
 };
 #endif
