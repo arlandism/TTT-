@@ -24,7 +24,7 @@ std::multimap<int, int> Minimax::ScorePossibleMoves(Board board){
     return score_to_move_map;
 }
 
-int Minimax::ScoreMove(Board board, int move, std::string current_token, int depth, bool maximizing){
+int Minimax::ScoreMove(Board board, int move, std::string current_token, int depth){
     Board sandbox_board = *new Board( board.state() );
     sandbox_board.Move(move, current_token);
     if (GameOver(sandbox_board) or depth == 0){
@@ -32,12 +32,16 @@ int Minimax::ScoreMove(Board board, int move, std::string current_token, int dep
     } else {
         std::string opponent_token = OtherToken(current_token);
         depth += 1;
-        if (maximizing) {
-            return Maximize(sandbox_board, opponent_token, depth);
-        } else {
+        if (Maximizing(current_token)) {
             return Minimize(sandbox_board, opponent_token, depth);
+        } else {
+            return Maximize(sandbox_board, opponent_token, depth);
         }
     }
+}
+
+bool Minimax::Maximizing(std::string token){
+    return token == token_;
 }
 
 bool Minimax::GameOver(Board board){
@@ -56,7 +60,7 @@ int Minimax::Maximize(Board board, std::string token, int depth){
     int best_score = -10000;
     for (iterator = available_moves.begin(); iterator != available_moves.end(); iterator++){
         int move = *iterator;
-        best_score = std::max(best_score, ScoreMove(board, move, token, depth, false));
+        best_score = std::max(best_score, ScoreMove(board, move, token, depth));
     }
     return best_score;
 }
@@ -67,7 +71,7 @@ int Minimax::Minimize(Board board, std::string token, int depth){
     int best_score = 10000;
     for (iterator = available_moves.begin(); iterator != available_moves.end(); iterator++){
         int move = *iterator;
-        best_score = std::min(best_score, ScoreMove(board, move, token, depth, true));
+        best_score = std::min(best_score, ScoreMove(board, move, token, depth));
     }
     return best_score;
 }
