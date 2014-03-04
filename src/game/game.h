@@ -2,7 +2,6 @@
 #define __TTT____game__
 
 #include <string>
-#include "boardpresenter.h"
 #include "iplayer.h"
 #include "tttrules.h"
 
@@ -16,7 +15,6 @@ public:
         player_two_ = player_two;
     };
     void Round();
-    std::string Summary();
     
 private:
     

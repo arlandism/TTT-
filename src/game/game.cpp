@@ -12,7 +12,3 @@ void Game::PlayerMove(IPlayer *player){
         board_->Move(player_move, player->token());
     }
 }
-
-std::string Game::Summary(){
-    return BoardPresenter::Present(*board_);
-}
