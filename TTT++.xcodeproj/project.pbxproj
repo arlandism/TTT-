@@ -576,7 +576,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INSTALL_PATH = /usr/local/bin;
+				INSTALL_PATH = /;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -584,7 +584,7 @@
 		6B906CAA18BA615E005AFE4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INSTALL_PATH = /usr/local/bin;
+				INSTALL_PATH = /;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
