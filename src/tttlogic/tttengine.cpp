@@ -18,10 +18,6 @@ void TTTEngine::RunGame(){
     driver_->DisplayWinner(rules.GameWinner());
 }
 
-IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_token){
-    return factory_->Create(player_type, player_token);
-}
-
 IPlayer * TTTEngine::CreatePlayerOne(){
     std::string player_type = driver_->GetPlayerType("first", factory_->ValidPlayerChoices());
     std::string player_token = driver_->GetToken(TTTRules::ValidTokenChoices());
@@ -34,4 +30,8 @@ IPlayer * TTTEngine::CreatePlayerTwo(std::string first_player_token){
     std::string player_token = TTTRules::OtherToken(first_player_token);
     IPlayer *player_two = CreatePlayer(player_type, player_token);
     return player_two;
+}
+
+IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_token){
+    return factory_->Create(player_type, player_token);
 }

@@ -18,12 +18,13 @@ public:
     }
     
     void RunGame();
-    IPlayer * CreatePlayer(std::string, std::string);
     IPlayer * CreatePlayerOne();
     IPlayer * CreatePlayerTwo(std::string);
     
 private:
     UIDriver *driver_;
     IPlayerFactory *factory_;
+    
+    IPlayer * CreatePlayer(std::string, std::string);
 };
 #endif
