@@ -11,12 +11,12 @@ std::vector<std::string> MockPlayerFactory::ValidPlayerChoices(){
     return valid_player_choices;
 }
 
-bool MockPlayerFactory::LastPlayerType(std::string player_type){
+std::string MockPlayerFactory::LastPlayerType(){
     std::string last_call_value = player_type_call_list.back();
-    return last_call_value == player_type;
+    return last_call_value;
 }
 
-bool MockPlayerFactory::LastPlayerToken(std::string token){
+std::string MockPlayerFactory::LastPlayerToken(){
     std::string last_call_value = player_token_call_list.back();
-    return last_call_value == token;
+    return last_call_value;
 }

@@ -15,13 +15,13 @@ TEST_CASE("TTTEngine::CreatePlayerOne..."){
     SECTION("creates a player"){
         TTTEngine engine = *new TTTEngine(&driver, &mock_factory);
         engine.CreatePlayerOne();
-        REQUIRE(true == mock_factory.LastPlayerType("Human"));
+        REQUIRE("Human" == mock_factory.LastPlayerType());
     }
     
     SECTION("creates a player with supplied token"){
         TTTEngine engine = *new TTTEngine(&driver, &mock_factory);
         engine.CreatePlayerOne();
-        REQUIRE(true == mock_factory.LastPlayerToken("x"));
+        REQUIRE("x" == mock_factory.LastPlayerToken());
     }
     
 }
@@ -36,13 +36,13 @@ TEST_CASE("TTTEngine::CreatePlayerTwo..."){
     SECTION("create players"){
         TTTEngine engine = *new TTTEngine(&driver, &mock_factory);
         engine.CreatePlayerTwo(player_one_token);
-        REQUIRE(true == mock_factory.LastPlayerType("Human"));
+        REQUIRE("Human" == mock_factory.LastPlayerType());
     }
     
     SECTION("create players with opposite token of the first player"){
         TTTEngine engine = *new TTTEngine(&driver, &mock_factory);
         engine.CreatePlayerTwo(player_one_token);
-        REQUIRE(true == mock_factory.LastPlayerToken("o"));
+        REQUIRE("o" == mock_factory.LastPlayerToken());
     }
     
 }
