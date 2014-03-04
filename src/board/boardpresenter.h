@@ -1,10 +1,10 @@
 #ifndef __TTT____boardpresenter__
 #define __TTT____boardpresenter__
 
-#include <iostream>
+#include <string>
 #include <stdio.h>
+#include <vector>
 #include "board.h"
-#include "vector"
 #include "boardspaces.h"
 
 class BoardPresenter {

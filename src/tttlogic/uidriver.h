@@ -1,13 +1,14 @@
 #ifndef __TTT____uidriver__
 #define __TTT____uidriver__
 
-#include <iostream>
+#include <string>
+#include <vector>
+
 #include "iplayer.h"
 #include "playerfactory.h"
 #include "gamepresenter.h"
 #include "inputvalidator.h"
 #include "io.h"
-#include "vector"
 
 class UIDriver {
     

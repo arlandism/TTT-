@@ -1,11 +1,11 @@
 #ifndef __TTT____minimax__
 #define __TTT____minimax__
 
-#include <iostream>
+#include <string>
+#include <map>
+#include <vector>
 #include "board.h"
 #include "movestrategy.h"
-#include <map>
-#include "vector"
 #include "tttrules.h"
 
 class Minimax: public MoveStrategy {

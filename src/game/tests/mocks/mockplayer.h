@@ -1,9 +1,9 @@
 #ifndef __TTT____mockplayer__
 #define __TTT____mockplayer__
 
-#include <iostream>
+#include <string>
+#include <vector>
 #include "player.h"
-#include "vector"
 
 class MockPlayer: public IPlayer {
     

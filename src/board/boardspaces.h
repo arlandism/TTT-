@@ -1,9 +1,9 @@
 #ifndef __TTT____boardspaces__
 #define __TTT____boardspaces__
 
-#include <iostream>
+#include <string>
+#include <vector>
 #include "math.h"
-#include "vector"
 
 class BoardSpaces {
     

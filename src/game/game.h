@@ -1,7 +1,7 @@
 #ifndef __TTT____game__
 #define __TTT____game__
 
-#include <iostream>
+#include <string>
 #include "boardpresenter.h"
 #include "iplayer.h"
 #include "tttrules.h"

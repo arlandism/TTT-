@@ -1,8 +1,9 @@
 #ifndef __TTT____terminalio__
 #define __TTT____terminalio__
 
-#include "io.h"
+#include <string>
 #include <iostream>
+#include "io.h"
 
 class TerminalIO: public IO {
     

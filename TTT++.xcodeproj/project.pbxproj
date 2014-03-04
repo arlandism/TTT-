@@ -91,7 +91,6 @@
 		6B42DB1218C53FB600D8D6BF /* uidriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uidriver.cpp; sourceTree = "<group>"; };
 		6B42DB1318C53FB600D8D6BF /* uidriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uidriver.h; sourceTree = "<group>"; };
 		6B42DB1618C53FC700D8D6BF /* uidrivertest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uidrivertest.cpp; sourceTree = "<group>"; };
-		6B42DB1718C53FC700D8D6BF /* uidrivertest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uidrivertest.h; sourceTree = "<group>"; };
 		6B6019B218C41733007F2BC7 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
 		6B6019B318C41733007F2BC7 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 		6B6019BD18C417D9007F2BC7 /* boardpresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boardpresenter.cpp; path = board/boardpresenter.cpp; sourceTree = "<group>"; };
@@ -304,7 +303,6 @@
 				6BE8486C18C429DF00FF219E /* mocks */,
 				6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */,
 				6B42DB1618C53FC700D8D6BF /* uidrivertest.cpp */,
-				6B42DB1718C53FC700D8D6BF /* uidrivertest.h */,
 			);
 			path = tests;
 			sourceTree = "<group>";

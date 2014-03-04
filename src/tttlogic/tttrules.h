@@ -1,8 +1,8 @@
 #ifndef __TTT____tttrules__
 #define __TTT____tttrules__
 
+#include <string>
 #include "board.h"
-#include <iostream>
 
 class TTTRules {
 

@@ -1,8 +1,8 @@
 #ifndef __TTT____InputValidator__
 #define __TTT____InputValidator__
 
-#include <iostream>
-#include "vector"
+#include <string>
+#include <vector>
 
 class InputValidator{
     

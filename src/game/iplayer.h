@@ -1,7 +1,7 @@
 #ifndef TTT___iplayer_h
 #define TTT___iplayer_h
 
-#include <iostream>
+#include <string>
 #include "board.h"
 
 class IPlayer {

@@ -1,8 +1,8 @@
 #ifndef __TTT____board__
 #define __TTT____board__
 
-#include <iostream>
-#include "vector"
+#include <string>
+#include <vector>
 #include "boardspaces.h"
 
 class Board {

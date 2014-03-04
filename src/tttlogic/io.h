@@ -2,7 +2,7 @@
 #ifndef __TTT____io__
 #define __TTT____io__
 
-#include <iostream>
+#include <string>
 
 class IO {
     

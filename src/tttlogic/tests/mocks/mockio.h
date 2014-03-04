@@ -1,10 +1,12 @@
 #ifndef __TTT____mockio__
 #define __TTT____mockio__
+
+#include <string>
+#include <vector>
 #include "io.h"
-#include <iostream>
-#include "vector"
 
 class MockIO: public IO {
+    
 public:
     
     MockIO(){};
@@ -17,6 +19,7 @@ public:
     void Print(std::string);
     
 private:
+    
     std::vector<std::string>inputs_to_return;
 };
 

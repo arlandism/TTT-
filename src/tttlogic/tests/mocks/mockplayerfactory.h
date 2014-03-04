@@ -1,7 +1,7 @@
 #ifndef __TTT____mockplayerfactory__
 #define __TTT____mockplayerfactory__
 
-#include <iostream>
+#include <string>
 #include "mockplayer.h"
 #include "playerfactory.h"
 

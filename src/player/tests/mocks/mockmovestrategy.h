@@ -2,10 +2,10 @@
 #ifndef __TTT____mockmovestrategy__
 #define __TTT____mockmovestrategy__
 
-#include <iostream>
+#include <string>
+#include <vector>
 #include "board.h"
 #include "movestrategy.h"
-#include "vector"
 
 class MockMoveStrategy: public MoveStrategy {
     

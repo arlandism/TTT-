@@ -1,7 +1,7 @@
 #ifndef __TTT____tttengine__
 #define __TTT____tttengine__
 
-#include <iostream>
+#include <string>
 #include "gamepresenter.h"
 #include "tttrules.h"
 #include "game.h"
