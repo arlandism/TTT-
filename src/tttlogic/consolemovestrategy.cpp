@@ -1,11 +1,15 @@
 #include "consolemovestrategy.h"
 
 int ConsoleMoveStrategy::NextMove(Board board){
-    TerminalIO io = *new TerminalIO();
-    io.Print(BoardPresenter::Present(board));
-    io.Print("Please select a valid move from: ");
-    io.Print(BoardPresenter::ShowOpenSpaces(board) + "\n");
-    std::string input = io.GetInput();
+    ShowMovePrompt(board);
+    std::string input = io_.GetInput();
     int move = std::stoi(input);
     return move;
+}
+
+void ConsoleMoveStrategy::ShowMovePrompt(Board board){
+    io_.Print("\n" + BoardPresenter::Present(board));
+    io_.Print("\nYou're " + token_);
+    io_.Print("\nPlease select a valid move from: ");
+    io_.Print(BoardPresenter::ShowOpenSpaces(board) + "\n");
 }

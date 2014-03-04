@@ -3,7 +3,7 @@
 IPlayer * PlayerFactory::Create(std::string type, std::string token){
     MoveStrategy *move_strategy;
     if (type == "Human"){
-        move_strategy = new ConsoleMoveStrategy();
+        move_strategy = new ConsoleMoveStrategy(token);
     } else {
         move_strategy = new Minimax(token);
     }

@@ -21,5 +21,6 @@ void TTTEngine::StartGame(){
     while (not rules.GameOver()){
         game.Round();
     }
+    io_->Print("\n" + BoardPresenter::Present(board));
     io_->Print(GamePresenter::PresentWinner(rules.GameWinner()));
 }

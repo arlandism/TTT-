@@ -56,8 +56,8 @@ TEST_CASE("Game::Summary displays board"){
     std::string expected_format =
     "  x|  o|  x\n"
     "------------\n"
-    "    |   |   \n"
+    "   |   |   \n"
     "------------\n"
-    "    |   |   \n";
+    "   |   |   \n";
     REQUIRE(expected_format == game.Summary());
 }

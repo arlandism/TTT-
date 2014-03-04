@@ -10,8 +10,18 @@ class ConsoleMoveStrategy: public MoveStrategy {
     
 public:
     
+    ConsoleMoveStrategy(std::string token){
+        token_ = token;
+    }
+    
     int NextMove(Board);
     
+private:
+    
+    std::string token_;
+    TerminalIO io_ = *new TerminalIO();
+    
+    void ShowMovePrompt(Board);
 };
 
 #endif

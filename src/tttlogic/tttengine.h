@@ -7,7 +7,6 @@
 #include "game.h"
 #include "io.h"
 #include "inputvalidator.h"
-#include "iplayerfactory.h"
 #include "player.h"
 #include "uidriver.h"
 

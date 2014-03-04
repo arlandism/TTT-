@@ -1,6 +1,6 @@
 #include "boardpresenter.h"
 
-const std::string BoardPresenter::LINE_SEPARATOR = "\n------------\n ";
+const std::string BoardPresenter::LINE_SEPARATOR = "\n------------\n";
 const std::string BoardPresenter::TOKEN_SEPARATOR = "|";
 
 std::string BoardPresenter::Present(Board board){

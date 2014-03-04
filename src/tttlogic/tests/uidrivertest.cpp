@@ -23,7 +23,6 @@ TEST_CASE("UIDriver::CreatePlayer uses user input to..."){
     
 }
 
-
 TEST_CASE("UIDriver::GetPlayerType keeps asking until it gets valid choice from user"){
     
     std::vector<std::string> valid_player_choices = {"Human"};
