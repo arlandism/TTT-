@@ -1,7 +1,7 @@
 #ifndef TTT___playerfactory_h
 #define TTT___playerfactory_h
 
-#include "iplayer.h"
+#include "player.h"
 #include "consolemovestrategy.h"
 #include "minimax.h"
 #include "movestrategy.h"

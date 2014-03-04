@@ -27,7 +27,7 @@ std::multimap<int, int> Minimax::ScorePossibleMoves(Board board){
 int Minimax::ScoreMove(Board board, int move, std::string current_token, int depth){
     Board sandbox_board = *new Board( board.state() );
     sandbox_board.Move(move, current_token);
-    TTTRules rules = *new TTTRules(&board);
+    TTTRules rules = *new TTTRules(&sandbox_board);
     if (rules.GameOver() or depth == 0){
         return EvaluateGame(rules.GameWinner(), current_token, depth);
     } else {
