@@ -8,7 +8,7 @@
 #include "movestrategy.h"
 #include "tttrules.h"
 
-class Minimax: public MoveStrategy {
+class Minimax: public MoveStrategy{
     
 public:
     

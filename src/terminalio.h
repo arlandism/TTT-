@@ -5,7 +5,7 @@
 #include <iostream>
 #include "io.h"
 
-class TerminalIO: public IO {
+class TerminalIO: public IO{
     
 public:
     

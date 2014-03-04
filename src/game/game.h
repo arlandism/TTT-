@@ -5,7 +5,7 @@
 #include "iplayer.h"
 #include "tttrules.h"
 
-class Game {
+class Game{
     
 public:
     

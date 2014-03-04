@@ -7,7 +7,7 @@
 #include "board.h"
 #include "boardspaces.h"
 
-class BoardPresenter {
+class BoardPresenter{
     
 public:
     

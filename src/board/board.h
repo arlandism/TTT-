@@ -5,7 +5,7 @@
 #include <vector>
 #include "boardspaces.h"
 
-class Board {
+class Board{
     
 public:
     

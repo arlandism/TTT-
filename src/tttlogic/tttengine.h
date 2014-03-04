@@ -22,6 +22,7 @@ public:
     IPlayer * CreatePlayerTwo(std::string);
     
 private:
+    
     UIDriver *driver_;
     IPlayerFactory *factory_;
     

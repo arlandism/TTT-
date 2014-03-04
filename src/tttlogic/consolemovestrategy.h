@@ -6,7 +6,7 @@
 #include "movestrategy.h"
 #include "terminalio.h"
 
-class ConsoleMoveStrategy: public MoveStrategy {
+class ConsoleMoveStrategy: public MoveStrategy{
     
 public:
     

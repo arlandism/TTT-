@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 
-class IPlayerFactory {
+class IPlayerFactory{
     
 public:
     

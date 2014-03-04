@@ -4,7 +4,7 @@
 
 #include <string>
 
-class IO {
+class IO{
     
 public:
     

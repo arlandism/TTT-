@@ -6,7 +6,7 @@
 
 #include "board.h"
 
-class UIPresenter {
+class UIPresenter{
     
 public:
     
