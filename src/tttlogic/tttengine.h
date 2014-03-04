@@ -2,7 +2,6 @@
 #define __TTT____tttengine__
 
 #include <string>
-#include "uipresenter.h"
 #include "tttrules.h"
 #include "game.h"
 #include "inputvalidator.h"
@@ -22,6 +21,5 @@ public:
     
 private:
     UIDriver *driver_;
-    std::vector<std::string> valid_token_choices = {"x", "o"};
 };
 #endif

@@ -28,3 +28,15 @@ std::string UIDriver::GetFromUser(std::vector<std::string> valid_choices, std::s
 void UIDriver::Display(std::string message){
     io_->Print(message);
 }
+
+void UIDriver::DisplayWelcome(){
+    io_->Print(UIPresenter::WelcomeBanner());
+}
+
+void UIDriver::DisplayBoard(Board board){
+    io_->Print("\n" + BoardPresenter::Present(board));
+}
+
+void UIDriver::DisplayWinner(std::string winner){
+    io_->Print(UIPresenter::PresentWinner(winner));
+}

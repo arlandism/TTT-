@@ -15,6 +15,7 @@ public:
     std::string GameWinner();
     bool GameOver();
     static std::string OtherToken(std::string);
+    static std::vector<std::string> ValidTokenChoices();
     
 private:
     

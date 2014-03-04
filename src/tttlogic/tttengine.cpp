@@ -5,9 +5,9 @@ void TTTEngine::StartGame(){
                 first_player_token, second_player_token,
                 play_again_answer;
     
-    driver_->Display(UIPresenter::WelcomeBanner());
+    driver_->DisplayWelcome();
     first_player_type = driver_->GetPlayerType("first", PlayerFactory::ValidPlayerChoices());
-    first_player_token = driver_->GetToken(valid_token_choices);
+    first_player_token = driver_->GetToken(TTTRules::ValidTokenChoices());
     
     second_player_type = driver_->GetPlayerType("second", PlayerFactory::ValidPlayerChoices());
     second_player_token = TTTRules::OtherToken(first_player_token);
@@ -21,6 +21,6 @@ void TTTEngine::StartGame(){
     while (not rules.GameOver()){
         game.Round();
     }
-    driver_->Display("\n" + BoardPresenter::Present(board));
-    driver_->Display(UIPresenter::PresentWinner(rules.GameWinner()));
+    driver_->DisplayBoard(board);
+    driver_->DisplayWinner(rules.GameWinner());
 }

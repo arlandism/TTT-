@@ -55,3 +55,8 @@ std::string TTTRules::OtherToken(std::string token){
         return "x";
     }
 }
+
+std::vector<std::string> TTTRules::ValidTokenChoices(){
+    std::vector<std::string> valid_token_choices = {"x", "o"};
+    return valid_token_choices;
+}

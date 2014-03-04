@@ -3,7 +3,8 @@
 
 #include <string>
 #include <vector>
-
+#include "board.h"
+#include "boardpresenter.h"
 #include "iplayer.h"
 #include "iplayerfactory.h"
 #include "uipresenter.h"
@@ -23,6 +24,9 @@ public:
     std::string GetPlayerType(std::string, std::vector<std::string>);
     std::string GetToken(std::vector<std::string>);
     void Display(std::string);
+    void DisplayWelcome();
+    void DisplayBoard(Board);
+    void DisplayWinner(std::string);
     
 private:
     
