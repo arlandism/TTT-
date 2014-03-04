@@ -1,12 +1,12 @@
-#ifndef __TTT____gamepresenter__
-#define __TTT____gamepresenter__
+#ifndef __TTT____uipresenter__
+#define __TTT____uipresenter__
 
 #include <string>
 #include <vector>
 
 #include "board.h"
 
-class GamePresenter {
+class UIPresenter {
     
 public:
     

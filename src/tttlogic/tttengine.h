@@ -2,7 +2,7 @@
 #define __TTT____tttengine__
 
 #include <string>
-#include "gamepresenter.h"
+#include "uipresenter.h"
 #include "tttrules.h"
 #include "game.h"
 #include "inputvalidator.h"

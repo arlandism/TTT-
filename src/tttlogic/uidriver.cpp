@@ -5,13 +5,13 @@ IPlayer * UIDriver::CreatePlayer(std::string player_type, std::string player_tok
 }
 
 std::string UIDriver::GetPlayerType(std::string order, std::vector<std::string> valid_player_choices){
-    std::string prompt = GamePresenter::PlayerPrompt(order, valid_player_choices);
+    std::string prompt = UIPresenter::PlayerPrompt(order, valid_player_choices);
     return GetFromUser(valid_player_choices, prompt);
 }
 
 std::string UIDriver::GetToken(std::vector<std::string> valid_token_choices){
-    std::string prompt = GamePresenter::TokenPrompt(valid_token_choices);
-    std::string token = GetFromUser(valid_token_choices, GamePresenter::TokenPrompt(valid_token_choices));
+    std::string prompt = UIPresenter::TokenPrompt(valid_token_choices);
+    std::string token = GetFromUser(valid_token_choices, UIPresenter::TokenPrompt(valid_token_choices));
     used_token_ = token;
     return token;
 }

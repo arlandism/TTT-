@@ -6,7 +6,7 @@
 
 #include "iplayer.h"
 #include "iplayerfactory.h"
-#include "gamepresenter.h"
+#include "uipresenter.h"
 #include "inputvalidator.h"
 #include "io.h"
 
