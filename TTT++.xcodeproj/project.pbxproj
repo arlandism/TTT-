@@ -20,7 +20,6 @@
 		6B6019D218C41924007F2BC7 /* tttrules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019CD18C41924007F2BC7 /* tttrules.cpp */; };
 		6B6019D818C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
 		6B6019D918C41A56007F2BC7 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B6019D618C41A56007F2BC7 /* player.cpp */; };
-		6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC518BA7D1C005AFE4B /* main.cpp */; };
 		6B9AAAFF18C63D86000BF4CA /* tttenginetest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAAFD18C63D86000BF4CA /* tttenginetest.cpp */; };
 		6B9AAB0218C66856000BF4CA /* playerfactorytest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB0018C66856000BF4CA /* playerfactorytest.cpp */; };
 		6B9AAB3018C68521000BF4CA /* uidriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB2C18C68521000BF4CA /* uidriver.cpp */; };
@@ -37,6 +36,7 @@
 		6B9AAB4818C689DD000BF4CA /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB4518C689DD000BF4CA /* terminalio.cpp */; };
 		6B9AAB4A18C68B25000BF4CA /* tttrulestest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB4918C68B25000BF4CA /* tttrulestest.cpp */; };
 		6B9AAB8018C68F5A000BF4CA /* runtests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB7F18C68F5A000BF4CA /* runtests.cpp */; };
+		6B9AAB8218C68FBA000BF4CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB8118C68FBA000BF4CA /* main.cpp */; };
 		6BA597DE18C4E2BA0080A8B2 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA597DC18C4E2BA0080A8B2 /* minimax.cpp */; };
 		6BA597DF18C4E2BA0080A8B2 /* minimax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA597DC18C4E2BA0080A8B2 /* minimax.cpp */; };
 		6BA597E118C4E2CA0080A8B2 /* minimaxtest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA597E018C4E2CA0080A8B2 /* minimaxtest.cpp */; };
@@ -105,7 +105,6 @@
 		6B906C9218BA5FA8005AFE4B /* TTT++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TTT++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CA218BA615E005AFE4B /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B906CC418BA7D1C005AFE4B /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
-		6B906CC518BA7D1C005AFE4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6B9AAAFD18C63D86000BF4CA /* tttenginetest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttenginetest.cpp; sourceTree = "<group>"; };
 		6B9AAB0018C66856000BF4CA /* playerfactorytest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactorytest.cpp; sourceTree = "<group>"; };
 		6B9AAB2C18C68521000BF4CA /* uidriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uidriver.cpp; sourceTree = "<group>"; };
@@ -124,6 +123,7 @@
 		6B9AAB4618C689DD000BF4CA /* terminalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalio.h; sourceTree = "<group>"; };
 		6B9AAB4918C68B25000BF4CA /* tttrulestest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttrulestest.cpp; sourceTree = "<group>"; };
 		6B9AAB7F18C68F5A000BF4CA /* runtests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = runtests.cpp; sourceTree = SOURCE_ROOT; };
+		6B9AAB8118C68FBA000BF4CA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		6BA597DC18C4E2BA0080A8B2 /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
 		6BA597DD18C4E2BA0080A8B2 /* minimax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minimax.h; sourceTree = "<group>"; };
 		6BA597E018C4E2CA0080A8B2 /* minimaxtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimaxtest.cpp; sourceTree = "<group>"; };
@@ -249,6 +249,7 @@
 		6B906C9418BA5FA8005AFE4B /* TTT++ */ = {
 			isa = PBXGroup;
 			children = (
+				6B9AAB8118C68FBA000BF4CA /* main.cpp */,
 				6B9AAB7F18C68F5A000BF4CA /* runtests.cpp */,
 				6B906CC018BA7D1C005AFE4B /* src */,
 			);
@@ -272,7 +273,6 @@
 				6B6019CA18C41924007F2BC7 /* engine */,
 				6B6019D418C41A56007F2BC7 /* player */,
 				6B6019B118C41733007F2BC7 /* game */,
-				6B906CC518BA7D1C005AFE4B /* main.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -454,8 +454,8 @@
 				6B6019D118C41924007F2BC7 /* tttrules.cpp in Sources */,
 				6BA597DE18C4E2BA0080A8B2 /* minimax.cpp in Sources */,
 				6B9AAB4718C689DD000BF4CA /* terminalio.cpp in Sources */,
-				6B906CC818BA7D1C005AFE4B /* main.cpp in Sources */,
 				6B6019D818C41A56007F2BC7 /* player.cpp in Sources */,
+				6B9AAB8218C68FBA000BF4CA /* main.cpp in Sources */,
 				6BA597E418C4E3E80080A8B2 /* playerfactory.cpp in Sources */,
 				6B9AAB3218C68521000BF4CA /* uipresenter.cpp in Sources */,
 				6B9AAB3E18C688E6000BF4CA /* inputvalidator.cpp in Sources */,
