@@ -39,11 +39,3 @@ TEST_CASE("Board::OpenSpaces returns the open spaces on the board"){
     std::vector<int> open_spaces = {1, 2, 3, 4};
     REQUIRE(open_spaces == board.OpenSpaces());
 }
-
-TEST_CASE("Board::Undo undos a move"){
-    Board board = *new Board(2);
-    board.Move(1, "x");
-    board.Undo(1);
-    std::vector<std::string> expected_state = {"", "", "", ""};
-    REQUIRE(expected_state == board.state());
-}

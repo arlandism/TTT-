@@ -25,7 +25,6 @@ public:
     bool Full();
     bool AllSpacesFilled(std::vector<std::string>);
     std::vector<int> OpenSpaces();
-    void Undo(int);
     std::vector<std::string> state();
     
 private:

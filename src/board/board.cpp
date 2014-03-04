@@ -34,11 +34,6 @@ std::vector<int> Board::OpenSpaces(){
     return open_spaces;
 }
 
-void Board::Undo(int space){
-    int square_index = space  - 1;
-    state_[square_index] = EmptySpace;
-}
-
 bool Board::AllSpacesFilled(std::vector<std::string> spaces){
     return not EmptySquarePresent(spaces);
 }
