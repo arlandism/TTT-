@@ -17,7 +17,7 @@ public:
         factory_ = factory;
     }
     
-    void StartGame();
+    void RunGame();
     IPlayer * CreatePlayer(std::string, std::string);
     IPlayer * CreatePlayerOne();
     IPlayer * CreatePlayerTwo(std::string);

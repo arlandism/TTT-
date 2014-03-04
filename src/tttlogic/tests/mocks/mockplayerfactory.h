@@ -14,6 +14,8 @@ public:
     std::vector<std::string> ValidPlayerChoices();
     bool LastPlayerType(std::string);
     bool LastPlayerToken(std::string);
+    bool FirstPlayerType(std::string);
+    bool FirstPlayerToken(std::string);
     
 private:
     

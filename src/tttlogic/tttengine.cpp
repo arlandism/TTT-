@@ -1,6 +1,6 @@
 #include "tttengine.h"
 
-void TTTEngine::StartGame(){
+void TTTEngine::RunGame(){
     
     driver_->DisplayWelcome();
     IPlayer *player_one = CreatePlayerOne();

@@ -9,6 +9,6 @@ int main(int argc, const char * argv[])
     IO *io = new TerminalIO();
     UIDriver *driver = new UIDriver(io);
     TTTEngine engine = *new TTTEngine(driver, factory);
-    engine.StartGame();
+    engine.RunGame();
     return 0;
 }
