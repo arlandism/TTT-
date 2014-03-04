@@ -24,25 +24,17 @@ TEST_CASE("UIDriver::CreatePlayer uses user input to..."){
 }
 
 TEST_CASE("UIDriver::GetPlayerType keeps asking until it gets valid choice from user"){
-    
     std::vector<std::string> valid_player_choices = {"Human"};
-    
-    SECTION("Human"){
-        std::vector<std::string> return_values = {"Foo", "Human"};
-        MockIO mock_io = *new MockIO(return_values);
-        UIDriver driver = *new UIDriver(&mock_io, &mock_factory);
-        REQUIRE("Human" == driver.GetPlayerType("", valid_player_choices));
-    }
+    std::vector<std::string> return_values = {"Foo", "Human"};
+    MockIO mock_io = *new MockIO(return_values);
+    UIDriver driver = *new UIDriver(&mock_io, &mock_factory);
+    REQUIRE("Human" == driver.GetPlayerType("", valid_player_choices));
 }
 
 TEST_CASE("UIDriver::GetToken keeps asking until it gets valid choice from user"){
-    
     std::vector<std::string> valid_token_choices = {"x"};
-    
-    SECTION("x"){
-        std::vector<std::string> return_values = {"f", "x"};
-        MockIO mock_io = *new MockIO(return_values);
-        UIDriver driver = *new UIDriver(&mock_io, &mock_factory);
-        REQUIRE("x" == driver.GetToken(valid_token_choices));
-    }
+    std::vector<std::string> return_values = {"f", "x"};
+    MockIO mock_io = *new MockIO(return_values);
+    UIDriver driver = *new UIDriver(&mock_io, &mock_factory);
+    REQUIRE("x" == driver.GetToken(valid_token_choices));
 }

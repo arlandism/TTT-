@@ -24,3 +24,7 @@ std::string UIDriver::GetFromUser(std::vector<std::string> valid_choices, std::s
     }
     return user_choice;
 }
+
+void UIDriver::Display(std::string message){
+    io_->Print(message);
+}

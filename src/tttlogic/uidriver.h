@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "iplayer.h"
-#include "playerfactory.h"
+#include "iplayerfactory.h"
 #include "gamepresenter.h"
 #include "inputvalidator.h"
 #include "io.h"
@@ -22,6 +22,7 @@ public:
     IPlayer * CreatePlayer(std::string player_type, std::string player_token);
     std::string GetPlayerType(std::string, std::vector<std::string>);
     std::string GetToken(std::vector<std::string>);
+    void Display(std::string);
     
 private:
     

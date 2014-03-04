@@ -5,7 +5,7 @@ void TTTEngine::StartGame(){
                 first_player_token, second_player_token,
                 play_again_answer;
     
-    io_->Print(GamePresenter::WelcomeBanner());
+    driver_->Display(GamePresenter::WelcomeBanner());
     first_player_type = driver_->GetPlayerType("first", valid_player_choices);
     first_player_token = driver_->GetToken(valid_token_choices);
     
@@ -21,6 +21,6 @@ void TTTEngine::StartGame(){
     while (not rules.GameOver()){
         game.Round();
     }
-    io_->Print("\n" + BoardPresenter::Present(board));
-    io_->Print(GamePresenter::PresentWinner(rules.GameWinner()));
+    driver_->Display("\n" + BoardPresenter::Present(board));
+    driver_->Display(GamePresenter::PresentWinner(rules.GameWinner()));
 }
