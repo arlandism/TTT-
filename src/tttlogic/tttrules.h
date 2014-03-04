@@ -4,7 +4,7 @@
 #include <string>
 #include "board.h"
 
-class TTTRules {
+class TTTRules{
 
 public:
     
