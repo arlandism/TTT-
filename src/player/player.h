@@ -5,6 +5,7 @@
 #include "board.h"
 #include "movestrategy.h"
 #include "iplayer.h"
+#include "inputvalidator.h"
 
 class Player: public IPlayer {
 

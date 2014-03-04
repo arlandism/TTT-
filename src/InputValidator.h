@@ -1,5 +1,5 @@
-#ifndef __TTT____InputValidator__
-#define __TTT____InputValidator__
+#ifndef __TTT___inputvalidator__
+#define __TTT___inputvalidator__
 
 #include <string>
 #include <vector>
