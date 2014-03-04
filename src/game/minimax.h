@@ -28,9 +28,7 @@ private:
     int ScoreMove(Board, int, std::string, int depth=1);
     int Maximize(Board, std::string, int);
     int Minimize(Board, std::string, int);
-    std::string GameWinner(Board);
     bool Maximizing(std::string);
-    bool GameOver(Board);
     int EvaluateGame(std::string, std::string, int);
 };
 #endif
