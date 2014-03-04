@@ -30,6 +30,7 @@
 		6B9AAAFB18C63D31000BF4CA /* uipresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAAF918C63D31000BF4CA /* uipresenter.cpp */; };
 		6B9AAAFC18C63D31000BF4CA /* uipresenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAAF918C63D31000BF4CA /* uipresenter.cpp */; };
 		6B9AAAFF18C63D86000BF4CA /* tttenginetest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAAFD18C63D86000BF4CA /* tttenginetest.cpp */; };
+		6B9AAB0218C66856000BF4CA /* playerfactorytest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B9AAB0018C66856000BF4CA /* playerfactorytest.cpp */; };
 		6BA27DA318BBB02B00303336 /* inputvalidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B906CC118BA7D1C005AFE4B /* inputvalidator.cpp */; };
 		6BA46E2C18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
 		6BA46E2D18C2C29900B15D42 /* terminalio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA46E2A18C2C29900B15D42 /* terminalio.cpp */; };
@@ -116,6 +117,7 @@
 		6B9AAAF918C63D31000BF4CA /* uipresenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uipresenter.cpp; sourceTree = "<group>"; };
 		6B9AAAFA18C63D31000BF4CA /* uipresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uipresenter.h; sourceTree = "<group>"; };
 		6B9AAAFD18C63D86000BF4CA /* tttenginetest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttenginetest.cpp; sourceTree = "<group>"; };
+		6B9AAB0018C66856000BF4CA /* playerfactorytest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerfactorytest.cpp; sourceTree = "<group>"; };
 		6BA46E2A18C2C29900B15D42 /* terminalio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = terminalio.cpp; sourceTree = "<group>"; };
 		6BA46E2B18C2C29900B15D42 /* terminalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = terminalio.h; sourceTree = "<group>"; };
 		6BA597DC18C4E2BA0080A8B2 /* minimax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minimax.cpp; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				6BE8486C18C429DF00FF219E /* mocks */,
 				6B9AAAF718C63D1D000BF4CA /* uipresentertest.cpp */,
 				6B0BBC3D18BE7BBD00F3EB4B /* tttrulestest.cpp */,
+				6B9AAB0018C66856000BF4CA /* playerfactorytest.cpp */,
 				6B42DB1618C53FC700D8D6BF /* uidrivertest.cpp */,
 				6B9AAAFD18C63D86000BF4CA /* tttenginetest.cpp */,
 			);
@@ -471,6 +474,7 @@
 				6BA597DF18C4E2BA0080A8B2 /* minimax.cpp in Sources */,
 				6BBDE6EE18BD090C00DD5829 /* inputvalidatortest.cpp in Sources */,
 				6B389DDE18BE44FD000D3294 /* boardspaces.cpp in Sources */,
+				6B9AAB0218C66856000BF4CA /* playerfactorytest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
