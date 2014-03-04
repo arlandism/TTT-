@@ -1,5 +1,5 @@
 ##Getting Started:
-You'll need the basic gcc compiler toolkit. If you already have XCode along with its corresponding command-line tools installed on your machine then should have everything.
+If you already have XCode along with its corresponding command-line tools installed on your machine then you should have everything.
 
 Otherwise, you'll want to install XCode from the app store. After installation, open XCode's Preference menu, select Downloads, highlight Command Line Tools and then click "Install".
 
