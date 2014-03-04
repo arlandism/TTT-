@@ -10,7 +10,7 @@ class GamePresenter {
 public:
     
     static std::string WelcomeBanner();
-    static std::string PlayerPrompt(std::vector<std::string>);
+    static std::string PlayerPrompt(std::string, std::vector<std::string>);
     static std::string TokenPrompt(std::vector<std::string>);
     static std::string PresentWinner(std::string);
     

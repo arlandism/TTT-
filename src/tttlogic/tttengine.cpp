@@ -6,10 +6,10 @@ void TTTEngine::StartGame(){
                 play_again_answer;
     
     io_->Print(GamePresenter::WelcomeBanner());
-    first_player_type = driver_->GetPlayerType(valid_player_choices);
+    first_player_type = driver_->GetPlayerType("first", valid_player_choices);
     first_player_token = driver_->GetToken(valid_token_choices);
     
-    second_player_type = driver_->GetPlayerType(valid_player_choices);
+    second_player_type = driver_->GetPlayerType("second", valid_player_choices);
     second_player_token = TTTRules::OtherToken(first_player_token);
     
     IPlayer *player_one = driver_->CreatePlayer(first_player_type, first_player_token);
@@ -20,7 +20,6 @@ void TTTEngine::StartGame(){
     TTTRules rules = *new TTTRules(&board);
     while (not rules.GameOver()){
         game.Round();
-        io_->Print(game.Summary());
     }
     io_->Print(GamePresenter::PresentWinner(rules.GameWinner()));
 }

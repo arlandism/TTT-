@@ -8,14 +8,14 @@ std::string GamePresenter::WelcomeBanner(){
     return banner;
 }
 
-std::string GamePresenter::PlayerPrompt(std::vector<std::string> player_choices){
+std::string GamePresenter::PlayerPrompt(std::string order, std::vector<std::string> player_choices){
     std::string formatted_player_choices = GamePresenter::JoinChoices(player_choices);
-    return "\nPlease select a player type:\n" + formatted_player_choices + "\n";
+    return "\nPlease select a type for the " + order + " player. Options are: \n" + formatted_player_choices + "\n";
 }
 
 std::string GamePresenter::TokenPrompt(std::vector<std::string> token_choices){
     std::string formatted_token_choices = GamePresenter::JoinChoices(token_choices);
-    return "\nPlease select a token:\n" + formatted_token_choices + "\n";
+    return "\nPlease select a token. Options are: \n" + formatted_token_choices + "\n";
 }
 
 std::string GamePresenter::JoinChoices(std::vector<std::string> choices){

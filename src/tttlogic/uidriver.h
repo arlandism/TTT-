@@ -19,7 +19,7 @@ public:
     }
     
     IPlayer * CreatePlayer(std::string player_type, std::string player_token);
-    std::string GetPlayerType(std::vector<std::string>);
+    std::string GetPlayerType(std::string, std::vector<std::string>);
     std::string GetToken(std::vector<std::string>);
     
 private:
