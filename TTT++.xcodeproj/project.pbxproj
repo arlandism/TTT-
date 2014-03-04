@@ -198,7 +198,7 @@
 			path = game;
 			sourceTree = "<group>";
 		};
-		6B6019CA18C41924007F2BC7 /* tttlogic */ = {
+		6B6019CA18C41924007F2BC7 /* engine */ = {
 			isa = PBXGroup;
 			children = (
 				6BE8486918C4290500FF219E /* tests */,
@@ -214,7 +214,7 @@
 				6B6019CD18C41924007F2BC7 /* tttrules.cpp */,
 				6B6019CE18C41924007F2BC7 /* tttrules.h */,
 			);
-			path = tttlogic;
+			path = engine;
 			sourceTree = "<group>";
 		};
 		6B6019D418C41A56007F2BC7 /* player */ = {
@@ -269,7 +269,7 @@
 				6B9AAB2918C68521000BF4CA /* ui */,
 				6B906CC318BA7D1C005AFE4B /* lib */,
 				6B389DDF18BE5B92000D3294 /* board */,
-				6B6019CA18C41924007F2BC7 /* tttlogic */,
+				6B6019CA18C41924007F2BC7 /* engine */,
 				6B6019D418C41A56007F2BC7 /* player */,
 				6B6019B118C41733007F2BC7 /* game */,
 				6B906CC518BA7D1C005AFE4B /* main.cpp */,
