@@ -6,6 +6,11 @@ IPlayer * MockPlayerFactory::Create(std::string player_type, std::string token){
     return new MockPlayer();
 }
 
+std::vector<std::string> MockPlayerFactory::ValidPlayerChoices(){
+    std::vector<std::string> valid_player_choices = {"Human", "AI"};
+    return valid_player_choices;
+}
+
 bool MockPlayerFactory::LastPlayerType(std::string player_type){
     std::string last_call_value = player_type_call_list.back();
     return last_call_value == player_type;

@@ -1,6 +1,7 @@
 #include "catch.hpp"
 #include "mockplayerfactory.h"
 #include "mockio.h"
+#include "uidriver.h"
 #include "tttengine.h"
 
 MockPlayerFactory mock_factory = *new MockPlayerFactory();

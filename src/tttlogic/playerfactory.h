@@ -13,7 +13,7 @@ class PlayerFactory: public IPlayerFactory {
     
 public:
     
-    static std::vector<std::string> ValidPlayerChoices();
+    std::vector<std::string> ValidPlayerChoices();
     IPlayer * Create(std::string, std::string);
 };
 

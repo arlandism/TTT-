@@ -6,10 +6,10 @@ void TTTEngine::StartGame(){
                 play_again_answer;
     
     driver_->DisplayWelcome();
-    first_player_type = driver_->GetPlayerType("first", PlayerFactory::ValidPlayerChoices());
+    first_player_type = driver_->GetPlayerType("first", factory_->ValidPlayerChoices());
     first_player_token = driver_->GetToken(TTTRules::ValidTokenChoices());
     
-    second_player_type = driver_->GetPlayerType("second", PlayerFactory::ValidPlayerChoices());
+    second_player_type = driver_->GetPlayerType("second", factory_->ValidPlayerChoices());
     second_player_token = TTTRules::OtherToken(first_player_token);
     
     IPlayer *player_one = CreatePlayer(first_player_type, first_player_token);

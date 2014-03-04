@@ -4,11 +4,9 @@
 #include <string>
 #include "tttrules.h"
 #include "game.h"
-#include "inputvalidator.h"
 #include "iplayer.h"
 #include "uidriver.h"
 #include "iplayerfactory.h"
-#include "playerfactory.h"
 
 class TTTEngine {
     
