@@ -19,6 +19,7 @@ public:
     
     void StartGame();
     IPlayer * CreatePlayer(std::string, std::string);
+    IPlayer * CreatePlayerOne();
     
 private:
     UIDriver *driver_;

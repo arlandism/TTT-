@@ -1,18 +1,16 @@
 #include "tttengine.h"
 
 void TTTEngine::StartGame(){
-    std::string first_player_type, second_player_type,
-                first_player_token, second_player_token,
+    std::string second_player_type,
+                second_player_token,
                 play_again_answer;
     
     driver_->DisplayWelcome();
-    first_player_type = driver_->GetPlayerType("first", factory_->ValidPlayerChoices());
-    first_player_token = driver_->GetToken(TTTRules::ValidTokenChoices());
+    IPlayer *player_one = CreatePlayerOne();
+    std::string first_player_token = player_one->token();
     
     second_player_type = driver_->GetPlayerType("second", factory_->ValidPlayerChoices());
     second_player_token = TTTRules::OtherToken(first_player_token);
-    
-    IPlayer *player_one = CreatePlayer(first_player_type, first_player_token);
     IPlayer *player_two = CreatePlayer(second_player_type, second_player_token);
     
     Board board = *new Board(3);
@@ -27,4 +25,11 @@ void TTTEngine::StartGame(){
 
 IPlayer * TTTEngine::CreatePlayer(std::string player_type, std::string player_token){
     return factory_->Create(player_type, player_token);
+}
+
+IPlayer * TTTEngine::CreatePlayerOne(){
+    std::string player_type = driver_->GetPlayerType("first", factory_->ValidPlayerChoices());
+    std::string player_token = driver_->GetToken(TTTRules::ValidTokenChoices());
+    IPlayer *player_one = CreatePlayer(player_type, player_token);
+    return player_one;
 }
