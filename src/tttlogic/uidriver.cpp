@@ -1,9 +1,5 @@
 #include "uidriver.h"
 
-IPlayer * UIDriver::CreatePlayer(std::string player_type, std::string player_token){
-    return factory_->Create(player_type, player_token);
-}
-
 std::string UIDriver::GetPlayerType(std::string order, std::vector<std::string> valid_player_choices){
     std::string prompt = UIPresenter::PlayerPrompt(order, valid_player_choices);
     return GetFromUser(valid_player_choices, prompt);
