@@ -23,7 +23,7 @@ public:
     
     void Move(int, std::string);
     bool Full();
-    bool AllSpacesFilled(std::vector<std::string>);
+    bool AllSpacesFilledInCombination(std::vector<std::string>);
     std::vector<int> OpenSpaces();
     std::vector<std::string> state();
     

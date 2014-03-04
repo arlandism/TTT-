@@ -34,8 +34,8 @@ std::vector<int> Board::OpenSpaces(){
     return open_spaces;
 }
 
-bool Board::AllSpacesFilled(std::vector<std::string> spaces){
-    return not EmptySquarePresent(spaces);
+bool Board::AllSpacesFilledInCombination(std::vector<std::string> combination){
+    return not EmptySquarePresent(combination);
 }
 
 bool Board::EmptySquarePresent(std::vector<std::string> spaces){

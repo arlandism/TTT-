@@ -11,7 +11,7 @@ std::string TTTRules::GameWinner(){
     for (iterator = winning_combinations.begin(); iterator != winning_combinations.end(); iterator++){
         std::vector<std::string> combination = *iterator;
         std::string token = (*iterator).front();
-        if (TokensEqual(combination) && board_->AllSpacesFilled(combination)){
+        if (TokensEqual(combination) && board_->AllSpacesFilledInCombination(combination)){
             return token;
         }
     }
