@@ -9,3 +9,8 @@ IPlayer * PlayerFactory::Create(std::string type, std::string token){
     }
     return new Player(token, move_strategy);
 }
+
+std::vector<std::string> PlayerFactory::ValidPlayerChoices(){
+    std::vector<std::string> valid_player_choices = {"Human", "AI"};
+    return valid_player_choices;
+}

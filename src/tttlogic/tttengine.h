@@ -8,6 +8,7 @@
 #include "inputvalidator.h"
 #include "iplayer.h"
 #include "uidriver.h"
+#include "playerfactory.h"
 
 class TTTEngine {
     
@@ -21,7 +22,6 @@ public:
     
 private:
     UIDriver *driver_;
-    std::vector<std::string> valid_player_choices = {"Human", "AI"};
     std::vector<std::string> valid_token_choices = {"x", "o"};
 };
 #endif
