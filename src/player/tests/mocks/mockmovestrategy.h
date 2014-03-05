@@ -1,4 +1,3 @@
-
 #ifndef __TTT____mockmovestrategy__
 #define __TTT____mockmovestrategy__
 

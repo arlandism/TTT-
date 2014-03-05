@@ -1,9 +1,9 @@
 #ifndef TTT___iplayerfactory_h
 #define TTT___iplayerfactory_h
 
-#include "iplayer.h"
 #include <vector>
 #include <string>
+#include "iplayer.h"
 
 class IPlayerFactory{
     
