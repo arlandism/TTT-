@@ -10,7 +10,7 @@ int Minimax::HighestRatedMove(std::multimap<int, int> scores_to_moves){
     int highest_score = scores_to_moves.rbegin()->first;
     int highest_rated_move = scores_to_moves.find(highest_score)->second;
     return highest_rated_move;
-}
+}\
 
 std::multimap<int, int> Minimax::ScorePossibleMoves(Board board){
     std::multimap<int, int> score_to_move_map;
@@ -25,18 +25,18 @@ std::multimap<int, int> Minimax::ScorePossibleMoves(Board board){
 }
 
 int Minimax::ScoreMove(Board board, int move, std::string current_token, int depth){
-    Board sandbox_board = *new Board( board.state() );
-    sandbox_board.Move(move, current_token);
-    TTTRules rules = *new TTTRules(&sandbox_board);
+    Board clone_board = *new Board( board.state() );
+    clone_board.Move(move, current_token);
+    TTTRules rules = *new TTTRules(&clone_board);
     if (rules.GameOver() or depth == 0){
         return EvaluateGame(rules.GameWinner(), current_token, depth);
     } else {
         std::string opponent_token = OtherToken(current_token);
         depth += 1;
         if (Maximizing(current_token)) {
-            return Minimize(sandbox_board, opponent_token, depth);
+            return Minimize(clone_board, opponent_token, depth);
         } else {
-            return Maximize(sandbox_board, opponent_token, depth);
+            return Maximize(clone_board, opponent_token, depth);
         }
     }
 }

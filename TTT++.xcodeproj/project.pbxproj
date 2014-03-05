@@ -232,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				6B906C9418BA5FA8005AFE4B /* TTT++ */,
-				6B906CA318BA615E005AFE4B /* tests */,
 				6B906C9318BA5FA8005AFE4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -255,13 +254,6 @@
 			);
 			name = "TTT++";
 			path = src;
-			sourceTree = "<group>";
-		};
-		6B906CA318BA615E005AFE4B /* tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = tests;
 			sourceTree = "<group>";
 		};
 		6B906CC018BA7D1C005AFE4B /* src */ = {
